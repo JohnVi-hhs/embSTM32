@@ -1,0 +1,303 @@
+\chapter{Klasse en objecten in C++}
+Als eerste wordt er contact gelegd tussen de laptop en de RockPi, waarna een LEDje aan- en uitgezet wordt. Vervolgens wordt door middel van een programma een aantal LEDs aangestuurd.
+
+
+Het practicum wordt gedaan op een RockPi dit is een single board computer dat draait in ons geval met het linux operating systeem. Met behulp van de RockPi wordt tijdens het practicum door middel van objecten diverse LEDs aangestuurd. Dit wordt gedaan door een 1 of een 0 naar naar een file te schrijven. In Figuur \ref{fig:netw} wordt weergegeven hoe de RockPi op het lab netwerk is aangesloten.
+\begin{figure}[h!]
+	\centering
+	\begin{center} 	
+			\includegraphics[width=0.4\textwidth]{figuren/laBnetwork}
+			\caption{De rockPi in het lab-netwerk}
+      	\label{fig:netw}   
+	\end{center}
+\end{figure}
+Dit kan via de lab-wifi of via een UTP kabel. Het bijbehorende Ipnr. wordt getoond op het 
+displaytje dat aangesloten is op de RockPi. Om contact te kunnen maken tussen de laptop en de RockPi moet de laptop \textbf{ook} op het \textbf{labnetwerk(Lab001) aangesloten} zijn, b.v. via de wifi.
+
+
+\section{De eerste kennismaking met de RockPi.}
+
+
+\subsection{Contact maken met de RockPi}\label{chp:contactPi}
+
+In eerste instantie wordt er contact gemaakt met de RockPi via het \textit{ssh} commando.
+\begin{figure}[h!]
+	\centering
+	\begin{center} 	
+		\includegraphics[width=0.62\textwidth]{figuren/rockIPnr}
+		\caption{De rockPi met het \textit{IPnr.}}
+		\label{fig:rockpiip}   
+	\end{center}
+\end{figure}
+ Het IP nummer van de rockPi is af te lezen via het schermpje, zoals in figuur \ref{fig:rockpiip} wordt weergegeven. In dit voorbeeld is het IP nummer \textit{192.168.1.21}.
+
+
+Open in windows een terminal (b.v. een powershell, cmd prompt of een extern programma zoals b.v. putty), b.v.powershell. Ga naar windows search, zie figuur \ref{fig:windowsZk} en
+\begin{figure}[h!]
+	\centering
+	\begin{center} 	
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=0.95\textwidth]{figuren/windowsPowerShellSearch}
+			\caption{Zoekscherm in windows}
+			\label{fig:windowsZk}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.50\textwidth}
+			\includegraphics[width=0.95\textwidth]{figuren/powershell}
+			\caption{ssh verbinding maken naar de rockPI }
+			\label{fig:sshPi}
+		\end{subfigure}
+		\caption{Opstelling bij opdracht 1.}
+		\label{fig:contactPi}   
+	\end{center}
+\end{figure}
+type vervolgen in \textit{powershell}. In de powershell kan het \textit{ssh} commando met de username en ipnr gegeven worden, zoals in figuur \ref{fig:sshPi} wordt weergegeven. Bij de eerste keer zal de melding komen of de host key moet worden opgeslagen, type in\textit{ yes}. Vervolgens zal om om het password gevraagd worden. Dit is \textit{rock}. 
+
+Wanneer het inloggen gelukt is, verschijnt eerst een verhaaltje dat eindigt met de prompt van de rockPI, zoals in figuur \ref{fig:rockpiLogIn} te zien is.
+\begin{figure}[h!]
+	\centering
+	\begin{center} 	
+		\includegraphics[width=0.7\textwidth]{figuren/ingelogtRockPi}
+		\caption{Ingelogd in de rockPi}
+		\label{fig:rockpiLogIn}   
+	\end{center}
+\end{figure}
+Vanaf nu werk je in een linux terminal omgeving. Een listing van een directory kan opgevraagd worden met het \textit{ls} commando, het veranderen van een directory kan gedaan worden het \textit{cd} commando (change directory) en het maken van een directory met het \textit{mkdir}  commando (make directory). Verdere linux commando's en tips zijn te vinden in appendix \ref{app:linux}.
+
+
+
+\subsection{Het aansturen van een LED.}
+
+
+Wanneer contact is gemaakt met de Pi, zoals beschreven in hoofdstuk \ref{chp:contactPi}, kunnen de LEDs aangestuurd worden. De LED's zitten aangesloten op de GPIO (General Purpose Input Output) connector van de RockPI, deze is te zien in figuur \ref{fig:rockpiCon}.
+\begin{figure}[h!]
+	\centering
+	\begin{center} 	
+		\includegraphics[width=0.9\textwidth]{figuren/rockpi-connector}
+		\caption{De GPIO connector van de RockPI}
+		\label{fig:rockpiCon}   
+	\end{center}
+\end{figure}
+De buitenste kolom geeft aan de GPIO nummer die gebruikt kan worden waarop deze geprogrammeerd kan worden. Zo zit de rode LED aangesloten op GPIO nummer 135. \\
+
+
+\paragraph[Opdracht 1a]{Opdracht 1a, het eerste programmaatje op de RockPI}	
+
+\begin{enumerate}
+	\item Plaats de USB stick in de Rock PI.
+	\item Ga naar de directory van je USB stick
+	\begin{itemize}
+		\item \textit{cd /media/rock}
+	\end{itemize}
+    
+    \item Maak een directory \textit{ledje} aan en ga daar na toe.
+	\begin{itemize}
+	    \item \textit{mkdir ledje}
+	    \item \textit{cd ledje}
+    \end{itemize}  
+   \item Download files \textit{gpiofuncties.h}, \textit{gpiofuncties.cpp}, \textit{test.cpp} van git hup. Het main programma (\textit{test.cpp}) wordt in Listing \ref{lst:mainLd} weergegeven
+   	\begin{itemize}
+     	\item \textit{git clone https://github.com/JohnVi-hhs/oop.git}
+     	
+     
+  	
+   \end{itemize}
+
+\begin{lstlisting}[caption=Zet LED aan en uit,frame=tlrb,label={lst:mainLd}]{Name}
+#include <unistd.h>
+#include <iostream>
+#include "gpiofuncties.h"
+	
+using namespace std;
+#define RODELED 135
+	
+int main() {
+		
+	cout<<"Hi NSE"<<endl;
+	int b=zetPinOpOutput(RODELED);//return waarde of het gelukt is.
+	if(b == 0)  {  //if(!b) mag ook. 
+		cout<<"Foutje bedankt"<<endl;
+		return 0;
+	}
+	cout<<"b= "<<b<<endl;//return waarde of het gelukt is.
+	b=zetPinWaarde(RODELED,1);  //Zet de rode LED aan.
+	usleep(1000000);
+	b=zetPinWaarde(RODELED,0);  //Zet de rode LED uit.
+	cout<<"einde"<<endl;
+}
+\end{lstlisting}
+   \item Compileer en run het testprogramma.
+\begin{itemize}
+	\item Compileren van het programma. \\\textit{g++ -g3 *.cpp -o tst}\\
+	optie \textit{-g3} heeft te maken met debug mogelijkheden. \\
+	Optie \textit{-o} geeft een naam aan de output file (\textit{tst})
+	\item Voer het zojuist gecompileerde programma tst uit.\\\textit{./tst}  
+	
+\end{itemize}
+Resultaat:\\	
+De rode LED gaat 1 seconde aan.
+
+\item Pas het programma zodanig aan, zodat eerst de groene LED aangaat, daarna de gele LED en vervolgens de rode LED. \\
+In de linux terminal, kunnen verschillende editors gebruikt worden, waarvan \href{https://linuxize.com/post/how-to-use-nano-text-editor/}{nano} \'{e}\'{e}n van de meest gebruikte is, een ander beroemde/beruchte editor is \href{https://opensource.com/article/19/3/getting-started-vim}{vim}  
+
+\end{enumerate}
+
+\section{Het werken vanuit Visual Studio Code}
+
+Hierbij wordt vanuit Visual Studio Code (VSC) gewerkt, en wordt de klasse Led geïmplementeerd. Er wordt vanuit gegaan dat VSC geïnstalleerd is, zoals in appendix  \ref{app:vsc} beschreven staat.  
+\begin{enumerate}
+	\item Start VSC op en maak verbinding met de RockPi.
+	\begin{itemize}
+		\item Klik op remote Explorer \img{figuren/remoteExplorer}. De IP nummers van de remote system(en) die al eerder gebruikt zijn worden zichtbaar, zoals te zien is in Figuur \ref{fig:remNr}
+		\begin{figure}[h!]
+			\centering
+			\begin{center} 	
+				\includegraphics[width=0.5\textwidth]{figuren/remoteExplorer2}
+				\caption{Remote Explorer van VSC}
+				\label{fig:remNr}   
+			\end{center}
+		\end{figure}
+				 
+		\item  Maak een nieuwe connectie aan, door op \img{figuren/connectIcon} te klikken.
+
+      \end{itemize}
+      
+      \item Nadat een verbinding gemaakt is met de RockPi, open een remote folder door op \img{figuren/VSCiconeExpl} te klikken of (Cntrl + k Cntrl + o) en ga naar de directory van de vorige opdracht. Aan de linkerkant worden de files zichtbaar en onderaan een statusbalk met informatie, indien de runnable extensie \img{figuren/runnableExt} geïnstalleerd is. Dit is te zien in figuur \ref{fig:vncOp}
+  		\begin{figure}[h!]
+  	\centering
+  	\begin{center} 	
+  		\includegraphics[width=0.5\textwidth]{figuren/vncSchermOp1}
+  		\caption{VSCode in de gewenste directory}
+  		\label{fig:vncOp}   
+  	\end{center}
+  \end{figure}    
+
+Klik op select folder  en selecteer de folder waarin de files staan. Hierna voert de Runnable extensie een aantal opdrachten uit en wordt de statusbalk uitgebreid, zoals te zien is in figuur \ref{fig:vncstsblk}.
+  		\begin{figure}[h!]
+	\centering
+	\begin{center} 	
+		\includegraphics[width=0.5\textwidth]{figuren/statusbalk2}
+		\caption{De statusbalk nadat de directory is gekozen.}
+		\label{fig:vncstsblk}   
+	\end{center}
+\end{figure} 
+
+Klik op \img{figuren/vncComp} , de runnable extension compileert nu het programma.
+\item Door met de debugger te werken, kan een aantal onduidelijkheden van het programmeren verduidelijkt worden.
+\begin{itemize}
+	\item Klik links van regelnummer 10, er verschijnt een rode stip, dit is een breakpoint.
+	\item Klik op \img{figuren/startDebug}, de debugger wordt gestart en het  beeldscherm zoals in figuur \ref{fig:debugScherm} verschijnt.
+	\begin{figure}[h!]
+		\centering
+		\begin{center} 	
+			\includegraphics[width=0.5\textwidth]{figuren/debugScherm}
+			\caption{Start van de debug sessie.}
+			\label{fig:debugScherm}   
+		\end{center}
+	\end{figure}
+	
+	Met de debugknoppen rechtsboven kan nu stap voor stap door het programma gelopen worden.\\
+	Doorloop het programma stap voor stap, zodat de LED ook daadwerkelijk bij een stap aan- en uitgaat. 
+\end{itemize}
+
+\item Bij deze opdracht wordt de eerst klasse gemaakt.
+\begin{itemize}
+	\item Maak een nieuwe terminal aan (Terminal $\rightarrow$ New Terminal) of Cntr +Shift+` en maak een nieuwe directory aan.
+	\item clone de volgende code:\\
+	 git clone \verb|--|branch opdrLedH https://github.com/JohnVi-hhs/oop.git
+	\item De klasse \textbf{Led} wordt weergegeven in figuur \ref{fig:klassLed}
+		\begin{figure}[h!]
+		\centering
+		\begin{center} 	
+			\includegraphics[width=0.37\textwidth]{figuren/klasseLedOpg1}
+			\caption{Diagram van de klasse Led}
+			\label{fig:klassLed}   
+		\end{center}
+	\end{figure}
+	
+	Implementeer de Led.cpp
+	
+\end{itemize}
+
+
+    \end{enumerate}
+
+
+\section{Het werken met een visuele debugger.}
+ 
+Bij dit onderdeel van de opdracht wordt gewerkt met een grafische debugger. Hiermee wordt een grafische weergave gedaan wat een object is en wat een object van een afgeleide klasse inhoud (dit laatste komt in opgave 3 te spraken). Verder worden de associaties tussen objecten duidelijk weergegeven (dit wordt in week 4 en 5 gedaan).
+
+De grafische debugger die gebruikt wordt is de DDD debugger(Data Display Debugger) 
+
+
+Een paar handige links hierbij zijn:
+
+\begin{itemize}
+	\item DDD manual in \href{https://www.gnu.org/software/ddd/manual/html_mono/ddd.html}{html} en \href{https://www.gnu.org/software/ddd/manual/pdf/ddd.pdf}{pdf}
+	\item \href{https://www.gnu.org/software/ddd/}{GNU DDD project}
+	\item \href{href="https://taufanlubis.wordpress.com/2019/02/19/gnu-debugger-front-end-graphical-user-interface-with-ddd}{taufanlubis.wordpress.com}
+	\item  \href{https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_gdb.php}{Swarthmore}
+	\item  \href{http://www.linuxfocus.org/English/January1998/article20.html}{linuxfocus}
+\end{itemize}
+
+De instellingen van de DDD debugger staan in de file .ddd die staat in de home directory (\textit{/home/rock}). Soms is het eenvoudiger om deze directory te deleten dan de instellingen aan te passen.
+
+We gaan nu met de DDD debugger werken.
+Om met DDD te kunnen werken hebben we een grafische omgeving nodig. Een handige methode is om de de VNC viewer van de host te gebruiken. Deze viewer toont de grafische uitvoer van de RockPi. Open in de VNC een terminal, ga naar de directory die in de opdracht \ref{en:dir} van hoofdstuk \ref{hfst:strt}  aangemaakt is (waar de files blink1.cpp, Led.cpp en Led.h \textcolor{green}{blink1} staan) en start de DDD debugger op:
+\texttt{\textit{ddd blink1}}, vervolgens wordt het scherm, zoals weergegeven in Figuur \ref{fig:dddscherm1}, getoond.
+\begin{figure}[h!]
+	\captionsetup{justification=centering}
+	\includegraphics[width=0.7 \linewidth]{figuren/ddd_startup_screen}
+	\centering
+	\caption{het DDD opstartscherm.}
+	\label{fig:dddscherm1}
+\end{figure}
+
+\paragraph{Opdracht}
+We gaan hierbij stap voor stap het programma doorlopen, waarbij de inhoud van de objecten van de klasse Led wordt getoond.
+
+\begin{enumerate} [label=\alph*]
+	\item Als eerste een korte kennismaking met de DDD debugger.
+\begin{enumerate} [label=\roman*]
+
+	\item Ga met de cursor op de regel \texttt{\textit{ Led ld1(18, "Pietje Puk");}}
+	(regelnummer 22)
+	\item Klik op \textit{Break} (bij algemene commando's). Voor het begin van de regel verschijnt nu een breakpoint.
+
+\begin{figure}[h!]
+	\captionsetup{justification=centering}
+	\includegraphics[width=0.7 \linewidth]{figuren/ddd_set_breakpoint}
+	\centering
+	\caption{het zetten van een breakpoint.}
+	\label{fig:ddduitv1}
+\end{figure}
+	\item Klik op \textit{Run} (bij debug commando's),
+het programma wordt uitgevoerd tot het breakpoint. Er verschijn een groene pijl bij het breakpoint.
+\item Klik op \textit{Next}, de regel wordt uitgevoerd. \\
+De groene pijl komt voor de regel \textit{Led ld2(23);} te staan. 
+\item Klik op step, met dit commando \textit{Step} wordt in de constructor van de klasse Led gestapt. Doorloop het programma verder stap voor stap.
+
+\end{enumerate}
+\item Het zichtbaar maken van de inhoud van de objecten.
+
+
+\begin{enumerate} [label=\roman*]
+	\item Start de DDD debugger op (\texttt{\textit{ddd blink1}}):
+		\item Zet een breakpoint op de regel	\textit{ld1.zetAan();} 
+		\item Klik met de muis op variabele \texttt{ld1} en vervolgens op Display of klik met rechtermuisknop en vervolgens op Display ld1.
+		\item Doe hetzelfde met variabele \textit{ld2}. 
+		\item Als het goed is ziet de debugger er ongeveer uit zoals Figuur \ref{fig:dddLeds}, alleen met je \textcolor{BrickRed}{eigen naam}.  
+	    \item Ga met het Step commando de methode \texttt{zetAan} van l1 in.
+		\item Ga met het Step commando de methode \texttt{zetAan} van l2 in. Je ziet dat de methode hetzelfde is, alleen de attributen hebben een andere waarde.
+		  \begin{figure}[h!]
+		 	\captionsetup{justification=centering}
+		 	\includegraphics[width=0.9 \linewidth]{figuren/LedDDD}
+		 	\centering
+		 	\caption{Weergave van twee objecten van de klasse Led.}
+		 	\label{fig:dddLeds}
+		 \end{figure}
+\end{enumerate}
+	 \item Maak een screenshot die lijkt op Figuur \ref{fig:dddLeds} alleen met je \textbf{eigen naam} in plaats van "Pietje Puk" en upload deze op Brightspace.
+	 \item Laat de opdracht aftekenen met onder andere een zichtbaar screenshot.
+ 
+\end{enumerate}
+
