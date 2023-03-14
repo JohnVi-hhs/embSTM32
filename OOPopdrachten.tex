@@ -1,7 +1,7 @@
-\documentclass[x11names,12pt,openright,twoside]{report}
+\documentclass[12pt,openright,twoside]{report}
 \usepackage[a4paper,top=25mm,bottom=25mm,right=25mm,left=25mm,bindingoffset=6mm]{geometry}
 \usepackage[utf8]{inputenc}
-\usepackage[british]{babel}
+\usepackage[dutch]{babel}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[dvipsnames]{xcolor}
@@ -16,7 +16,7 @@
 \usepackage{multirow}
 \usepackage[nottoc]{tocbibind}
 
-
+\usepackage{xcolor}
 \usepackage{colortbl}
 %\usepackage[table]{xcolor}
 %\usepackage{tabularray}
@@ -34,7 +34,6 @@
 \usepackage{etoolbox}
 \usepackage{textcomp}
 \usepackage{float}
-\usepackage{xcolor}
 %\usepackage{lststyle-VS2017.sty}
 
 %\usepackage{minted} 
@@ -45,6 +44,33 @@
 
 
 \definecolor{mygray}{gray}{0.85}
+
+% Vanaf hier: Gert
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{bash}{
+	language=bash,
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+% Tot hier: Gert
 
 \newcommand{\ctext}[3][RGB]{%
 	\begingroup
@@ -102,6 +128,7 @@
 	commentstyle=\color{green},
 	morecomment=[l][\color{magenta}]{\#},
     captionpos=b,
+	breaklines=true,    % Gert 
     tabsize=3
 }
 
@@ -134,7 +161,7 @@
 	{\vspace{-4cm}}
 	
 	{\hspace{-20pt}\begin{bfseries}\LARGE{\color{black}Object Georiënteerd Programmeren  \\( Introductie )} \end{bfseries}  } \\
-	\small{(practicumhandleiding inclusief de practicumopstelling voor de Rock Pi)}
+	\small{(Practicumhandleiding inclusief de practicumopstelling voor de RockPi)}
 	\ThisCenterWallPaper{0.8}{figuren/frontRock.jpg}
 	
 	%{\hspace{-20pt}\begin{bfseries}\Huge{\color{black} Realtime programmeren} \end{bfseries}  } \\
@@ -160,6 +187,7 @@
 	
 	\let\cleardoublepage\clearpage
 	
+	\input{inleiding}
 	\input{opdracht1}
 %	\input{rockopdracht2}
 	
