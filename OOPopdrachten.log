@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  16 MAR 2023 21:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  16 MAR 2023 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1039,198 +1039,192 @@ B\ij lage A.
 
 ]
 B\ij lage B.
+Excluding 'comment' comment.
 <figuren/vncopstart.png, id=371, 664.58287pt x 79.79813pt>
 File: figuren/vncopstart.png Graphic file (type png)
 <use figuren/vncopstart.png>
-Package pdftex.def Info: figuren/vncopstart.png  used on input line 25.
-(pdftex.def)             Requested size: 306.71939pt x 36.82933pt.
+Package pdftex.def Info: figuren/vncopstart.png  used on input line 37.
+(pdftex.def)             Requested size: 438.17247pt x 52.61333pt.
 <figuren/laptopVCS.png, id=374, 530.58224pt x 243.00787pt>
 File: figuren/laptopVCS.png Graphic file (type png)
 <use figuren/laptopVCS.png>
-Package pdftex.def Info: figuren/laptopVCS.png  used on input line 39.
+Package pdftex.def Info: figuren/laptopVCS.png  used on input line 52.
 (pdftex.def)             Requested size: 284.80942pt x 130.44733pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 <figuren/vcsExtSSH.png, id=376, 930.47626pt x 520.94624pt>
 File: figuren/vcsExtSSH.png Graphic file (type png)
 <use figuren/vcsExtSSH.png>
-Package pdftex.def Info: figuren/vcsExtSSH.png  used on input line 52.
+Package pdftex.def Info: figuren/vcsExtSSH.png  used on input line 65.
 (pdftex.def)             Requested size: 262.90614pt x 147.19144pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <figuren/extensionIcon.png, id=377, 51.94406pt x 50.43843pt>
 File: figuren/extensionIcon.png Graphic file (type png)
 <use figuren/extensionIcon.png>
-Package pdftex.def Info: figuren/extensionIcon.png  used on input line 60.
+Package pdftex.def Info: figuren/extensionIcon.png  used on input line 73.
 (pdftex.def)             Requested size: 14.49985pt x 14.07956pt.
 [20
 
- <./figuren/vncopstart.png>]
-<figuren/VNCremoteSSH.png, id=389, 1442.38875pt x 936.49875pt>
+ <./figuren/vncopstart.png> <./figuren/laptopVCS.png>]
+<figuren/VNCremoteSSH.png, id=388, 1442.38875pt x 936.49875pt>
 File: figuren/VNCremoteSSH.png Graphic file (type png)
 <use figuren/VNCremoteSSH.png>
-Package pdftex.def Info: figuren/VNCremoteSSH.png  used on input line 69.
+Package pdftex.def Info: figuren/VNCremoteSSH.png  used on input line 82.
 (pdftex.def)             Requested size: 262.90614pt x 170.69168pt.
-<figuren/VNCInvoerHost.png, id=392, 828.84656pt x 144.54pt>
+<figuren/VNCInvoerHost.png, id=391, 828.84656pt x 144.54pt>
 File: figuren/VNCInvoerHost.png Graphic file (type png)
 <use figuren/VNCInvoerHost.png>
-Package pdftex.def Info: figuren/VNCInvoerHost.png  used on input line 78.
+Package pdftex.def Info: figuren/VNCInvoerHost.png  used on input line 91.
 (pdftex.def)             Requested size: 262.90614pt x 45.84572pt.
- [21 <./figuren/laptopVCS.png> <./figuren/vcsExtSSH.png> <./figuren/extensionIc
-on.png> <./figuren/VNCremoteSSH.png>]
-<figuren/VSCsshCommand.png, id=409, 833.36343pt x 115.18031pt>
+<figuren/VSCsshCommand.png, id=393, 833.36343pt x 115.18031pt>
 File: figuren/VSCsshCommand.png Graphic file (type png)
 <use figuren/VSCsshCommand.png>
-Package pdftex.def Info: figuren/VSCsshCommand.png  used on input line 87.
+Package pdftex.def Info: figuren/VSCsshCommand.png  used on input line 100.
 (pdftex.def)             Requested size: 306.71939pt x 42.39282pt.
-<figuren/VSCconfigFile.png, id=411, 834.86906pt x 207.77625pt>
+<figuren/VSCconfigFile.png, id=395, 834.86906pt x 207.77625pt>
 File: figuren/VSCconfigFile.png Graphic file (type png)
 <use figuren/VSCconfigFile.png>
-Package pdftex.def Info: figuren/VSCconfigFile.png  used on input line 95.
+Package pdftex.def Info: figuren/VSCconfigFile.png  used on input line 108.
 (pdftex.def)             Requested size: 306.71939pt x 76.33386pt.
-<figuren/VSCcontinue.png, id=413, 832.61063pt x 152.82094pt>
+ [21 <./figuren/vcsExtSSH.png> <./figuren/extensionIcon.png> <./figuren/VNCremo
+teSSH.png> <./figuren/VNCInvoerHost.png>]
+<figuren/VSCcontinue.png, id=414, 832.61063pt x 152.82094pt>
 File: figuren/VSCcontinue.png Graphic file (type png)
 <use figuren/VSCcontinue.png>
-Package pdftex.def Info: figuren/VSCcontinue.png  used on input line 104.
+Package pdftex.def Info: figuren/VSCcontinue.png  used on input line 117.
 (pdftex.def)             Requested size: 306.71939pt x 56.29567pt.
-<figuren/VSCpasswd.png, id=415, 831.85782pt x 115.93312pt>
+<figuren/VSCpasswd.png, id=416, 831.85782pt x 115.93312pt>
 File: figuren/VSCpasswd.png Graphic file (type png)
 <use figuren/VSCpasswd.png>
-Package pdftex.def Info: figuren/VSCpasswd.png  used on input line 113.
+Package pdftex.def Info: figuren/VSCpasswd.png  used on input line 126.
 (pdftex.def)             Requested size: 306.71939pt x 42.74597pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figuren/VSCfout1.png, id=417, 772.38562pt x 171.64125pt>
+<figuren/VSCfout1.png, id=418, 772.38562pt x 171.64125pt>
 File: figuren/VSCfout1.png Graphic file (type png)
 <use figuren/VSCfout1.png>
-Package pdftex.def Info: figuren/VSCfout1.png  used on input line 122.
+Package pdftex.def Info: figuren/VSCfout1.png  used on input line 135.
 (pdftex.def)             Requested size: 262.90614pt x 58.42271pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuren/VSCnewTerminal.png, id=418, 1425.07407pt x 368.87813pt>
+<figuren/VSCnewTerminal.png, id=419, 1425.07407pt x 368.87813pt>
 File: figuren/VSCnewTerminal.png Graphic file (type png)
 <use figuren/VSCnewTerminal.png>
-Package pdftex.def Info: figuren/VSCnewTerminal.png  used on input line 131.
+Package pdftex.def Info: figuren/VSCnewTerminal.png  used on input line 144.
 (pdftex.def)             Requested size: 262.90614pt x 68.05pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <./figuren/VNCInvoerHost.png> <./figuren/VSCsshCommand.png> <./figuren/VSCc
-onfigFile.png> <./figuren/VSCcontinue.png>]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
-40.
-
+53.
 (c:/texlive/2022/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 140.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 153.
+ [22 <./figuren/VSCsshCommand.png> <./figuren/VSCconfigFile.png> <./figuren/VSC
+continue.png> <./figuren/VSCpasswd.png>]
 File: figuren/VSCiconeExpl.png Graphic file (type png)
 <use figuren/VSCiconeExpl.png>
-Package pdftex.def Info: figuren/VSCiconeExpl.png  used on input line 154.
+Package pdftex.def Info: figuren/VSCiconeExpl.png  used on input line 167.
 (pdftex.def)             Requested size: 14.49995pt x 14.49995pt.
 <figuren/VSCopenFolder.png, id=440, 832.61063pt x 456.20438pt>
 File: figuren/VSCopenFolder.png Graphic file (type png)
 <use figuren/VSCopenFolder.png>
-Package pdftex.def Info: figuren/VSCopenFolder.png  used on input line 157.
+Package pdftex.def Info: figuren/VSCopenFolder.png  used on input line 170.
 (pdftex.def)             Requested size: 262.90614pt x 144.05318pt.
 <figuren/VSCexplorerveld.png, id=442, 770.88pt x 578.16pt>
 File: figuren/VSCexplorerveld.png Graphic file (type png)
 <use figuren/VSCexplorerveld.png>
-Package pdftex.def Info: figuren/VSCexplorerveld.png  used on input line 167.
+Package pdftex.def Info: figuren/VSCexplorerveld.png  used on input line 180.
 (pdftex.def)             Requested size: 262.90614pt x 197.17169pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figuren/VSCmakeFile.png, id=444, 31.61812pt x 29.35968pt>
+[23 <./figuren/VSCfout1.png> <./figuren/VSCnewTerminal.png> <./figuren/VSCopenF
+older.png>]
+<figuren/VSCmakeFile.png, id=459, 31.61812pt x 29.35968pt>
 File: figuren/VSCmakeFile.png Graphic file (type png)
 <use figuren/VSCmakeFile.png>
-Package pdftex.def Info: figuren/VSCmakeFile.png  used on input line 174.
+Package pdftex.def Info: figuren/VSCmakeFile.png  used on input line 187.
 (pdftex.def)             Requested size: 14.5001pt x 13.46439pt.
-[23 <./figuren/VSCpasswd.png> <./figuren/VSCfout1.png> <./figuren/VSCnewTermina
-l.png> <./figuren/VSCmakeFile.png>]
-Overfull \hbox (23.95178pt too wide) in paragraph at lines 186--188
+
+Overfull \hbox (23.95178pt too wide) in paragraph at lines 199--201
 []\OT1/cmr/m/n/12 Via git: \OT1/cmr/m/it/12 git clone  - -branch in-tro https:/
 /github.com/Johnny63Vi/oopr1.git[][][][][]
  []
 
-[24 <./figuren/VSCopenFolder.png> <./figuren/VSCexplorerveld.png>]
 File: figuren/extensionIcon.png Graphic file (type png)
 <use figuren/extensionIcon.png>
-Package pdftex.def Info: figuren/extensionIcon.png  used on input line 201.
+Package pdftex.def Info: figuren/extensionIcon.png  used on input line 215.
 (pdftex.def)             Requested size: 14.49985pt x 14.07956pt.
+[24 <./figuren/VSCexplorerveld.png> <./figuren/VSCmakeFile.png>]
 <figuren/cPlusIcon.png, id=482, 35.23163pt x 30.1125pt>
 File: figuren/cPlusIcon.png Graphic file (type png)
 <use figuren/cPlusIcon.png>
-Package pdftex.def Info: figuren/cPlusIcon.png  used on input line 202.
+Package pdftex.def Info: figuren/cPlusIcon.png  used on input line 216.
 (pdftex.def)             Requested size: 14.4999pt x 12.39305pt.
 <figuren/VSCcompile.png, id=484, 691.08188pt x 398.23781pt>
 File: figuren/VSCcompile.png Graphic file (type png)
 <use figuren/VSCcompile.png>
-Package pdftex.def Info: figuren/VSCcompile.png  used on input line 208.
+Package pdftex.def Info: figuren/VSCcompile.png  used on input line 222.
 (pdftex.def)             Requested size: 262.90614pt x 151.50208pt.
 <figuren/VSCiconeRunDebug.png, id=485, 46.67438pt x 45.16875pt>
 File: figuren/VSCiconeRunDebug.png Graphic file (type png)
 <use figuren/VSCiconeRunDebug.png>
-Package pdftex.def Info: figuren/VSCiconeRunDebug.png  used on input line 224.
+Package pdftex.def Info: figuren/VSCiconeRunDebug.png  used on input line 238.
 (pdftex.def)             Requested size: 14.49951pt x 14.0318pt.
-<figuren/VSCksGDB.png, id=487, 372.64218pt x 142.28156pt>
-File: figuren/VSCksGDB.png Graphic file (type png)
-<use figuren/VSCksGDB.png>
-Package pdftex.def Info: figuren/VSCksGDB.png  used on input line 229.
-(pdftex.def)             Requested size: 163.87857pt x 62.5715pt.
-<figuren/VSCKsGcc.png, id=488, 425.33907pt x 271.76532pt>
-File: figuren/VSCKsGcc.png Graphic file (type png)
-<use figuren/VSCKsGcc.png>
-Package pdftex.def Info: figuren/VSCKsGcc.png  used on input line 234.
-(pdftex.def)             Requested size: 187.31685pt x 119.68492pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[25 <./figuren/cPlusIcon.png> <./figuren/VSCcompile.png> <./figuren/VSCiconeRun
-Debug.png>]
-<figuren/VCRrunDebug.png, id=511, 40.65187pt x 32.37094pt>
+<figuren/VCRrunDebug.png, id=488, 40.65187pt x 32.37094pt>
 File: figuren/VCRrunDebug.png Graphic file (type png)
 <use figuren/VCRrunDebug.png>
-Package pdftex.def Info: figuren/VCRrunDebug.png  used on input line 247.
+Package pdftex.def Info: figuren/VCRrunDebug.png  used on input line 244.
 (pdftex.def)             Requested size: 14.50005pt x 11.54633pt.
-<figuren/VSCdebugVeld.png, id=513, 1640.37843pt x 1023.825pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+[25 <./figuren/cPlusIcon.png> <./figuren/VSCcompile.png> <./figuren/VSCiconeRun
+Debug.png> <./figuren/VCRrunDebug.png>]
+<figuren/VSCksGDB.png, id=512, 372.64218pt x 142.28156pt>
+File: figuren/VSCksGDB.png Graphic file (type png)
+<use figuren/VSCksGDB.png>
+Package pdftex.def Info: figuren/VSCksGDB.png  used on input line 250.
+(pdftex.def)             Requested size: 163.87857pt x 62.5715pt.
+<figuren/VSCKsGcc.png, id=513, 425.33907pt x 271.76532pt>
+File: figuren/VSCKsGcc.png Graphic file (type png)
+<use figuren/VSCKsGcc.png>
+Package pdftex.def Info: figuren/VSCKsGcc.png  used on input line 255.
+(pdftex.def)             Requested size: 187.31685pt x 119.68492pt.
+<figuren/VSCdebugVeld.png, id=514, 1640.37843pt x 1023.825pt>
 File: figuren/VSCdebugVeld.png Graphic file (type png)
 <use figuren/VSCdebugVeld.png>
-Package pdftex.def Info: figuren/VSCdebugVeld.png  used on input line 250.
+Package pdftex.def Info: figuren/VSCdebugVeld.png  used on input line 266.
 (pdftex.def)             Requested size: 350.5393pt x 218.77457pt.
-<figuren/VSCDebugKnoppen.png, id=514, 237.13594pt x 42.91031pt>
+<figuren/VSCDebugKnoppen.png, id=515, 237.13594pt x 42.91031pt>
 File: figuren/VSCDebugKnoppen.png Graphic file (type png)
 <use figuren/VSCDebugKnoppen.png>
-Package pdftex.def Info: figuren/VSCDebugKnoppen.png  used on input line 255.
+Package pdftex.def Info: figuren/VSCDebugKnoppen.png  used on input line 271.
 (pdftex.def)             Requested size: 80.12943pt x 14.5pt.
 )) Excluding 'comment' comment. [26 <./figuren/VSCksGDB.png> <./figuren/VSCKsGc
-c.png> <./figuren/VCRrunDebug.png> <./figuren/VSCDebugKnoppen.png> <./figuren/V
-SCdebugVeld.png>] (./OOPopdrachten.aux)
+c.png> <./figuren/VSCdebugVeld.png> <./figuren/VSCDebugKnoppen.png>] (./OOPopdr
+achten.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `OOPopdrachten.out' has not changed.
-(rerunfilecheck)             Checksum: B502BF586C4AD8F8522B3AE6C025D6F8;3295.
+(rerunfilecheck)             Checksum: BEAAC2C99612A52A60D4377147DB27F9;3305.
  ) 
 Here is how much of TeX's memory you used:
- 19294 strings out of 476029
- 309794 string characters out of 5794164
+ 19292 strings out of 476029
+ 309780 string characters out of 5794164
  2020340 words of memory out of 5000000
  39156 multiletter control sequences out of 15000+600000
  528224 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,76p,1202b,2556s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,76p,1202b,2040s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2022/texm
 f-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1
@@ -1247,10 +1241,10 @@ s/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm120
 0.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:/texliv
 e/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2022/texmf-dis
 t/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on OOPopdrachten.pdf (26 pages, 19131207 bytes).
+Output written on OOPopdrachten.pdf (26 pages, 19131717 bytes).
 PDF statistics:
- 640 PDF objects out of 1000 (max. 8388607)
- 487 compressed objects within 5 object streams
- 202 named destinations out of 1000 (max. 500000)
+ 638 PDF objects out of 1000 (max. 8388607)
+ 485 compressed objects within 5 object streams
+ 200 named destinations out of 1000 (max. 500000)
  385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
