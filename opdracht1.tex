@@ -1,7 +1,7 @@
 \chapter{Klasse en objecten in C++}
-Als eerste wordt er contact gelegd tussen de laptop en de RockPi, waarna een LEDje aan- en uitgezet wordt. Vervolgens wordt door middel van een programma een aantal LEDs aangestuurd.
+Als eerste wordt er verbinding gemaakt vanaf je laptop met de RockPi, waarna een LEDje aan- en uitgezet wordt. Vervolgens wordt door middel van een programma een aantal LEDs aangestuurd.
 
-
+\begin{comment}
 Het practicum wordt gedaan op een RockPi dit is een single board computer dat draait in ons geval met het linux operating systeem. Met behulp van de RockPi wordt tijdens het practicum door middel van objecten diverse LEDs aangestuurd. Dit wordt gedaan door een 1 of een 0 naar naar een file te schrijven. In Figuur \ref{fig:netw} wordt weergegeven hoe de RockPi op het lab netwerk is aangesloten.
 \begin{figure}[h!]
 	\centering
@@ -17,76 +17,78 @@ displaytje dat aangesloten is op de RockPi. Om contact te kunnen maken tussen de
 
 \section{De eerste kennismaking met de RockPi.}
 
+\end{comment}
 
-\subsection{Contact maken met de RockPi}\label{chp:contactPi}
+\section{Werken met de RockPi.}
 
-In eerste instantie wordt er contact gemaakt met de RockPi via het \textit{ssh} commando.
+\subsection{Verbinding opzetten met de RockPi}\label{chp:contactPi}
+
+In eerste instantie wordt er verbinding gemaakt met de RockPi via het \textit{ssh} commando.
 \begin{figure}[h!]
 	\centering
 	\begin{center} 	
-		\includegraphics[width=0.62\textwidth]{figuren/rockIPnr}
-		\caption{De rockPi met het \textit{IPnr.}}
+		\includegraphics[width=1\textwidth]{figuren/rockIPnr}
+		\caption{De RockPi met het \textit{IP adres.}}
 		\label{fig:rockpiip}   
 	\end{center}
 \end{figure}
- Het IP nummer van de rockPi is af te lezen via het schermpje, zoals in figuur \ref{fig:rockpiip} wordt weergegeven. In dit voorbeeld is het IP nummer \textit{192.168.1.21}.
+ Het IP adres van de RockPi is af te lezen via het oled display zoals in Figuur \ref{fig:rockpiip} wordt weergegeven. In het voorbeeld hierna wordt het IP adres \textit{192.168.178.89} gebruikt.
 
 
-Open in windows een terminal (b.v. een powershell, cmd prompt of een extern programma zoals b.v. putty), b.v.powershell. Ga naar windows search, zie figuur \ref{fig:windowsZk} en
+Open in Windows een terminal (b.v. een PowerShell, cmd prompt of een extern programma zoals b.v. KiTTY). We gebruiken voor nu PowerShell: Ga naar Windows Search: druk Windows+S (de knop met het Windows vlaggetje + de 'S'), zie Figuur \ref{fig:windowsZk} en
 \begin{figure}[h!]
 	\centering
 	\begin{center} 	
-		\begin{subfigure}[b]{0.45\textwidth}
-			\includegraphics[width=0.95\textwidth]{figuren/windowsPowerShellSearch}
-			\caption{Zoekscherm in windows}
+		%\begin{subfigure}[b]{0.63\textwidth}
+			\includegraphics[width=1\textwidth]{figuren/windowsPowerShellSearch}
+			\caption{Zoekscherm in Windows}
 			\label{fig:windowsZk}
-		\end{subfigure}
-		\begin{subfigure}[b]{0.50\textwidth}
-			\includegraphics[width=0.95\textwidth]{figuren/powershell}
-			\caption{ssh verbinding maken naar de rockPI }
+		%\end{subfigure}
+	\begin{comment}
+		\begin{subfigure}[b]{0.63\textwidth}
+			\includegraphics[width=1\textwidth]{figuren/powershell}
+			\caption{ssh verbinding maken naar de RockPi }
 			\label{fig:sshPi}
 		\end{subfigure}
 		\caption{Opstelling bij opdracht 1.}
 		\label{fig:contactPi}   
+	\end{comment}
 	\end{center}
 \end{figure}
-type vervolgen in \textit{powershell}. In de powershell kan het \textit{ssh} commando met de username en ipnr gegeven worden, zoals in figuur \ref{fig:sshPi} wordt weergegeven. Bij de eerste keer zal de melding komen of de host key moet worden opgeslagen, type in\textit{ yes}. Vervolgens zal om om het password gevraagd worden. Dit is \textit{rock}. 
+tik vervolgens in: \textit{powershell}. In de PowerShell kan het \textit{ssh} commando met de username en het IP adres gegeven worden, zoals in figuur \ref{fig:rockpiLogIn} wordt weergegeven. Bij de eerste keer zal de melding komen of de host key moet worden opgeslagen, kies \textit{yes}. Vervolgens zal om om het password gevraagd worden. Dit is \textit{rock}. 
 
-Wanneer het inloggen gelukt is, verschijnt eerst een verhaaltje dat eindigt met de prompt van de rockPI, zoals in figuur \ref{fig:rockpiLogIn} te zien is.
+\clearpage
+Wanneer het inloggen gelukt is, verschijnt een verhaaltje dat eindigt met de prompt van de RockPi, zoals in figuur \ref{fig:rockpiLogIn} te zien is.
 \begin{figure}[h!]
 	\centering
 	\begin{center} 	
-		\includegraphics[width=0.7\textwidth]{figuren/ingelogtRockPi}
-		\caption{Ingelogd in de rockPi}
+		\includegraphics[width=1\textwidth]{figuren/ingelogtRockPi}
+		\caption{Ingelogd in de RockPi}
 		\label{fig:rockpiLogIn}   
 	\end{center}
 \end{figure}
-Vanaf nu werk je in een linux terminal omgeving. Een listing van een directory kan opgevraagd worden met het \textit{ls} commando, het veranderen van een directory kan gedaan worden het \textit{cd} commando (change directory) en het maken van een directory met het \textit{mkdir}  commando (make directory). Verdere linux commando's en tips zijn te vinden in appendix \ref{app:linux}.
+Vanaf nu werk je in een Linux terminal omgeving. Een listing van een directory kan opgevraagd worden met het \textit{ls} commando, het veranderen van een directory kan gedaan worden het \textit{cd} commando (change directory) en het maken van een directory met het \textit{mkdir}  commando (make directory). Verdere Linux commando's en tips zijn te vinden in Bijlage \ref{app:Linux}.
 
-
-
+\clearpage
 \subsection{Het aansturen van een LED.}
-
-
-Wanneer contact is gemaakt met de Pi, zoals beschreven in hoofdstuk \ref{chp:contactPi}, kunnen de LEDs aangestuurd worden. De LED's zitten aangesloten op de GPIO (General Purpose Input Output) connector van de RockPI, deze is te zien in figuur \ref{fig:rockpiCon}.
+Wanneer contact is gemaakt met de RockPi, zoals beschreven in hoofdstuk \ref{chp:contactPi}, kunnen de LEDs aangestuurd worden. De LED's zitten aangesloten op de GPIO ('General Purpose Input Output') connector van de RockPI, deze is te zien in Figuur \ref{fig:rockpiCon}.
 \begin{figure}[h!]
 	\centering
 	\begin{center} 	
-		\includegraphics[width=0.9\textwidth]{figuren/rockpi-connector}
-		\caption{De GPIO connector van de RockPI}
+		\includegraphics[width=1.1\textwidth]{figuren/rockpi-connector}
+		\caption{GPIO connector van de RockPI}
 		\label{fig:rockpiCon}   
 	\end{center}
 \end{figure}
-De buitenste kolom geeft aan de GPIO nummer die gebruikt kan worden waarop deze geprogrammeerd kan worden. Zo zit de rode LED aangesloten op GPIO nummer 135. \\
-
+De buitenste kolom geeft het GPIO nummer aan waarop deze geprogrammeerd kan worden. Zo zit de rode LED aangesloten op GPIO nummer 135. De \textbf{dikgedrukte} pinnen worden gebruikt met de printplaat. In de kolom \textbf{breakout} zie je wat op die pinnen zit.
 
 \paragraph[Opdracht 1a]{Opdracht 1a, het eerste programmaatje op de RockPI}	
 
 \begin{enumerate}
-	\item Plaats de USB stick in de Rock PI.
+	\item Plaats de USB stick in de RockPi.
 	\item Ga naar de directory van je USB stick
 	\begin{itemize}
-		\item \textit{cd /media/rock}
+		\item \textit{cd Documents} (het hele pad is \textit{/media/rock/Documents} )
 	\end{itemize}
     
     \item Maak een directory \textit{ledje} aan en ga daar na toe.
@@ -94,13 +96,23 @@ De buitenste kolom geeft aan de GPIO nummer die gebruikt kan worden waarop deze 
 	    \item \textit{mkdir ledje}
 	    \item \textit{cd ledje}
     \end{itemize}  
-   \item Download files \textit{gpiofuncties.h}, \textit{gpiofuncties.cpp}, \textit{test.cpp} van git hup. Het main programma (\textit{test.cpp}) wordt in Listing \ref{lst:mainLd} weergegeven
+   \item Download files \textit{gpiofuncties.h}, \textit{gpiofuncties.cpp}, \textit{test.cpp} van Github. Het main programma (\textit{test.cpp}) wordt in Listing \ref{lst:mainLd} weergegeven
    	\begin{itemize}
      	\item \textit{git clone https://github.com/JohnVi-hhs/oop.git}
-     	
-     
-  	
+     	\item \textit{cd oop}
+     	\item \textit{ls -l}
+     	\item \textit{nano test.cpp} Druk Ctrl+X om nano weer te sluiten.
    \end{itemize}
+
+\clearpage
+\begin{figure}[h!]
+	\centering
+	\begin{center} 	
+		\includegraphics[width=0.94\textwidth]{figuren/gitclone}
+		\caption{Schermuitvoer na bovenstaande opdrachten}
+		\label{fig:gitclone}   
+	\end{center}
+\end{figure}
 
 \begin{lstlisting}[caption=Zet LED aan en uit,frame=tlrb,label={lst:mainLd}]{Name}
 #include <unistd.h>
@@ -138,12 +150,12 @@ De rode LED gaat 1 seconde aan.
 
 \item Pas het programma zodanig aan, zodat eerst de groene LED aangaat, daarna de gele LED en vervolgens de rode LED. \\
 In de linux terminal, kunnen verschillende editors gebruikt worden, waarvan \href{https://linuxize.com/post/how-to-use-nano-text-editor/}{nano} \'{e}\'{e}n van de meest gebruikte is, een ander beroemde/beruchte editor is \href{https://opensource.com/article/19/3/getting-started-vim}{vim}  
-
+Als je nano gebruikt: druk Ctrl+O om op te slaan en Ctrl+X om af te sluiten. Bij vim, druk/tik \textit{:help}
 \end{enumerate}
 
 \section{Het werken vanuit Visual Studio Code}
 
-Hierbij wordt vanuit Visual Studio Code (VSC) gewerkt, en wordt de klasse Led geïmplementeerd. Er wordt vanuit gegaan dat VSC geïnstalleerd is, zoals in appendix  \ref{app:vsc} beschreven staat.  
+Hierbij wordt vanuit 'Visual Studio Code' (VSC) gewerkt, en wordt de klasse Led geïmplementeerd. Er wordt vanuit gegaan dat VSC geïnstalleerd is zoals in appendix  \ref{app:vsc} beschreven staat.  
 \begin{enumerate}
 	\item Start VSC op en maak verbinding met de RockPi.
 	\begin{itemize}
@@ -296,7 +308,7 @@ De groene pijl komt voor de regel \textit{Led ld2(23);} te staan.
 		 	\label{fig:dddLeds}
 		 \end{figure}
 \end{enumerate}
-	 \item Maak een screenshot die lijkt op Figuur \ref{fig:dddLeds} alleen met je \textbf{eigen naam} in plaats van "Pietje Puk" en upload deze op Brightspace.
+	 \item Maak een screenshot die lijkt op Figuur \ref{fig:dddLeds} alleen met je \textbf{eigen naam} in plaats van ''Pietje Puk'' en upload deze op Brightspace.
 	 \item Laat de opdracht aftekenen met onder andere een zichtbaar screenshot.
  
 \end{enumerate}
