@@ -1,15 +1,54 @@
-\chapter{Tips en trucks in een linux omgeving } \label{app:linux}
+\chapter{Tips\&Tricks voor Linux omgeving} \label{app:linux}
 
-\section{commando's}
+\section{Tips} \label{app:tips}
+\textbf{\textit{Je kunt de tips en trucs toepassen bij de commando's in \ref{app:commands}}}
+
+\begin{itemize}
+	\item 
+	Linux is in tegenstelling tot Windows ‘case-sensitive’. Het maakt dus verschil of je hoofdletters of kleine letters gebruikt. Voorbeeld: Als je map \texttt{Documents} heet, dan werkt \texttt{cd Documents} wel en \texttt{cd documents} niet.
+	\item 
+	Tip bij het invoeren van map- en bestandsnamen: tik de eerste 3 letters in en druk de Tab toets in, Linux vult dan automatisch de rest van de naam in. Voordeel: je hoeft minder te tikken en het is gelijk een foutcontrole.
+	\item 
+	Op en neer pijltjestoetsen in de terminal: door vorige commando's heen gaan.
+	\item
+	Nog een verschil met Windows; Windows werkt met bestandsextensies: *.exe is een uitvoerbaar (executable) betand. In Linux doet de extensie er niet toe, maar zet je met \texttt{chmod +x} het 'executable' bitje aan, een attribuut op het bestand.
+	\item  
+	Hulp vragen bij commando’s: \texttt{<\textit{commando}> --help}. Voorbeeld: \texttt{ls  --help}
+	Uitgebreidere informatie: \texttt{man <\textit{commando}>}. Voorbeeld: \texttt{man ls}\newline
+	Voor de bedieningstoetsen van \texttt{man} druk ‘h’.
+	\item 
+	\href{https://phoenixnap.com/kb/linux-sudo-command}{Uitleg en gebruik van het sudo commando}  ('\textbf{Su}per \textbf{U}ser \textbf{Do}'); admin rechten.
+	\item
+	Zoeken in het bestandssysteem: \texttt{sudo find / -name \textit{<bestandsnaam>}}
+	zoekt naar \texttt{\textit{<bestandsnaam>}} vanaf de root '/' in het gehele bestandssysteem.
+	\item 
+	\href{https://linuxconfig.org/filesystem-basics}{Uitleg van- en navigeren door het bestandssysteem.}
+	\item
+	Wil je meer uitleg, \href{https://duckduckgo.com/?q=linux+command+cheatsheet}{zoek dan naar 'Linux Command Cheatsheet'}. \newline
+	Ik vind \href{https://linuxconfig.org/linux-commands-cheat-sheet}{deze uitleg} wel prettig.
+\end{itemize}
+
+\break
+\section{\textbf{Linux commando's} (zie ook tips in \ref{app:tips})}\label{app:commands}
 
 \begin{table}[h!]
 	\begin{tabular}{|l|l|}
 		\hline
-		\multicolumn{2}{|l|}{Commando's}    \\ \hline
-		ls & listing \\ \hline
-		cd & change directory \\ \hline
-	    mkdir & make directory \\ \hline
+		%\multicolumn{2}{|l|}{Linux commando's}    \\ \hline
+		Commando & Uitleg \\ \hline
+		\texttt{ls \textbf{-l}} & \textbf{L}ange directory listing - Opvragen van bestanden in een directory  \\ \hline
+		\texttt{cd} & change directory; \texttt{cd ..} betekent 1 niveau omhoog naar de root '/' \\ \hline
+	    \texttt{cp} & copy \\ \hline
+	    \texttt{rm} & remove - Verwijderen van bestanden en mappen. \\ \hline
+	    \texttt{mv} & move - Verplaatsen van bestanden en mappen. \\ \hline
+	    \texttt{cat} & bestand bekijken \\ \hline
+	    \texttt{pwd} & In welke directoy sta ik? ('present working directory') \\ \hline
+	    \texttt{mkdir} & make directory \\ \hline
+		\texttt{rmdir} & remove (lege) directory \\ \hline
+	    \texttt{history} & Laat lijst zien van laatst uitgevoerde commando's \\ \hline
+	    \texttt{sudo} & Zet dit vóór je commando om het met admin rechten uit te voeren. \\ \hline
+	    \texttt{chmod} & (met sudo) lees/schrijfrechten wijzigen, +x maakt bestand executable. \\ \hline
+	    \texttt{chown} & (met sudo) eigenaar van bestand / map wijzigen \\ \hline
 	\end{tabular}
 \end{table}
 
-\section{tips}
