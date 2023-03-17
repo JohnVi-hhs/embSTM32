@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  16 MAR 2023 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  17 MAR 2023 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -795,15 +795,15 @@ Package caption Info: End \AtBeginDocument code.
 
 LaTeX Warning: No \author given.
 
-<figuren/frontRock.jpg, id=76, 4015.0pt x 2260.445pt>
-File: figuren/frontRock.jpg Graphic file (type jpg)
-<use figuren/frontRock.jpg>
-Package pdftex.def Info: figuren/frontRock.jpg  used on input line 185.
-(pdftex.def)             Requested size: 477.98087pt x 269.10323pt.
+<figuren/frontRock.png, id=76, 2415.0225pt x 1348.28719pt>
+File: figuren/frontRock.png Graphic file (type png)
+<use figuren/frontRock.png>
+Package pdftex.def Info: figuren/frontRock.png  used on input line 185.
+(pdftex.def)             Requested size: 477.98431pt x 266.8547pt.
 [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figuren/front
-Rock.jpg>] (./OOPopdrachten.toc)
+Rock.png>] (./OOPopdrachten.toc)
 \tf@toc=\write5
 \openout5 = `OOPopdrachten.toc'.
 
@@ -1218,8 +1218,8 @@ Package rerunfilecheck Info: File `OOPopdrachten.out' has not changed.
 (rerunfilecheck)             Checksum: BEAAC2C99612A52A60D4377147DB27F9;3305.
  ) 
 Here is how much of TeX's memory you used:
- 19292 strings out of 476029
- 309780 string characters out of 5794164
+ 19291 strings out of 476029
+ 309776 string characters out of 5794164
  2020340 words of memory out of 5000000
  39156 multiletter control sequences out of 15000+600000
  528224 words of font info for 88 fonts, out of 8000000 for 9000
@@ -1241,7 +1241,7 @@ s/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm120
 0.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:/texliv
 e/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2022/texmf-dis
 t/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on OOPopdrachten.pdf (26 pages, 19131717 bytes).
+Output written on OOPopdrachten.pdf (26 pages, 26458086 bytes).
 PDF statistics:
  638 PDF objects out of 1000 (max. 8388607)
  485 compressed objects within 5 object streams
