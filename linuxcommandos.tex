@@ -1,5 +1,4 @@
 \chapter{Tips\&Tricks voor Linux omgeving} \label{app:linux}
-
 \section{Tips} \label{app:tips}
 \textbf{\textit{Je kunt de tips en trucs toepassen bij de commando's in \ref{app:commands}}}
 
@@ -29,9 +28,9 @@
 \end{itemize}
 
 \break
-\section{\textbf{Linux commando's} (zie ook tips in \ref{app:tips})}\label{app:commands}
+\section{Linux commando's (zie ook tips in \ref{app:tips})}\label{app:commands}
 
-\begin{table}[h!]
+\begin{table}[ht] %[h!]
 	\begin{tabular}{|l|l|}
 		\hline
 		%\multicolumn{2}{|l|}{Linux commando's}    \\ \hline
@@ -51,4 +50,46 @@
 	    \texttt{chown} & (met sudo) eigenaar van bestand / map wijzigen \\ \hline
 	\end{tabular}
 \end{table}
+
+\break
+\section{GPIO poorten in Linux}\label{app:gpiolinux}
+In Linux wordt alles gerepresenteerd als een bestand. Of het nu een volledige disk of een device is, je kunt het als een bestand openen en lezen en schrijven. Dit geldt ook voor GPIO pinnen (‘General Purpose Input/Output’ pinnen). Deze pinnen gebruik je op dezelfde manier als de pinnen van een microcontroller (denk aan een Arduino Uno, of een Microbit). Je kunt pinnen als uitgang zetten en hoog of laag maken, of als ingang instellen en uitlezen of een pin hoog of laag is (en nog meer, bijvoorbeeld pull-up en pull-down en reageren op events, maar dat gaan we niet behandelen).\newline
+Omdat pinnen gerepresenteerd worden door bestanden, geldt ook dat er rechten op gezet worden in het bestandssysteem. Meestal kan een standaard gebruiker (zoal ‘rock’) er niet bij. Alleen ‘root’ kan er standaard bij. Voor het practicum hebben we de rechten zo ingesteld dat gebruiker ‘rock’ standaard gebruik kan maken van de op de breakout board beschikbare pinnen.\newline
+Voorbeeld van de handelingen om een pin in te stellen en uit te lezen of aan te sturen, het hekje ‘\#’ aan het begin van de regel geeft aan dat het commentaar (uitleg) is:
+
+\begin{lstlisting}[language=bash]
+# GPIO pin 135 (de rode led) aanzetten:
+echo 135 > /sys/class/gpio/export
+# GPIO pin 135 (de rode led) als uitgang instellen:
+echo out > /sys/class/gpio/gpio135/direction
+# GPIO pin 135 (de rode led) hoog maken:
+echo 1 > /sys/class/gpio/gpio135/value
+# 1 seconde wachten
+sleep 1
+# GPIO pin 135 (de rode led) laag maken:
+echo 0 > /sys/class/gpio/gpio135/value
+\end{lstlisting}
+	
+Je kunt ook de hele bestandstructuur van de pin bekijken:
+\begin{lstlisting}[language=bash]
+rock@rockpi-4b:~$ ls -l /sys/class/gpio/gpio135/
+total 0
+-rwSrwSr-- 1 root gpio 4096 Mar 12 18:49 active_low
+lrwxrwxrwx 1 root gpio    0 Mar 12 18:49 device -> ../../../pinctrl
+-rwSrwSr-- 1 root gpio 4096 Mar 12 18:49 direction
+-rwSrwSr-- 1 root gpio 4096 Mar 12 18:49 edge
+drwsrwsr-x 2 root gpio    0 Mar 12 18:49 power
+lrwxrwxrwx 1 root gpio    0 Mar 12 18:49 subsystem -> ../../../../../class/gpio
+-rwSrwSr-- 1 root gpio 4096 Mar 12 18:49 uevent
+-rwSrwSr-- 1 root gpio 4096 Mar 13 10:55 value
+\end{lstlisting}
+	
+En een bepaalde status uitlezen (in dit geval of de pin als ingang of uitgang is ingesteld):
+\begin{lstlisting}[language=bash]
+rock@rockpi-4b:~$ cat /sys/class/gpio/gpio135/direction
+out
+rock@rockpi-4b:~$
+\end{lstlisting}
+	
+Tot zover de uitleg. Ik laat GPIO pin als ingang en gebruik met PWM voor nu achterwege. Als je daar meer van wilt weten, kijk dan even naar het zelftest scriptje: \texttt{sudo cat /usr/local/bin/pwmtest.sh} 
 
