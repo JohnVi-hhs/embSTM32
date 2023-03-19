@@ -173,7 +173,7 @@ Hierbij wordt vanuit 'Visual Studio Code' (VSC) gewerkt, en wordt de klasse Led 
 
       \end{itemize}
       
-      \item Nadat een verbinding gemaakt is met de RockPi, open een remote folder door op \img{figuren/VSCiconeExpl} te klikken of (Cntrl + k Cntrl + o) en ga naar de directory van de vorige opdracht. Aan de linkerkant worden de files zichtbaar en onderaan een statusbalk met informatie, indien de runnable extensie \img{figuren/runnableExt} geïnstalleerd is. Dit is te zien in figuur \ref{fig:vncOp}
+      \item Nadat een verbinding gemaakt is met de RockPi, open een remote folder door op \img{figuren/VSCiconeExpl} te klikken of (Cntrl + k Cntrl + o) en ga naar de directory van de vorige opdracht. Aan de linkerkant worden de files zichtbaar en onderaan een statusbalk met informatie. Dit is te zien in figuur \ref{fig:vncOp}
   		\begin{figure}[h!]
   	\centering
   	\begin{center} 	
@@ -183,25 +183,18 @@ Hierbij wordt vanuit 'Visual Studio Code' (VSC) gewerkt, en wordt de klasse Led 
   	\end{center}
   \end{figure}    
 
-Klik op select folder  en selecteer de folder waarin de files staan. Hierna voert de Runnable extensie een aantal opdrachten uit en wordt de statusbalk uitgebreid, zoals te zien is in figuur \ref{fig:vncstsblk}.
-  		\begin{figure}[h!]
-	\centering
-	\begin{center} 	
-		\includegraphics[width=0.5\textwidth]{figuren/statusbalk2}
-		\caption{De statusbalk nadat de directory is gekozen.}
-		\label{fig:vncstsblk}   
-	\end{center}
-\end{figure} 
+Klik op select folder  en selecteer de folder waarin de files staan. 
 
-Klik op \img{figuren/vncComp} , de runnable extension compileert nu het programma.
-\item Door met de debugger te werken, kan een aantal onduidelijkheden van het programmeren verduidelijkt worden.
+
+
 \begin{itemize}
+	\item Selecteer de file test.cpp en compileer de files\footnote{compileren lukt niet, controleer of c++ extension (\img{figuren/cPlusIcon} ) is geinstalleerd} (Terminal $\rightarrow$ Run Build Task... of Cntrl+Shift+B) 
 	\item Klik links van regelnummer 10, er verschijnt een rode stip, dit is een breakpoint.
-	\item Klik op \img{figuren/startDebug}, de debugger wordt gestart en het  beeldscherm zoals in figuur \ref{fig:debugScherm} verschijnt.
+	\item Selecteer bij het pijltje rechtsboven \img{figuren/debugPijl} de Debug optie en klik op de pijl (of Run $\rightarrow$ Start Debugging), de debugger wordt gestart en het  beeldscherm zoals in figuur \ref{fig:debugScherm} verschijnt.
 	\begin{figure}[h!]
 		\centering
 		\begin{center} 	
-			\includegraphics[width=0.5\textwidth]{figuren/debugScherm}
+			\includegraphics[width=0.9\textwidth]{figuren/debugScherm}
 			\caption{Start van de debug sessie.}
 			\label{fig:debugScherm}   
 		\end{center}
@@ -216,18 +209,78 @@ Klik op \img{figuren/vncComp} , de runnable extension compileert nu het programm
 	\item Maak een nieuwe terminal aan (Terminal $\rightarrow$ New Terminal) of Cntr +Shift+` en maak een nieuwe directory aan.
 	\item clone de volgende code:\\
 	 git clone \verb|--|branch opdrLedH https://github.com/JohnVi-hhs/oop.git
-	\item De klasse \textbf{Led} wordt weergegeven in figuur \ref{fig:klassLed}
-		\begin{figure}[h!]
-		\centering
-		\begin{center} 	
-			\includegraphics[width=0.37\textwidth]{figuren/klasseLedOpg1}
-			\caption{Diagram van de klasse Led}
-			\label{fig:klassLed}   
-		\end{center}
+	\item De UML notatie van de klasse \textbf{Led} wordt weergegeven in figuur \ref{fig:klassLed} en de headerfile in listing \ref{lst:ledH}
+
+	\begin{minipage}{0.5\textwidth} 
+	\begin{figure}[H]
+	%	\caption{\label{fig:label} Figure title}
+		\includegraphics[width=0.9\textwidth]{figuren/klasseLedOpg1}
+		\caption{UML diagram van de \\klasse Led}
+		\label{fig:klassLed}   
 	\end{figure}
+\end{minipage}\hfill
+\begin{minipage}{.45\textwidth}
 	
-	Implementeer de Led.cpp
+	\begin{lstlisting}[caption=LED declaratie file(.h),frame=tlrb,label={lst:ledH}]{Name}
+class Led
+{
+	public:
+    	Led(int);
+		Led(int, string);
+		Led(int, string,string);
+		~Led();
+		void zetAan();
+		void zetUit();
+		string ledKleur()const;
+		int isLedAan()const;
+		int pinNummer() const;
+		string deEigenaar() const;
+			
+	private:
+		string kleur;
+		int pinNr;
+		int status;  
+		string eigenaar;
+};
+		
+		
+	\end{lstlisting}
 	
+\end{minipage}
+\paragraph{Opdracht:} Implementeer de Led.cpp zodat het hoofdprogramma van listing \ref{lst:hfdprg2} zonder errors en warning gecompileerd en uitgevoerd kan worden. 
+\begin{lstlisting}[caption=Hoofdprogramma om de LED uit te testen ,frame=tlrb, label={lst:hfdprg2}]{Name}
+#include <unistd.h>
+#include <iostream>
+#include <string>
+#include "Led.h"
+
+using namespace std;
+#define RODELED 135
+#define GROENELED 132
+#define GELELED 134
+
+int main() {
+	
+	cout<<"Hi NSE"<<endl;
+	Led rood(RODELED,"Rood","Pietje Puk");
+	Led geel(GELELED,"Geel");
+	Led groen(GROENELED);
+	
+	groen.zetAan();
+	usleep(1000000);
+	groen.zetUit();
+	geel.zetAan();
+	usleep(1000000);
+	geel.zetUit();
+	rood.zetAan();
+	usleep(1000000);  
+	rood.zetUit();
+	
+	cout<<"einde"<<endl;
+}
+
+
+\end{lstlisting}	
 \end{itemize}
 
 
@@ -236,7 +289,7 @@ Klik op \img{figuren/vncComp} , de runnable extension compileert nu het programm
 
 \section{Het werken met een visuele debugger.}
  
-Bij dit onderdeel van de opdracht wordt gewerkt met een grafische debugger. Hiermee wordt een grafische weergave gedaan wat een object is en wat een object van een afgeleide klasse inhoud (dit laatste komt in opgave 3 te spraken). Verder worden de associaties tussen objecten duidelijk weergegeven (dit wordt in week 4 en 5 gedaan).
+Bij dit onderdeel van de opdracht wordt gewerkt met een grafische debugger. Hiermee wordt een grafische weergave gedaan wat een object is en wat een object van een afgeleide klasse inhoud (dit laatste komt in opgave 2 te spraken). Verder worden de associaties tussen objecten duidelijk weergegeven (dit wordt in week 4 en 5 gedaan).
 
 De grafische debugger die gebruikt wordt is de DDD debugger(Data Display Debugger) 
 
@@ -254,11 +307,11 @@ Een paar handige links hierbij zijn:
 De instellingen van de DDD debugger staan in de file .ddd die staat in de home directory (\textit{/home/rock}). Soms is het eenvoudiger om deze directory te deleten dan de instellingen aan te passen.
 
 We gaan nu met de DDD debugger werken.
-Om met DDD te kunnen werken hebben we een grafische omgeving nodig. Een handige methode is om de de VNC viewer van de host te gebruiken. Deze viewer toont de grafische uitvoer van de RockPi. Open in de VNC een terminal, ga naar de directory die in de opdracht \ref{en:dir} van hoofdstuk \ref{hfst:strt}  aangemaakt is (waar de files blink1.cpp, Led.cpp en Led.h \textcolor{green}{blink1} staan) en start de DDD debugger op:
-\texttt{\textit{ddd blink1}}, vervolgens wordt het scherm, zoals weergegeven in Figuur \ref{fig:dddscherm1}, getoond.
+Om met DDD te kunnen werken hebben we een grafische omgeving nodig. Een handige methode is om de de VNC viewer van de host te gebruiken. Deze viewer toont de grafische uitvoer van de RockPi. Open in de VNC een terminal, ga naar de directory die in de vorige opdracht gemaakt is (waar de files test.cpp, Led.cpp en Led.h \textcolor{green}{test} staan) en start de DDD debugger op:
+\texttt{\textit{ddd test}}, vervolgens wordt het scherm, zoals weergegeven in Figuur \ref{fig:dddscherm1}, getoond.
 \begin{figure}[h!]
 	\captionsetup{justification=centering}
-	\includegraphics[width=0.7 \linewidth]{figuren/ddd_startup_screen}
+	\includegraphics[width=0.8 \linewidth]{figuren/ddd_startup_screen}
 	\centering
 	\caption{het DDD opstartscherm.}
 	\label{fig:dddscherm1}
@@ -271,8 +324,8 @@ We gaan hierbij stap voor stap het programma doorlopen, waarbij de inhoud van de
 	\item Als eerste een korte kennismaking met de DDD debugger.
 \begin{enumerate} [label=\roman*]
 
-	\item Ga met de cursor op de regel \texttt{\textit{ Led ld1(18, "Pietje Puk");}}
-	(regelnummer 22)
+	\item Ga met de cursor op de regel \texttt{\textit{ Led rood(RODELED,"Rood", "Pietje Puk");}}
+	(regelnummer 14)
 	\item Klik op \textit{Break} (bij algemene commando's). Voor het begin van de regel verschijnt nu een breakpoint.
 
 \begin{figure}[h!]
@@ -285,7 +338,7 @@ We gaan hierbij stap voor stap het programma doorlopen, waarbij de inhoud van de
 	\item Klik op \textit{Run} (bij debug commando's),
 het programma wordt uitgevoerd tot het breakpoint. Er verschijn een groene pijl bij het breakpoint.
 \item Klik op \textit{Next}, de regel wordt uitgevoerd. \\
-De groene pijl komt voor de regel \textit{Led ld2(23);} te staan. 
+De groene pijl komt voor de regel \textit{Led geel(GELELED,"Geel");} te staan. 
 \item Klik op step, met dit commando \textit{Step} wordt in de constructor van de klasse Led gestapt. Doorloop het programma verder stap voor stap.
 
 \end{enumerate}
@@ -293,13 +346,13 @@ De groene pijl komt voor de regel \textit{Led ld2(23);} te staan.
 
 
 \begin{enumerate} [label=\roman*]
-	\item Start de DDD debugger op (\texttt{\textit{ddd blink1}}):
-		\item Zet een breakpoint op de regel	\textit{ld1.zetAan();} 
-		\item Klik met de muis op variabele \texttt{ld1} en vervolgens op Display of klik met rechtermuisknop en vervolgens op Display ld1.
-		\item Doe hetzelfde met variabele \textit{ld2}. 
+	\item Start de DDD debugger op (\texttt{\textit{ddd test}}):
+		\item Zet een breakpoint op de regel	\textit{groen.zetAan();} 
+		\item Klik met de muis op variabele \texttt{rood} en vervolgens op Display of klik met rechtermuisknop en vervolgens op Display rood. Het object \texttt{rood} van de Klasse Led wordt nu weergegeven.
+		\item Doe hetzelfde met de variabele \texttt{geel} en \texttt{groen}.
 		\item Als het goed is ziet de debugger er ongeveer uit zoals Figuur \ref{fig:dddLeds}, alleen met je \textcolor{BrickRed}{eigen naam}.  
-	    \item Ga met het Step commando de methode \texttt{zetAan} van l1 in.
-		\item Ga met het Step commando de methode \texttt{zetAan} van l2 in. Je ziet dat de methode hetzelfde is, alleen de attributen hebben een andere waarde.
+	    \item Ga met het Step commando de methode \texttt{zetAan} van groen in.
+		\item Ga met het Step commando de methode \texttt{zetAan} van geel in. Je ziet dat de methode hetzelfde is, alleen de attributen hebben een andere waarde.
 		  \begin{figure}[h!]
 		 	\captionsetup{justification=centering}
 		 	\includegraphics[width=0.9 \linewidth]{figuren/LedDDD}
