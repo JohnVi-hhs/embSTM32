@@ -22,12 +22,12 @@ Zorg dat je vóór het practicum de volgende software geïnstalleerd hebt:
 \item Vanuit Github Desktop, druk Ctrl+Shift+O voor 'Clone repository' en voeg de repository \textbf{JohnVi-hhs/oop} toe.
 \item Installeer 'Visual Studio Code' (VSC) volgens de instructies in \newline \url{https://github.com/Grrtzm/OOPR1} \textit{(moet nog aangepast worden)}
 \item Download en installeer de VNC viewer:  \newline \url{https://www.realVNC.com/en/connect/download/combined/}
-\item (Optioneel) Download en installeer de SSH client KiTTY  \newline \url{https://www.fosshub.com/KiTTY.html} \newline
+\item (Optioneel maar wel handig) Download en installeer de SSH client KiTTY  \newline \url{https://www.fosshub.com/KiTTY.html} \newline
 KiTTY is een opvolger van PuTTY. Het grote voordeel is dat KiTTY automatisch opnieuw verbinding maakt als de verbinding even verbroken is geweest.
 \end{itemize}
 
 \section{Eerste gebruik van de RockPi}
-We gaan er van uit dat je de RockPi in lokaal D2.001 van HHS Delft gebruikt. \newline
+We gaan er van uit dat je de RockPi in lokaal D2.001 of D2.003 van HHS Delft gebruikt. \newline
 De RockPi is al ingesteld voor Wi-Fi netwerk in D2.001: \textbf{Lab001}. \newline
 Log ook met je laptop in op dit netwerk. Het password is \textbf{Lab001WiFi}. \newline
 In Figuur \ref{fig:netw} wordt weergegeven hoe de RockPi op het lab netwerk is aangesloten.
@@ -53,8 +53,8 @@ Sluit de USB-C voedingskabel aan zodat de RockPi gaat opstarten (op de RockPi ga
 \textbf{\textit{Controleer de zelftest:}} Om zeker te weten dat het bovenstaande bordje OK is gaat de RockPi alle leds even aan en uitzetten. \newline
 Als je de RockPi in het lab (D2.001) aanzet, verschijnt op het oled display bij “IP address for wlan0:” een IP adres van het Lab001 Wi-Fi netwerk (zie Figuur \ref{fig:rockIPnr}). \newline
 Nu kun je via SSH en/of VNC een verbinding maken met dit IP adres en inloggen op de RockPi.
-De username is \textbf{rock}, het password is ook \textbf{rock}. 
-Overigens kun je ook een UTP/ethernet kabel aansluiten zoals in Figuur \ref{fig:rockIPnr} te zien is bij “IP address for eth0:”.\break\newline
+De username is \textbf{rock}, het password is ook \textbf{rock}. Mocht er een sudo password gevraagd worden, dan is dit ook \textbf{rock}.
+Overigens kun je ook een ethernet kabel aansluiten zoals in Figuur \ref{fig:rockIPnr} te zien is bij “IP address for eth0:”.\break\newline
 Zorg wel dat je PC op hetzelfde netwerk is aangesloten. Als VNC het niet wil doen, maar ssh wel, dan zitten je PC en de RockPi mogelijk op verschillende Wi-Fi access-points. Als VNC niet werkt, maar je RockPi en laptop zitten wel op hetzelfde netwerk, dan kun je het knopje '\textbf{Restart\_X}' indrukken, dit herstart de grafische schil op de RockPi.
 
 Zodra je bent ingelogd met VNC, kun je je USB stick aansluiten en configureren. Het maakt niet uit welke USB poort je gebruikt. 
