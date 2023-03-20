@@ -169,26 +169,28 @@ Hierbij wordt vanuit 'Visual Studio Code' (VSC) gewerkt, en wordt de klasse Led 
 			\end{center}
 		\end{figure}
 				 
-		\item  Maak een nieuwe connectie aan, door op \img{figuren/connectIcon} te klikken.
+		\item  Maak een nieuwe connectie aan, door op \img{figuren/connectIcon} te klikken (rood omkaderd).
 
       \end{itemize}
       
-      \item Nadat een verbinding gemaakt is met de RockPi, open een remote folder door op \img{figuren/VSCiconeExpl} te klikken of (Cntrl + k Cntrl + o) en ga naar de directory van de vorige opdracht. Aan de linkerkant worden de files zichtbaar en onderaan een statusbalk met informatie. Dit is te zien in figuur \ref{fig:vncOp}
+      \item Nadat een verbinding gemaakt is met de RockPi, open een remote folder door op \img{figuren/VSCiconeExpl} te klikken (of druk Ctrl+K Ctrl+O) en ga naar de directory van de vorige opdracht: \texttt{/home/rock/Documents/ledje/oop/} \newline
+      Aan de linkerkant worden de files zichtbaar en onderaan een statusbalk met informatie. Dit is te zien in figuur \ref{fig:vncOp}
   		\begin{figure}[h!]
   	\centering
   	\begin{center} 	
-  		\includegraphics[width=0.5\textwidth]{figuren/vncSchermOp1}
+  		\includegraphics[width=0.72\textwidth]{figuren/vncSchermOp1}
   		\caption{VSCode in de gewenste directory}
   		\label{fig:vncOp}   
   	\end{center}
   \end{figure}    
 
-Klik op select folder  en selecteer de folder waarin de files staan. 
-
+\newpage
+Klik op select folder  % Gert: Ik kan niks vinden wat 'select folder' heet
+en selecteer de folder waarin de files staan. 
 
 
 \begin{itemize}
-	\item Selecteer de file test.cpp en compileer de files\footnote{compileren lukt niet, controleer of c++ extension (\img{figuren/cPlusIcon} ) is geinstalleerd} (Terminal $\rightarrow$ Run Build Task... of Cntrl+Shift+B) 
+	\item Selecteer de file \textit{test.cpp} en compileer de files\footnote{compileren lukt niet, controleer of C++ extension (\img{figuren/cPlusIcon} ) is geïnstalleerd} (Terminal $\rightarrow$ Run Build Task... of Ctrl+Shift+B) 
 	\item Klik links van regelnummer 10, er verschijnt een rode stip, dit is een breakpoint.
 	\item Selecteer bij het pijltje rechtsboven \img{figuren/debugPijl} de Debug optie en klik op de pijl (of Run $\rightarrow$ Start Debugging), de debugger wordt gestart en het  beeldscherm zoals in figuur \ref{fig:debugScherm} verschijnt.
 	\begin{figure}[h!]
