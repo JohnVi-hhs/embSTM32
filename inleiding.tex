@@ -123,12 +123,14 @@ Als je het commando \href{https://www.techrepublic.com/article/linux-101-what-is
 /dev/sda1 on /media/rock/9C02-C2F1 type vfat (rw,nosuid,nodev,relatime,uid=1000,gid=1000,fmask=0022,dmask=0022,codepage=936,iocharset=utf8,shortname=mixed,showexec,utf8,flush,errors=remount-ro,uhelper=udisks2)
 \end{lstlisting}
 
-Hierboven zie je dat disk ge-'mount' is. Om te formatteren moet je eerst 'unmount' doen:\newline
-\textbf{\texttt{umount /dev/sda }}\newline
-Nu USB disk formatteren met ext4 filesystem:\newline
+Hierboven zie je dat disk ge-'mount' is. Om te formatteren moet je eerst 'umount' doen:\newline
+\textbf{\texttt{umount /dev/sda1 }}\newline
+Nu USB disk formatteren met ext4 filesystem (sudo password is \textit{rock}):\newline
 \textbf{\texttt{sudo mkfs -t ext4 /dev/sda}}\newline
 Vervolgens disklabel 'Documents' instellen:\newline
-\textbf{\texttt{sudo e2label /dev/sda Documents}}
+\textbf{\texttt{sudo e2label /dev/sda Documents}}\newline
+Als laatste gebruiker \textit{rock} eigenaar maken van de USB stick:\newline
+\textbf{\texttt{sudo chown rock /home/rock/Documents}}\newline
 
 Hieronder zie je de output van bovenstaande commando's:
 	

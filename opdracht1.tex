@@ -159,7 +159,7 @@ Hierbij wordt vanuit 'Visual Studio Code' (VSC) gewerkt, en wordt de klasse Led 
 \begin{enumerate}
 	\item Start VSC op en maak verbinding met de RockPi.
 	\begin{itemize}
-		\item Klik op remote Explorer \img{figuren/remoteExplorer}. De IP nummers van de remote system(en) die al eerder gebruikt zijn worden zichtbaar, zoals te zien is in Figuur \ref{fig:remNr}
+		\item Klik op remote Explorer \img{figuren/remoteExplorer}. De IP nummers van de remote system(en) die al eerder gebruikt zijn worden zichtbaar, zoals te zien is in Figuur \ref{fig:remNr}. Als dit niet zo is, klik dan op \textcolor{red}{[1]} om de lijst te verversen, als je een nieuw systeem wilt toevoegen, klik \textcolor{red}{[2]}.
 		\begin{figure}[h!]
 			\centering
 			\begin{center} 	
@@ -169,7 +169,8 @@ Hierbij wordt vanuit 'Visual Studio Code' (VSC) gewerkt, en wordt de klasse Led 
 			\end{center}
 		\end{figure}
 				 
-		\item  Maak een nieuwe connectie aan, door op \img{figuren/connectIcon} te klikken (rood omkaderd).
+		\item  Maak nu verbinding met de RockPi door te klikken op \textcolor{red}{[3]} of \textcolor{red}{[4]}\newline
+		(\textcolor{red}{[3]} = in hetzelfde venster), \textcolor{red}{[4]} = nieuw venster).
 
       \end{itemize}
       
@@ -202,15 +203,16 @@ en selecteer de folder waarin de files staan.
 		\end{center}
 	\end{figure}
 	
-	Met de debugknoppen rechtsboven kan nu stap voor stap door het programma gelopen worden.\\
-	Doorloop het programma stap voor stap, zodat de LED ook daadwerkelijk bij een stap aan- en uitgaat. 
+	Met de debugknoppen rechtsboven kan nu stap voor stap het programma doorlopen worden (\hyperlink{chp:debugknoppen}{naar uitleg}, druk Alt+\textbf{$\leftarrow$} om hier terug te komen).\\
+	Doorloop het programma stap voor stap met 'Step Over' (F10), zodat de LED ook daadwerkelijk bij een stap aan- en uitgaat. 
 \end{itemize}
 
 \item Bij deze opdracht wordt de eerste klasse gemaakt.
 \begin{itemize}
-	\item Maak een nieuwe terminal aan (Terminal $\rightarrow$ New Terminal) of Ctrl+Shift+` en maak een nieuwe directory aan.
+	\item Maak een nieuwe terminal aan (Terminal $\rightarrow$ New Terminal) of Ctrl+Shift+` en maak een nieuwe directory aan:\\ \texttt{mkdir $\sim$/Documents/opdrLedH} gevolgd door \texttt{cd $\sim$/Documents/opdrLedH}
 	\item clone de volgende code:\\
 	 git clone \verb|--|branch opdrLedH https://github.com/JohnVi-hhs/oop.git
+	 \item Sluit in VSC de huidige folder (Ctrl+K F) en open de folder\\ /home/rock/Documents/opdrLedH/oop/ 
 	\item De UML notatie van de klasse \textbf{Led} wordt weergegeven in figuur \ref{fig:klassLed} en de headerfile in listing \ref{lst:ledH}
 
 	\begin{minipage}{0.5\textwidth} 
@@ -222,7 +224,6 @@ en selecteer de folder waarin de files staan.
 	\end{figure}
 \end{minipage}\hfill
 \begin{minipage}{.45\textwidth}
-	
 	\begin{lstlisting}[caption=LED declaratie file(.h),frame=tlrb,label={lst:ledH}]{Name}
 class Led
 {
@@ -249,6 +250,8 @@ class Led
 	\end{lstlisting}
 	
 \end{minipage}
+
+\newpage	
 \paragraph{Opdracht:} Implementeer de Led.cpp zodat het hoofdprogramma van listing \ref{lst:hfdprg2} zonder errors en warning gecompileerd en uitgevoerd kan worden. 
 \begin{lstlisting}[caption=Hoofdprogramma om de LED uit te testen ,frame=tlrb, label={lst:hfdprg2}]{Name}
 #include <unistd.h>
@@ -291,7 +294,7 @@ int main() {
 
 \section{Het werken met een visuele debugger.}
  
-Bij dit onderdeel van de opdracht wordt gewerkt met een grafische debugger. Hiermee wordt een grafische weergave gedaan wat een object is en wat een object van een afgeleide klasse inhoud (dit laatste komt in opgave 2 te spraken). Verder worden de associaties tussen objecten duidelijk weergegeven (dit wordt in week 4 en 5 gedaan).
+Bij dit onderdeel van de opdracht wordt gewerkt met een grafische debugger. Hiermee wordt een grafische weergave gedaan wat een object is en wat een object van een afgeleide klasse inhoudt (dit laatste komt in opgave 2 aan de orde). Verder worden de associaties tussen objecten duidelijk weergegeven (dit wordt in week 4 en 5 gedaan).
 
 De grafische debugger die gebruikt wordt is de DDD debugger(Data Display Debugger) 
 
@@ -306,7 +309,7 @@ Een paar handige links hierbij zijn:
 	\item  \href{http://www.linuxfocus.org/English/January1998/article20.html}{linuxfocus}
 \end{itemize}
 
-De instellingen van de DDD debugger staan in de file .ddd die staat in de home directory (\textit{/home/rock}). Soms is het eenvoudiger om deze directory te deleten dan de instellingen aan te passen.
+De instellingen van de DDD debugger staan in de folder .ddd die staat in de home directory (\textit{/home/rock}). Soms is het eenvoudiger om deze directory te deleten dan de instellingen aan te passen (tips: \texttt{ls -al $\sim$} en \texttt{rm -rf $\sim$/.ddd}).
 
 We gaan nu met de DDD debugger werken.
 Om met DDD te kunnen werken hebben we een grafische omgeving nodig. Een handige methode is om de de VNC viewer van de host te gebruiken. Deze viewer toont de grafische uitvoer van de RockPi. Open in de VNC een terminal, ga naar de directory die in de vorige opdracht gemaakt is (waar de files test.cpp, Led.cpp en Led.h \textcolor{green}{test} staan) en start de DDD debugger op:
