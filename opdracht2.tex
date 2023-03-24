@@ -57,9 +57,120 @@ De werking is als volgt.
 \item Een LED wordt uitgezet door de methode void zetUit(); Dit houd in dat bij een RGBLed alle kleuren uitgezet worden.
 \item De methode string connectie(); geeft het gpioNummer van het aangesloten platform mee terug. In het geval van de RGBLed wordt een string mee teruggegeven met alle drie de gpioNummers gescheiden door een spatie.
 \item Doordat de status van de LED verschillend zijn (een singleLed kan alleen aan en uit terwijl bij de RGBLed kan kleur1, kleur 2, kleur 3 of een combinatie van kleuren aan- en uitgaan), heeft elke afgeleide LED een eigen status.
-	
+\item Omdat bij een RGBLed al bekend is, wat de kleuren zijn (Rood, Groen en Blauw), hoef de kleur van de LED niet opgevraagd te worden. In tegenstelling tot een singleLed die maar \'{e}\'{e}n kleur heeft, dit kunnen overigens verschillende kleuren zijn.
 \end{itemize}
 
-\paragraph{Opdracht} 
+%\paragraph{Opdracht} 
+\section{De Klasse SingleLed}
 
+Zoals in figuur \ref{fig:klasAfg} wordt aangegeven is de singleLed een speciale vorm van Led. Dit is ook terug te zien in de code, zoals Listing \ref{lst:singleLedH} laat zien.
+
+\noindent\begin{minipage}{.45\textwidth}
+\begin{lstlisting}[caption=LED declaratie file(.h),frame=tlrb,label={lst:ledBaseH}]{Name}
+class Led
+{
+	public:
+	/*
+	
+	Implementeer hier 
+	de construcor(s) 
+	en de methoden
+	
+	*/
+	
+	
+	private:
+       string eigenaar;
+};
+\end{lstlisting}
+\end{minipage}\hfill
+\begin{minipage}{.45\textwidth}
+\begin{lstlisting}[caption=SingleLed declaratie file(.h),frame=tlrb,label={lst:singleLedH}]{Name}
+class SingleLed : public Led
+{
+	public:
+	/*
+	
+	Implementeer hier 
+	de construcor(s) 
+	en de methoden
+	
+	*/
+	
+	private:
+        string kleur;
+	    int pinNr;
+	    int status;
+};
+\end{lstlisting}
+\end{minipage}
+\paragraph{Opdracht} 
+\begin{enumerate}[label=(\alph*)]
+\item
+Implementeer de klasse Led en SingleLed (zowel de .h als de .cpp file )en run de main code van Listing \ref{lst:mainSled}.
+
+\begin{lstlisting}[caption=main functie om de klasse SingleLed te testen. ,frame=trbl,firstnumber=1,numbers=left,label={lst:mainSled}]{Name}
+
+void LedInfo(Led& l) {
+	cout<<"De eigenaar is:"<<l.deEigenaar()<<endl;
+	cout<<"De Led is aangesloten op pinnen"<<l.connectie()<<endl;
+	cout<<"De status van de Led is:"<<l.ledStatus()<<endl;
+}
+
+int main() {
+	
+	SingleLed led1(RODELED,"rood","Pietje Puk");
+	SingleLed led2(RODELED,"rood");
+	
+	Led &lr1(led1);
+	lr1.zetAan("rood");
+	usleep(1000000);
+	led2.zetAan("geel"); 
+	usleep(1000000);
+	led1.zetUit();
+	usleep(1000000);
+	
+	LedInfo(led1);
+	LedInfo(led2);
+	LedInfo(lr1);
+	
+	led2.zetUit();
+	return 0;
+}
+
+\end{lstlisting}
+
+De uitkomst van het programma wordt weergegeven op de volgende bladzijde.
+\newpage
+De eigenaar is:Pietje Puk\\
+De Led is aangesloten op pinnen135\\
+De status van de Led is:0\\
+De eigenaar is:Anoniem\\
+De Led is aangesloten op pinnen134\\
+De status van de Led is:1\\
+De eigenaar is:Pietje Puk\\
+De Led is aangesloten op pinnen135\\
+De status van de Led is:0\\
+\item 
+\begin{itemize}
+	\item Start de vnc viewer op met hierin de ddd debugger.
+	\item Plaats een breakpoint op regel 21 van Listing \ref{lst:mainSled} (LedInfo(led1)).
+	\item Run het programma, de debugger zal stoppen op regel 21.
+	\item Toon de objecten led1 en led2, zoals getoond in figuur \ref{fig:dddLed1_2}. 
+	\begin{figure}[h!]
+		\captionsetup{justification=centering}
+%		\includegraphics[width=0.95 \linewidth]{figuren/dddLed1Led2}
+    	\includegraphics[width=0.95 \textwidth]{figuren/dddLed1Led2}
+		\centering
+		\caption{De inhoud van objecte led1 en led2 .}
+		\label{fig:dddLed1_2}
+	\end{figure}
+	De tekst achter \texttt{\_vptr.led} kan verborgen worden door deze te selecteren en in de pull-down menu \textit{hide All} te kiezen. Hierin is duidelijk te zien dat de base-klasse  \textbf{Led} een onderdeel is van de afgeleide klasse \textbf{SingleLed}.
+\end{itemize}
+
+\item Maak een screenshot van beide objecten in de DDD debugger, uiteraard met je \textcolor{red}{\huge{eigen}} naam en plaatst deze met de \textbf{code} in je portfolio onder het hoofdstuk programmeren.
+
+\end{enumerate}
+
+\section{De Klasse RGBLed}
 
