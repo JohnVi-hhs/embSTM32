@@ -61,7 +61,7 @@ De werking is als volgt.
 \end{itemize}
 
 %\paragraph{Opdracht} 
-\section{De Klasse SingleLed}
+\section{De Klasse SingleLed} \label{sec:singleLed}
 
 Zoals in figuur \ref{fig:klasAfg} wordt aangegeven is de singleLed een speciale vorm van Led. Dit is ook terug te zien in de code, zoals Listing \ref{lst:singleLedH} laat zien.
 
@@ -75,9 +75,7 @@ class Led
 	Implementeer hier 
 	de construcor(s) 
 	en de methoden
-	
 	*/
-	
 	
 	private:
        string eigenaar;
@@ -90,13 +88,11 @@ class SingleLed : public Led
 {
 	public:
 	/*
-	
 	Implementeer hier 
 	de construcor(s) 
 	en de methoden
 	
 	*/
-	
 	private:
         string kleur;
 	    int pinNr;
@@ -106,8 +102,10 @@ class SingleLed : public Led
 \end{minipage}
 \paragraph{Opdracht} 
 \begin{enumerate}[label=(\alph*)]
+\item Clone de code van git: \\
+git clone \verb|--|branch opdracht31 https://github.com/JohnVi-hhs/oop.git
 \item
-Implementeer de klasse Led en SingleLed (zowel de .h als de .cpp file )en run de main code van Listing \ref{lst:mainSled}.
+Implementeer de klasse Led en SingleLed (zowel de .h als de .cpp file ) en run de main code van Listing \ref{lst:mainSled}.
 
 \begin{lstlisting}[caption=main functie om de klasse SingleLed te testen. ,frame=trbl,firstnumber=1,numbers=left,label={lst:mainSled}]{Name}
 
@@ -142,9 +140,10 @@ int main() {
 
 \end{lstlisting}
 
-De uitkomst van het programma wordt weergegeven op de volgende bladzijde.
-\newpage
-De eigenaar is:Pietje Puk\\
+%De uitkomst van het programma wordt weergegeven op de volgende bladzijde.
+%\newpage
+De uitkomst van het programma is als volgt:
+\texttt{De eigenaar is:Pietje Puk\\
 De Led is aangesloten op pinnen135\\
 De status van de Led is:0\\
 De eigenaar is:Anoniem\\
@@ -152,7 +151,7 @@ De Led is aangesloten op pinnen134\\
 De status van de Led is:1\\
 De eigenaar is:Pietje Puk\\
 De Led is aangesloten op pinnen135\\
-De status van de Led is:0\\
+De status van de Led is:0\\}
 \item 
 \begin{itemize}
 	\item Start de vnc viewer op met hierin de ddd debugger.
@@ -167,12 +166,144 @@ De status van de Led is:0\\
 		\caption{De inhoud van objecte led1 en led2 .}
 		\label{fig:dddLed1_2}
 	\end{figure}
-	De tekst achter \texttt{\_vptr.led} kan verborgen worden door deze te selecteren en in de pull-down menu \textit{hide All} te kiezen. Hierin is duidelijk te zien dat de base-klasse  \textbf{Led} een onderdeel is van de afgeleide klasse \textbf{SingleLed}.
+	De tekst achter \texttt{\_vptr.led} kan verborgen worden door deze te selecteren en in de pull-down menu \textit{hide All} te kiezen. \\
+	Verder is duidelijk te zien dat de base-klasse  \textbf{Led}, met het attribuut eigenaar, een onderdeel is van de afgeleide klasse \textbf{SingleLed}.
 \end{itemize}
 
-\item Maak een screenshot van beide objecten in de DDD debugger, uiteraard met je \textcolor{red}{\huge{eigen}} naam en plaatst deze met de \textbf{code} in je portfolio onder het hoofdstuk programmeren.
+\item Maak een screenshot van beide objecten in de DDD debugger, uiteraard met je \textcolor{red}{\huge{eigen}} naam en plaatst deze met de \textbf{code} in je portfolio onder het hoofdstuk programmeren $\Longrightarrow$ subhoofdstuk \ref{sec:singleLed}. \\ 
+Laat de opdracht aftekenen met de screenshots zichtbaar.
 
 \end{enumerate}
 
-\section{De Klasse RGBLed}
+\section{De Klasse RGBLed} \label{sec:rgb}
 
+Zoals te zien in het klassendiagram van figuur \ref{fig:klasAfg} is de RGBLed ook een Led. Doordat bij een RGB LED de kleuren al bekend zijn, heeft deze klasse geen attribuut kleur. De klasse RGBLed heeft verder:
+\begin{itemize}
+	\item Drie aansluitingen op de RockPi, namelijk voor elke kleur 1. Deze aansluitingen zijn:
+	\begin{itemize}
+		\item 146 rood
+		\item 149 groen
+		\item 150 blauw
+	\end{itemize}
+    \item De methode connectie geeft de 3 aansluitnummers als een string mee terug, waarbij de spatie een onderscheid maakt tussen de pin-nummers.
+    \item De status geeft aan welke kleur aan is. Dit wordt gedaan door elke kleur een bit toe te wijzen. De toewijzing is als volgt:
+    \begin{itemize}
+    	\item bit 0 rood
+    	\item bit 1 groen
+    	\item bit 2 blauw
+    \end{itemize}
+
+\end{itemize}
+ \paragraph{Opdracht}
+ 
+\begin{enumerate}[label=(\alph*)]
+	\item
+	Implementeer de klasse RGBLed (zowel de .h als de .cpp file ) en run de main code van Listing \ref{lst:mainRGBLed}.
+	
+\begin{lstlisting}[caption=main functie om de klasse SingleLed te testen. ,frame=trbl,firstnumber=1,numbers=left,label={lst:mainRGBLed}]{Name}
+void LedInfo(Led& l) {
+	cout<<"De eigenaar is:"<<l.deEigenaar()<<endl;
+	cout<<"De Led is aangesloten op pinnen:"<<l.connectie()<<endl;
+	cout<<"De status van de Led is:"<<l.ledStatus()<<endl;
+}
+		
+int main() {
+   cout<<"Hi NSE, welkom bij opdracht 2"<<endl;
+
+   RGBLed kleuren(RGB_R,RGB_G,RGB_B,"Pietje Puk");
+   kleuren.zetAan("rood");
+   usleep(1000000);
+   kleuren.zetUit();
+   kleuren.zetAan("groen");
+   usleep(1000000);
+   kleuren.zetUit();
+   kleuren.zetAan("blauw");
+   usleep(1000000);
+   kleuren.zetAan("groen");
+   usleep(1000000);
+   kleuren.zetUit();
+   kleuren.zetAan("rood");
+   kleuren.zetAan("groen");
+   usleep(1000000);
+   kleuren.zetUit();
+   kleuren.zetAan("rood");
+   kleuren.zetAan("blauw");
+   usleep(1000000);
+   kleuren.zetAan("groen");
+   usleep(1000000);
+   LedInfo(kleuren);  
+   kleuren.zetUit();
+
+   cout<<"einde"<<endl;
+}
+		
+\end{lstlisting}
+ De uitkomst van het programma wordt weergegeven op de volgende bladzijde.
+ \newpage
+\texttt{Hi NSE, welkom bij opdracht 2\\
+De eigenaar is:Pietje Puk\\
+De Led is aangesloten op pinnen:146 149 146\\
+De status van de Led is:7\\
+einde\\     
+}
+Plaats de code van de RGBLed (zowel de .h als de .cpp) file in je portfolio onder het hoofdstuk programmeren $\Longrightarrow$ subhoofdstuk \ref{sec:rgb}.
+
+\item In deze opdracht worden zowel de singleLed als de RGBLed gebruikt. Verder worden objecten van de klasse \textbf{SingleLed} en \textbf{RGBLed} in de DDD debugger getoond. Compileer de code van Listing \ref{lst:mainCombi} en run deze.
+\begin{lstlisting}[caption=main functie om de klasse SingleLed te testen. ,frame=trbl,firstnumber=1,numbers=left,label={lst:mainCombi}]{Name}
+void LedInfo(Led& l) {
+	cout<<"De eigenaar is:"<<l.deEigenaar()<<endl;
+	cout<<"De Led is aangesloten op pinnen:"<<l.connectie()<<endl;
+	cout<<"De status van de Led is:"<<l.ledStatus()<<endl;
+}
+
+int main() {
+	
+	cout<<"Hi NSE, welkom bij opdracht 2"<<endl;
+	
+	RGBLed kleuren(RGB_R,RGB_G,RGB_B,"Pietje Puk");
+	SingleLed led1(RODELED,"rood","Pietje");
+	Led& refL1(led1);
+	
+	kleuren.zetAan("rood");
+	usleep(1000000);
+	led1.zetAan("rood");
+	usleep(1000000);
+	refL1.zetUit();
+	
+	LedInfo(kleuren);
+	LedInfo(refL1);
+	
+	cout<<"einde"<<endl;
+}	
+\end{lstlisting}	
+De uitvoer ziet er als volgt uit:\\
+\texttt{Hi NSE, welkom bij opdracht 2\\
+Informatie ove de RGBLed:\\
+De eigenaar is:Pietje Puk\\
+De Led is aangesloten op pinnen:146 149 146\\
+De status van de Led is:1\\
+Informatie ove de SingleLed:\\
+De eigenaar is:Pietje\\
+De Led is aangesloten op pinnen:135\\
+De status van de Led is:0\\
+einde}
+\item Start de vnc viewer, open een terminal, ga naar de directory waar de code van Listing \ref{lst:mainCombi} staat en run de DDD debugger. (ddd test)
+\begin{enumerate}[label=(\roman*)]
+	\item Zet een breakpoint op de regel\texttt{ LedInfo(kleuren);}(regel 21 van Listing \ref{lst:mainCombi}) 
+	\item Run het programma, de debugger stopt bij het statement \texttt{ LedInfo(kleuren);}
+	\item Display de objecten \texttt{kleuren} en \texttt{led1}. Het resultaat zal er ongeveer uitzien als figuur \ref{fig:dddRGB}, uiteraard alleen met je \textcolor{red}{\huge{eigen}} naam. 
+		\begin{figure}[h!]
+		\captionsetup{justification=centering}
+		%		\includegraphics[width=0.95 \linewidth]{figuren/dddLed1Led2}
+		\includegraphics[width=0.95 \textwidth]{figuren/dddRGB}
+		\centering
+		\caption{De inhoud van de objecten kleuren en led1 .}
+		\label{fig:dddRGB}
+	\end{figure}
+Hierbij is duidelijk te zien dat de Led een onderdeel is van de afgeleide klasse en dat beide afgeleide klassen van Led, ieder z'n eigen attributen heeft. 
+\item Maak een screenshot van beide objecten en zet dit in je portfolio onder de code van RGBLed.\\
+Upload je portfolio op Brightspace bij week 3.\\
+Laat de opdracht aftekenen met de screenshots zichtbaar.
+	
+\end{enumerate}
+\end{enumerate}
