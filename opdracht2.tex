@@ -1,14 +1,14 @@
 \chapter{Afgeleide klasse en objecten in C++}
 
-Bij deze opdracht richten we ons hoe bij OO componenten Overerving en Polymorfisme getest kunnen worden met een debugger.
+Bij deze opdracht kijken we hoe bij OO componenten, Overerving en Polymorfisme getest kunnen worden met een debugger.
 
-Deze opdracht bestaat verder uit de deelopdrachten A en B en er moeten 6 screenshots gemaakt worden die op brightspace moeten worden geüpload. Alle deelopdrachten moet je laten aftekenen door de docent.
+Deze opdracht bestaat uit de deelopdrachten A en B, Er moeten 6 screenshots gemaakt worden die op Brightspace moeten worden geüpload. Alle deelopdrachten moet je laten aftekenen door de docent.
 
-Er zijn diverse soorten LEDs, zoals in figuur \ref{fig:LEDs} te zien zijn. Deze zijn:
+Er zijn diverse soorten LEDs, zoals in Figuur \ref{fig:LEDs} te zien zijn. Deze zijn:
 \begin{itemize}
-	\item SingleLed: deze LEDs hebben 1 kleur, twee pootjes en worden aan 1 poort op de RockPi aangesloten, zoals de rode, oranje en groene LED. Een voorbeeld wordt weergegeven in figuur \ref{fig:singleLed}
-	\item DualLed: deze LEDs hebben 2 mogelijke kleuren, drie pootjes en worden aan 2 poorten (1 per kleur) aan de RockPi verbonden. Een voorbeeld wordt weergegeven in figuur \ref{fig:dualLed}
-	\item RGB Led: deze LEDs hebben de kleuren rood, groen en blauw in 1 behuizing en hebben vier pootjes, waarvan 3 worden aangesloten op de poorten (1 per kleur) van de RockPi.De LED met de witte kleur op het practicumboord is een RGB LED. Een voorbeeld van een RGB LED wordt weergegeven in figuur \ref{fig:rgbLed}
+	\item SingleLed: deze LEDs hebben 1 kleur, twee pootjes en worden aan 1 poort op de RockPi aangesloten, zoals de rode, oranje en groene LED. Een voorbeeld wordt weergegeven in Figuur \ref{fig:singleLed}
+	\item DualLed: deze LEDs hebben 2 mogelijke kleuren, drie pootjes en worden aan 2 poorten (1 per kleur) aan de RockPi verbonden. Een voorbeeld wordt weergegeven in Figuur \ref{fig:dualLed}
+	\item RGB Led: deze LEDs hebben de kleuren rood, groen en blauw in 1 behuizing en hebben vier pootjes, waarvan 3 worden aangesloten op de poorten (1 per kleur) van de RockPi. De LED met de witte kleur op het practicumbord is een RGB LED. Een voorbeeld van een RGB LED wordt weergegeven in Figuur \ref{fig:rgbLed}
 \end{itemize}
 
 \begin{figure}[h!]
@@ -37,7 +37,7 @@ Er zijn diverse soorten LEDs, zoals in figuur \ref{fig:LEDs} te zien zijn. Deze 
 	\label{fig:LEDs}
 \end{figure}
 
-De analist die de eisen voor de controller-software voor de LED controllers opstelt, heeft bedacht dat het in de toekomst mogelijk moet kunnen zijn om nieuwe LED types toe te voegen, bijvoorbeeld 3 kleuren LEDS. De controller software moet dus zo veel mogelijk onafhankelijk van het concrete LED type gemaakt worden. In figuur \ref{fig:klassLed} wordt de UML weergave geaan van zowel de SingleLed als de RGBLed
+De analist die de eisen voor de controller-software voor de LED controllers opstelt, heeft bedacht dat het in de toekomst mogelijk moet kunnen zijn om nieuwe LED types toe te voegen, bijvoorbeeld 3 kleuren LEDS. De controller software moet dus zo veel mogelijk onafhankelijk van het concrete LED type gemaakt worden. In Figuur \ref{fig:klassLed} wordt de UML weergave getoond van zowel de SingleLed als van de RGBLed
 \begin{figure}[h!]
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.6 \linewidth]{figuren/rgbKlasse}
@@ -54,16 +54,17 @@ De werking is als volgt.
 		\item Wordt bij een groene LED ''groen''  meegegeven, wordt de LED aangezet en true geretourneerd.
 		\item Wordt bij een groene LED ''rood'' meegegeven, wordt de LED niet aangezet en wordt false geretourneerd.
 	\end{itemize}
-\item Een LED wordt uitgezet door de methode void zetUit(); Dit houd in dat bij een RGBLed alle kleuren uitgezet worden.
-\item De methode string connectie(); geeft het gpioNummer van het aangesloten platform mee terug. In het geval van de RGBLed wordt een string mee teruggegeven met alle drie de gpioNummers gescheiden door een spatie.
+\item Een LED wordt uitgezet door de methode \texttt{void zetUit();} Dit houdt in dat bij een RGBLed alle kleuren uitgezet worden.
+\item De methode \texttt{string connectie();} geeft het gpioNummer van het aangesloten platform mee terug. In het geval van de RGBLed wordt een string mee teruggegeven met alle drie de gpioNummers gescheiden door een spatie.
 \item Doordat de status van de LED verschillend zijn (een singleLed kan alleen aan en uit terwijl bij de RGBLed kan kleur1, kleur 2, kleur 3 of een combinatie van kleuren aan- en uitgaan), heeft elke afgeleide LED een eigen status.
-\item Omdat bij een RGBLed al bekend is, wat de kleuren zijn (Rood, Groen en Blauw), hoef de kleur van de LED niet opgevraagd te worden. In tegenstelling tot een singleLed die maar \'{e}\'{e}n kleur heeft, dit kunnen overigens verschillende kleuren zijn.
+\item Omdat bij een RGBLed al bekend is wat de kleuren zijn (Rood, Groen en Blauw), hoeft de kleur van de LED niet opgevraagd te worden. In tegenstelling tot een singleLed die maar \'{e}\'{e}n kleur heeft, dit kunnen overigens verschillende kleuren zijn.
 \end{itemize}
 
 %\paragraph{Opdracht} 
+\newpage
 \section{De Klasse SingleLed} \label{sec:singleLed}
 
-Zoals in figuur \ref{fig:klasAfg} wordt aangegeven is de singleLed een speciale vorm van Led. Dit is ook terug te zien in de code, zoals Listing \ref{lst:singleLedH} laat zien.
+Zoals in figuur \ref{fig:klasAfg} wordt aangegeven is de singleLed een speciale vorm van Led. \\Dit is ook terug te zien in de code, zoals Listing \ref{lst:singleLedH} laat zien.
 
 \noindent\begin{minipage}{.45\textwidth}
 \begin{lstlisting}[caption=LED declaratie file(.h),frame=tlrb,label={lst:ledBaseH}]{Name}
@@ -71,9 +72,8 @@ class Led
 {
 	public:
 	/*
-	
-	Implementeer hier 
-	de construcor(s) 
+		Implementeer hier 
+	de constructor(s) 
 	en de methoden
 	*/
 	
@@ -91,8 +91,8 @@ class SingleLed : public Led
 	Implementeer hier 
 	de construcor(s) 
 	en de methoden
-	
 	*/
+
 	private:
         string kleur;
 	    int pinNr;
@@ -103,12 +103,11 @@ class SingleLed : public Led
 \paragraph{Opdracht} 
 \begin{enumerate}[label=(\alph*)]
 \item Clone de code van git: \\
-git clone \verb|--|branch opdracht31 https://github.com/JohnVi-hhs/oop.git
+{\small \texttt{git clone } \verb|--| \texttt{branch opdracht31 https://github.com/JohnVi-hhs/oop.git}}
 \item
 Implementeer de klasse Led en SingleLed (zowel de .h als de .cpp file ) en run de main code van Listing \ref{lst:mainSled}.
 
 \begin{lstlisting}[caption=main functie om de klasse SingleLed te testen. ,frame=trbl,firstnumber=1,numbers=left,label={lst:mainSled}]{Name}
-
 #define GROENELED 132
 #define GELELED 134
 void LedInfo(Led& l) {
@@ -118,7 +117,6 @@ void LedInfo(Led& l) {
 }
 
 int main() {
-	
 	SingleLed led1(RODELED,"rood","Pietje Puk");
 	SingleLed led2(GELELED,"geel");
 	
@@ -142,7 +140,7 @@ int main() {
 
 %De uitkomst van het programma wordt weergegeven op de volgende bladzijde.
 %\newpage
-De uitkomst van het programma is als volgt:
+De uitkomst van het programma is als volgt:\\
 \texttt{De eigenaar is:Pietje Puk\\
 De Led is aangesloten op pinnen135\\
 De status van de Led is:0\\
@@ -154,17 +152,17 @@ De Led is aangesloten op pinnen135\\
 De status van de Led is:0\\}
 \item 
 \begin{itemize}
-	\item Start de vnc viewer op met hierin de ddd debugger.
-	\item Plaats een breakpoint op regel 21 van Listing \ref{lst:mainSled} (LedInfo(led1)).
+	\item Start de VNC viewer op met hierin de DDD debugger.
+	\item Plaats een breakpoint op regel 21 van Listing \ref{lst:mainSled} ({\small \texttt{ LedInfo(led1) }}).
 	\item Run het programma, de debugger zal stoppen op regel 21.
-	\item Toon de objecten led1 en led2, zoals getoond in figuur \ref{fig:dddLed1_2}. 
+	\item Toon de objecten led1 en led2, zoals getoond in figuur \ref{fig:DDDLed1_2}. 
 	\begin{figure}[h!]
 		\captionsetup{justification=centering}
-%		\includegraphics[width=0.95 \linewidth]{figuren/dddLed1Led2}
-    	\includegraphics[width=0.95 \textwidth]{figuren/dddLed1Led2}
+%		\includegraphics[width=0.95 \linewidth]{figuren/DDDLed1Led2}
+    	\includegraphics[width=0.95 \textwidth]{figuren/DDDLed1Led2}
 		\centering
 		\caption{De inhoud van objecte led1 en led2 .}
-		\label{fig:dddLed1_2}
+		\label{fig:DDDLed1_2}
 	\end{figure}
 	De tekst achter \texttt{\_vptr.led} kan verborgen worden door deze te selecteren en in de pull-down menu \textit{hide All} te kiezen. \\
 	Verder is duidelijk te zien dat de base-klasse  \textbf{Led}, met het attribuut eigenaar, een onderdeel is van de afgeleide klasse \textbf{SingleLed}.
@@ -174,7 +172,7 @@ De status van de Led is:0\\}
 Laat de opdracht aftekenen met de screenshots zichtbaar.
 
 \end{enumerate}
-
+\newpage
 \section{De Klasse RGBLed} \label{sec:rgb}
 
 Zoals te zien in het klassendiagram van figuur \ref{fig:klasAfg} is de RGBLed ook een Led. Doordat bij een RGB LED de kleuren al bekend zijn, heeft deze klasse geen attribuut kleur. De klasse RGBLed heeft verder:
@@ -194,6 +192,7 @@ Zoals te zien in het klassendiagram van figuur \ref{fig:klasAfg} is de RGBLed oo
     \end{itemize}
 
 \end{itemize}
+\newpage
  \paragraph{Opdracht}
  
 \begin{enumerate}[label=(\alph*)]
@@ -202,9 +201,9 @@ Zoals te zien in het klassendiagram van figuur \ref{fig:klasAfg} is de RGBLed oo
 	
 \begin{lstlisting}[caption=main functie om de klasse SingleLed te testen. ,frame=trbl,firstnumber=1,numbers=left,label={lst:mainRGBLed}]{Name}
 void LedInfo(Led& l) {
-	cout<<"De eigenaar is:"<<l.deEigenaar()<<endl;
-	cout<<"De Led is aangesloten op pinnen:"<<l.connectie()<<endl;
-	cout<<"De status van de Led is:"<<l.ledStatus()<<endl;
+	cout<<"De eigenaar is: "<<l.deEigenaar()<<endl;
+	cout<<"De Led is aangesloten op pinnen: "<<l.connectie()<<endl;
+	cout<<"De status van de Led is: "<<l.ledStatus()<<endl;
 }
 		
 int main() {
@@ -240,20 +239,21 @@ int main() {
 \end{lstlisting}
  De uitkomst van het programma wordt weergegeven op de volgende bladzijde.
  \newpage
+% De uitkomst van het programma:\\ \\
 \texttt{Hi NSE, welkom bij opdracht 2\\
-De eigenaar is:Pietje Puk\\
-De Led is aangesloten op pinnen:146 149 146\\
-De status van de Led is:7\\
-einde\\     
+De eigenaar is: Pietje Puk\\
+De Led is aangesloten op pinnen: 146 149 146\\
+De status van de Led is: 7\\
+einde\\ \\    
 }
 Plaats de code van de RGBLed (zowel de .h als de .cpp) file in je portfolio onder het hoofdstuk programmeren $\Longrightarrow$ subhoofdstuk \ref{sec:rgb}.
 
-\item In deze opdracht worden zowel de singleLed als de RGBLed gebruikt. Verder worden objecten van de klasse \textbf{SingleLed} en \textbf{RGBLed} in de DDD debugger getoond. Compileer de code van Listing \ref{lst:mainCombi} en run deze.
+\item In deze opdracht worden zowel de SingleLed als de RGBLed gebruikt. Verder worden objecten van de klasse \textbf{SingleLed} en \textbf{RGBLed} in de DDD debugger getoond. Compileer de code van Listing \ref{lst:mainCombi} en run deze.
 \begin{lstlisting}[caption=main functie om de klasse SingleLed te testen. ,frame=trbl,firstnumber=1,numbers=left,label={lst:mainCombi}]{Name}
 void LedInfo(Led& l) {
-	cout<<"De eigenaar is:"<<l.deEigenaar()<<endl;
-	cout<<"De Led is aangesloten op pinnen:"<<l.connectie()<<endl;
-	cout<<"De status van de Led is:"<<l.ledStatus()<<endl;
+	cout<<"De eigenaar is: "<<l.deEigenaar()<<endl;
+	cout<<"De Led is aangesloten op pinnen: "<<l.connectie()<<endl;
+	cout<<"De status van de Led is: "<<l.ledStatus()<<endl;
 }
 
 int main() {
@@ -276,29 +276,31 @@ int main() {
 	cout<<"einde"<<endl;
 }	
 \end{lstlisting}	
-De uitvoer ziet er als volgt uit:\\
+De uitvoer ziet er als volgt uit:\\\\
 \texttt{Hi NSE, welkom bij opdracht 2\\
-Informatie ove de RGBLed:\\
-De eigenaar is:Pietje Puk\\
-De Led is aangesloten op pinnen:146 149 146\\
-De status van de Led is:1\\
-Informatie ove de SingleLed:\\
-De eigenaar is:Pietje\\
-De Led is aangesloten op pinnen:135\\
-De status van de Led is:0\\
+Informatie over de RGBLed:\\
+De eigenaar is: Pietje Puk\\
+De Led is aangesloten op pinnen: 146 149 146\\
+De status van de Led is: 1\\
+Informatie over de SingleLed:\\
+De eigenaar is: Pietje\\
+De Led is aangesloten op pinnen: 135\\
+De status van de Led is: 0\\
 einde}
-\item Start de vnc viewer, open een terminal, ga naar de directory waar de code van Listing \ref{lst:mainCombi} staat en run de DDD debugger. (ddd test)
+
+\newpage
+\item Start de VNC viewer, open een terminal, ga naar de directory waar de code van Listing \ref{lst:mainCombi} staat en run de DDD debugger. (DDD test)
 \begin{enumerate}[label=(\roman*)]
-	\item Zet een breakpoint op de regel\texttt{ LedInfo(kleuren);}(regel 21 van Listing \ref{lst:mainCombi}) 
+	\item Zet een breakpoint op regel 21 van Listing \ref{lst:mainCombi}, de regel met \texttt{LedInfo(kleuren);}
 	\item Run het programma, de debugger stopt bij het statement \texttt{ LedInfo(kleuren);}
-	\item Display de objecten \texttt{kleuren} en \texttt{led1}. Het resultaat zal er ongeveer uitzien als figuur \ref{fig:dddRGB}, uiteraard alleen met je \textcolor{red}{\huge{eigen}} naam. 
+	\item Display de objecten \texttt{kleuren} en \texttt{led1}. Het resultaat zal er ongeveer uitzien als figuur \ref{fig:DDDRGB}, uiteraard alleen met je \textcolor{red}{\huge{eigen}} naam. 
 		\begin{figure}[h!]
 		\captionsetup{justification=centering}
-		%		\includegraphics[width=0.95 \linewidth]{figuren/dddLed1Led2}
-		\includegraphics[width=0.95 \textwidth]{figuren/dddRGB}
+		%		\includegraphics[width=0.95 \linewidth]{figuren/DDDLed1Led2}
+		\includegraphics[width=0.95 \textwidth]{figuren/DDDRGB}
 		\centering
 		\caption{De inhoud van de objecten kleuren en led1 .}
-		\label{fig:dddRGB}
+		\label{fig:DDDRGB}
 	\end{figure}
 Hierbij is duidelijk te zien dat de Led een onderdeel is van de afgeleide klasse en dat beide afgeleide klassen van Led, ieder z'n eigen attributen heeft. 
 \item Maak een screenshot van beide objecten en zet dit in je portfolio onder de code van RGBLed.\\

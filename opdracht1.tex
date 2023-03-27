@@ -1,4 +1,4 @@
-\chapter{Klasse en objecten in C++}
+\chapter{Klassen en objecten in C++}
 Als eerste wordt er verbinding gemaakt vanaf je laptop met de RockPi, waarna een LEDje aan- en uitgezet wordt. Vervolgens wordt door middel van een programma een aantal LEDs aangestuurd.
 
 \begin{comment}
@@ -163,7 +163,7 @@ Hierbij wordt vanuit 'Visual Studio Code' (VSC) gewerkt, en wordt de klasse Led 
 		\begin{figure}[h!]
 			\centering
 			\begin{center} 	
-				\includegraphics[width=0.5\textwidth]{figuren/remoteExplorer2}
+				\includegraphics[width=0.8\textwidth]{figuren/remoteExplorer2}
 				\caption{Remote Explorer van VSC}
 				\label{fig:remNr}   
 			\end{center}
@@ -211,7 +211,7 @@ en selecteer de folder waarin de files staan.
 \begin{itemize}
 	\item Maak een nieuwe terminal aan (Terminal $\rightarrow$ New Terminal) of Ctrl+Shift+` en maak een nieuwe directory aan:\\ \texttt{mkdir $\sim$/Documents/opdrLedH} gevolgd door \texttt{cd $\sim$/Documents/opdrLedH}
 	\item clone de volgende code:\\
-	 git clone \verb|--|branch opdrLedH https://github.com/JohnVi-hhs/oop.git
+	 {\small \texttt{git clone } \verb|--|\texttt{branch opdrLedH https://github.com/JohnVi-hhs/oop.git}}
 	 \item Sluit in VSC de huidige folder (Ctrl+K F) en open de folder\\ /home/rock/Documents/opdrLedH/oop/ 
 	\item De UML notatie van de klasse \textbf{Led} wordt weergegeven in figuur \ref{fig:klassLed} en de headerfile in listing \ref{lst:ledH}
 
@@ -309,7 +309,9 @@ Een paar handige links hierbij zijn:
 	\item  \href{http://www.linuxfocus.org/English/January1998/article20.html}{linuxfocus}
 \end{itemize}
 
+\begin{comment}
 De instellingen van de DDD debugger staan in de folder .ddd die staat in de home directory (\textit{/home/rock}). Soms is het eenvoudiger om deze directory te deleten dan de instellingen aan te passen (tips: \texttt{ls -al $\sim$} en \texttt{rm -rf $\sim$/.ddd}).
+\end{comment}
 
 We gaan nu met de DDD debugger werken.
 Om met DDD te kunnen werken hebben we een grafische omgeving nodig. Een handige methode is om de de VNC viewer van de host te gebruiken. Deze viewer toont de grafische uitvoer van de RockPi. Open in de VNC een terminal, ga naar de directory die in de vorige opdracht gemaakt is (waar de files test.cpp, Led.cpp en Led.h \textcolor{green}{test} staan) en start de DDD debugger op:
@@ -331,7 +333,7 @@ We gaan hierbij stap voor stap het programma doorlopen, waarbij de inhoud van de
 
 	\item Ga met de cursor op de regel \texttt{\textit{ Led rood(RODELED,"Rood", "Pietje Puk");}}
 	(regelnummer 14)
-	\item Klik op \textit{Break} (bij algemene commando's). Voor het begin van de regel verschijnt nu een breakpoint.
+	\item Klik op \textit{Break} (bij `algemene commando's`, zie Figuur \ref{fig:dddscherm1}). Voor het begin van de regel verschijnt nu een breakpoint (een rood STOP-bordje).
 
 \begin{figure}[h!]
 	\captionsetup{justification=centering}
@@ -340,11 +342,11 @@ We gaan hierbij stap voor stap het programma doorlopen, waarbij de inhoud van de
 	\caption{het zetten van een breakpoint.}
 	\label{fig:ddduitv1}
 \end{figure}
-	\item Klik op \textit{Run} (bij debug commando's),
-het programma wordt uitgevoerd tot het breakpoint. Er verschijn een groene pijl bij het breakpoint.
-\item Klik op \textit{Next}, de regel wordt uitgevoerd. \\
+	\item Klik op \textit{Run} (bij `commando's tijdens debuggen`),
+het programma wordt uitgevoerd tot het breakpoint. \\Er verschijnt een groene pijl voor het breakpoint.
+\item Klik op \textit{Next}, de regel wordt uitgevoerd (dit doet hetzelfde als de `step over` bij VSC). \\
 De groene pijl komt voor de regel \textit{Led geel(GELELED,"Geel");} te staan. 
-\item Klik op step, met dit commando \textit{Step} wordt in de constructor van de klasse Led gestapt. Doorloop het programma verder stap voor stap.
+\item Klik op \textit{Step}, met dit commando wordt in de constructor van de klasse Led gestapt (dit doet hetzelfde als de `step into` bij VSC). \\Doorloop het programma verder stap voor stap.
 
 \end{enumerate}
 \item Het zichtbaar maken van de inhoud van de objecten.
@@ -353,7 +355,7 @@ De groene pijl komt voor de regel \textit{Led geel(GELELED,"Geel");} te staan.
 \begin{enumerate} [label=\roman*]
 	\item Start de DDD debugger op (\texttt{\textit{ddd test}}):
 		\item Zet een breakpoint op de regel	\textit{groen.zetAan();} 
-		\item Klik met de muis op variabele \texttt{rood} en vervolgens op Display of klik met rechtermuisknop en vervolgens op Display rood. Het object \texttt{rood} van de Klasse Led wordt nu weergegeven.
+		\item Klik met de linkermuisknop op variabele \texttt{rood}. Klik òf 1) op `Display` in balk b-1 van Figuur \ref{fig:ddduitv1}, of 2) Klik met de rechtermuisknop \textit{(hou ingedrukt!)} op \texttt{rood} en vervolgens op Display. \\Het object \texttt{rood} van de Klasse Led wordt nu weergegeven.
 		\item Doe hetzelfde met de variabele \texttt{geel} en \texttt{groen}.
 		\item Als het goed is ziet de debugger er ongeveer uit zoals Figuur \ref{fig:dddLeds}, alleen met je \textcolor{BrickRed}{eigen naam}.  
 	    \item Ga met het Step commando de methode \texttt{zetAan} van groen in.
