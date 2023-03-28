@@ -292,11 +292,11 @@ int main() {
     \end{enumerate}
 
 
-\section{Het werken met een visuele debugger.} \label{sec:startDDD}
+\section{Het werken met de DDD visuele debugger.} \label{sec:startDDD}
  
 Bij dit onderdeel van de opdracht wordt gewerkt met een grafische debugger. Hiermee wordt een grafische weergave gedaan wat een object is en wat een object van een afgeleide klasse inhoudt (dit laatste komt in opgave 2 aan de orde). Verder worden de associaties tussen objecten duidelijk weergegeven (dit wordt in week 4 en 5 gedaan).
 
-De grafische debugger die gebruikt wordt is de DDD debugger(Data Display Debugger) 
+De grafische debugger die gebruikt wordt is de DDD debugger (Data Display Debugger) 
 
 
 Een paar handige links hierbij zijn:
@@ -349,6 +349,7 @@ De groene pijl komt voor de regel \textit{Led geel(GELELED,"Geel");} te staan.
 \item Klik op \textit{Step}, met dit commando wordt in de constructor van de klasse Led gestapt (dit doet hetzelfde als de `step into` bij VSC). \\Doorloop het programma verder stap voor stap.
 
 \end{enumerate}
+\newpage
 \item Het zichtbaar maken van de inhoud van de objecten.
 
 
@@ -357,7 +358,8 @@ De groene pijl komt voor de regel \textit{Led geel(GELELED,"Geel");} te staan.
 		\item Zet een breakpoint op de regel	\textit{groen.zetAan();} 
 		\item Klik met de linkermuisknop op variabele \texttt{rood}. Klik òf 1) op `Display` in balk b-1 van Figuur \ref{fig:ddduitv1}, of 2) Klik met de rechtermuisknop \textit{(hou ingedrukt!)} op \texttt{rood} en vervolgens op Display. \\Het object \texttt{rood} van de Klasse Led wordt nu weergegeven.
 		\item Doe hetzelfde met de variabele \texttt{geel} en \texttt{groen}.
-		\item Als het goed is ziet de debugger er ongeveer uit zoals Figuur \ref{fig:dddLeds}, alleen met je \textcolor{BrickRed}{eigen naam}.  
+		\item Als het goed is ziet de debugger er ongeveer uit zoals Figuur \ref{fig:dddLeds}, alleen met je \textcolor{BrickRed}{eigen naam}.\\\\
+		\emph{Als je de grootte van de panelen in het DDD venster wilt aanpassen, zie de pijlen `\textit{Schermgrootte aan te passen}` in Figuur \ref{fig:dddscherm1}.\\Klik op zo'n klein blokje (muis ingedrukt houden) en versleep deze.}
 	    \item Ga met het Step commando de methode \texttt{zetAan} van groen in.
 		\item Ga met het Step commando de methode \texttt{zetAan} van geel in. Je ziet dat de methode hetzelfde is, alleen de attributen hebben een andere waarde.
 		  \begin{figure}[h!]

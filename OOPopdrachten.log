@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.18)  27 MAR 2023 22:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.18)  28 MAR 2023 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -709,24 +709,24 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 (./OOPopdrachten.aux)
 \openout1 = `OOPopdrachten.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -785,7 +785,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 181.
+Package hyperref Info: Link coloring ON on input line 182.
 
 (./OOPopdrachten.out) (./OOPopdrachten.out)
 \@outlinefile=\write4
@@ -793,18 +793,31 @@ Package hyperref Info: Link coloring ON on input line 181.
 
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 181.
-Package gensymb Info: Math companion symbols declared on input line 181.
-LaTeX Info: Redefining \degree on input line 181.
-LaTeX Info: Redefining \celsius on input line 181.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 182.
+Package gensymb Info: Math companion symbols declared on input line 182.
+LaTeX Info: Redefining \degree on input line 182.
+LaTeX Info: Redefining \celsius on input line 182.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 181.
-LaTeX Info: Redefining \ohm on input line 181.
-Package gensymb Info: Using \textohm for \ohm on input line 181.
-Package gensymb Info: Using \textmu for \micro on input line 181.
+erthousand on input line 182.
+LaTeX Info: Redefining \ohm on input line 182.
+Package gensymb Info: Using \textohm for \ohm on input line 182.
+Package gensymb Info: Using \textmu for \micro on input line 182.
 \c@lstlisting=\count355
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186 	
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
 LaTeX Warning: No \author given.
@@ -812,7 +825,7 @@ LaTeX Warning: No \author given.
 <figuren/frontRock.png, id=96, 2415.0225pt x 1348.28719pt>
 File: figuren/frontRock.png Graphic file (type png)
 <use figuren/frontRock.png>
-Package pdftex.def Info: figuren/frontRock.png  used on input line 185.
+Package pdftex.def Info: figuren/frontRock.png  used on input line 186.
 (pdftex.def)             Requested size: 477.98431pt x 266.8547pt.
 [1
 
@@ -1032,12 +1045,15 @@ Package pdftex.def Info: figuren/ddd_set_breakpoint.png  used on input line 340
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16 <./figuren/ddd_startup_screen.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 361--363
+
+ []
+
 <figuren/LedDDD.png, id=423, 1068.99374pt x 932.48375pt>
 File: figuren/LedDDD.png Graphic file (type png)
 <use figuren/LedDDD.png>
-Package pdftex.def Info: figuren/LedDDD.png  used on input line 365.
+Package pdftex.def Info: figuren/LedDDD.png  used on input line 367.
 (pdftex.def)             Requested size: 394.35254pt x 343.98914pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1049,22 +1065,22 @@ Overfull \hbox (30.49693pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/24.88 Afgeleide klasse en ob-jec-ten in C++| 
  []
 
-<figuren/singleled.jpg, id=451, 539.01375pt x 1601.985pt>
+<figuren/singleled.jpg, id=452, 539.01375pt x 1601.985pt>
 File: figuren/singleled.jpg Graphic file (type jpg)
 <use figuren/singleled.jpg>
 Package pdftex.def Info: figuren/singleled.jpg  used on input line 18.
 (pdftex.def)             Requested size: 92.00945pt x 99.5616pt.
-<figuren/dualled.jpg, id=452, 775.89874pt x 1632.0975pt>
+<figuren/dualled.jpg, id=453, 775.89874pt x 1632.0975pt>
 File: figuren/dualled.jpg Graphic file (type jpg)
 <use figuren/dualled.jpg>
 Package pdftex.def Info: figuren/dualled.jpg  used on input line 25.
 (pdftex.def)             Requested size: 92.01462pt x 99.56526pt.
-<figuren/rgbled.jpeg, id=453, 225.84375pt x 225.84375pt>
+<figuren/rgbled.jpeg, id=454, 225.84375pt x 225.84375pt>
 File: figuren/rgbled.jpeg Graphic file (type jpg)
 <use figuren/rgbled.jpeg>
 Package pdftex.def Info: figuren/rgbled.jpeg  used on input line 32.
 (pdftex.def)             Requested size: 118.30783pt x 99.5852pt.
-<figuren/rgbKlasse.png, id=455, 387.4475pt x 318.18875pt>
+<figuren/rgbKlasse.png, id=456, 387.4475pt x 318.18875pt>
 File: figuren/rgbKlasse.png Graphic file (type png)
 <use figuren/rgbKlasse.png>
 Package pdftex.def Info: figuren/rgbKlasse.png  used on input line 43.
@@ -1086,7 +1102,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--154
 
  []
 
-<figuren/DDDLed1Led2.png, id=536, 836.12375pt x 118.4425pt>
+<figuren/DDDLed1Led2.png, id=537, 836.12375pt x 118.4425pt>
 File: figuren/DDDLed1Led2.png Graphic file (type png)
 <use figuren/DDDLed1Led2.png>
 Package pdftex.def Info: figuren/DDDLed1Led2.png  used on input line 162.
@@ -1113,7 +1129,7 @@ Overfull \hbox (35.07664pt too wide) in paragraph at lines 295--296
 \OT1/pcr/m/n/12 LedInfo(kleuren); 
  []
 
-<figuren/DDDRGB.png, id=631, 781.92125pt x 164.615pt>
+<figuren/DDDRGB.png, id=633, 781.92125pt x 164.615pt>
 File: figuren/DDDRGB.png Graphic file (type png)
 <use figuren/DDDRGB.png>
 Package pdftex.def Info: figuren/DDDRGB.png  used on input line 300.
@@ -1121,41 +1137,20 @@ Package pdftex.def Info: figuren/DDDRGB.png  used on input line 300.
 ) (./appendix.tex [26 <./figuren/dddRGB.png>] [27
 
 
-] [28] (./linuxcommandos.tex
+] [28] (./deOmgeving.tex
 B\ij lage A.
-
-Overfull \hbox (32.33696pt too wide) in paragraph at lines 2--2
-|[]\OT1/cmr/bx/n/24.88 Tips&Tricks&Troubleshooting voor
- []
-
-[29
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
-Overfull \hbox (7.67314pt too wide) in paragraph at lines 43--61
-[][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31])
-(./deOmgeving.tex [32]
-B\ij lage B.
 Excluding 'comment' comment.
-<figuren/vncopstart.png, id=704, 664.58287pt x 79.79813pt>
+<figuren/vncopstart.png, id=655, 664.58287pt x 79.79813pt>
 File: figuren/vncopstart.png Graphic file (type png)
 <use figuren/vncopstart.png>
 Package pdftex.def Info: figuren/vncopstart.png  used on input line 37.
 (pdftex.def)             Requested size: 438.17247pt x 52.61333pt.
-<figuren/laptopVCS.png, id=707, 530.58224pt x 243.00787pt>
+<figuren/laptopVCS.png, id=658, 530.58224pt x 243.00787pt>
 File: figuren/laptopVCS.png Graphic file (type png)
 <use figuren/laptopVCS.png>
 Package pdftex.def Info: figuren/laptopVCS.png  used on input line 52.
 (pdftex.def)             Requested size: 284.80942pt x 130.44733pt.
-<figuren/vcsExtSSH.png, id=709, 930.47626pt x 520.94624pt>
+<figuren/vcsExtSSH.png, id=660, 930.47626pt x 520.94624pt>
 File: figuren/vcsExtSSH.png Graphic file (type png)
 <use figuren/vcsExtSSH.png>
 Package pdftex.def Info: figuren/vcsExtSSH.png  used on input line 65.
@@ -1164,47 +1159,47 @@ Package pdftex.def Info: figuren/vcsExtSSH.png  used on input line 65.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuren/extensionIcon.png, id=710, 51.94406pt x 50.43843pt>
+<figuren/extensionIcon.png, id=661, 51.94406pt x 50.43843pt>
 File: figuren/extensionIcon.png Graphic file (type png)
 <use figuren/extensionIcon.png>
 Package pdftex.def Info: figuren/extensionIcon.png  used on input line 73.
 (pdftex.def)             Requested size: 14.49985pt x 14.07956pt.
-[33
+[29
 
  <./figuren/vncopstart.png> <./figuren/laptopVCS.png>]
-<figuren/VNCremoteSSH.png, id=721, 1442.38875pt x 936.49875pt>
+<figuren/VNCremoteSSH.png, id=672, 1442.38875pt x 936.49875pt>
 File: figuren/VNCremoteSSH.png Graphic file (type png)
 <use figuren/VNCremoteSSH.png>
 Package pdftex.def Info: figuren/VNCremoteSSH.png  used on input line 82.
 (pdftex.def)             Requested size: 262.90614pt x 170.69168pt.
-<figuren/VNCInvoerHost.png, id=724, 828.84656pt x 144.54pt>
+<figuren/VNCInvoerHost.png, id=675, 828.84656pt x 144.54pt>
 File: figuren/VNCInvoerHost.png Graphic file (type png)
 <use figuren/VNCInvoerHost.png>
 Package pdftex.def Info: figuren/VNCInvoerHost.png  used on input line 91.
 (pdftex.def)             Requested size: 262.90614pt x 45.84572pt.
-<figuren/VSCsshCommand.png, id=726, 682.04813pt x 100.12407pt>
+<figuren/VSCsshCommand.png, id=677, 682.04813pt x 100.12407pt>
 File: figuren/VSCsshCommand.png Graphic file (type png)
 <use figuren/VSCsshCommand.png>
 Package pdftex.def Info: figuren/VSCsshCommand.png  used on input line 100.
 (pdftex.def)             Requested size: 306.71939pt x 45.02637pt.
-<figuren/VSCconfigFile.png, id=728, 834.86906pt x 207.77625pt>
+<figuren/VSCconfigFile.png, id=679, 834.86906pt x 207.77625pt>
 File: figuren/VSCconfigFile.png Graphic file (type png)
 <use figuren/VSCconfigFile.png>
 Package pdftex.def Info: figuren/VSCconfigFile.png  used on input line 108.
 (pdftex.def)             Requested size: 306.71939pt x 76.33386pt.
- [34 <./figuren/vcsExtSSH.png> <./figuren/extensionIcon.png> <./figuren/VNCremo
+ [30 <./figuren/vcsExtSSH.png> <./figuren/extensionIcon.png> <./figuren/VNCremo
 teSSH.png> <./figuren/VNCInvoerHost.png>]
-<figuren/VSCcontinue.png, id=747, 832.61063pt x 152.82094pt>
+<figuren/VSCcontinue.png, id=698, 832.61063pt x 152.82094pt>
 File: figuren/VSCcontinue.png Graphic file (type png)
 <use figuren/VSCcontinue.png>
 Package pdftex.def Info: figuren/VSCcontinue.png  used on input line 117.
 (pdftex.def)             Requested size: 306.71939pt x 56.29567pt.
-<figuren/VSCpasswd.png, id=749, 831.85782pt x 115.93312pt>
+<figuren/VSCpasswd.png, id=700, 831.85782pt x 115.93312pt>
 File: figuren/VSCpasswd.png Graphic file (type png)
 <use figuren/VSCpasswd.png>
 Package pdftex.def Info: figuren/VSCpasswd.png  used on input line 126.
 (pdftex.def)             Requested size: 306.71939pt x 42.74597pt.
-<figuren/VSCfout1.png, id=751, 772.38562pt x 171.64125pt>
+<figuren/VSCfout1.png, id=702, 772.38562pt x 171.64125pt>
 File: figuren/VSCfout1.png Graphic file (type png)
 <use figuren/VSCfout1.png>
 Package pdftex.def Info: figuren/VSCfout1.png  used on input line 135.
@@ -1213,7 +1208,7 @@ Package pdftex.def Info: figuren/VSCfout1.png  used on input line 135.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuren/VSCnewTerminal.png, id=752, 1425.07407pt x 368.87813pt>
+<figuren/VSCnewTerminal.png, id=703, 1425.07407pt x 368.87813pt>
 File: figuren/VSCnewTerminal.png Graphic file (type png)
 <use figuren/VSCnewTerminal.png>
 Package pdftex.def Info: figuren/VSCnewTerminal.png  used on input line 144.
@@ -1228,7 +1223,7 @@ File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 153.
- [35 <./figuren/VSCsshCommand.png> <./figuren/VSCconfigFile.png> <./figuren/VSC
+ [31 <./figuren/VSCsshCommand.png> <./figuren/VSCconfigFile.png> <./figuren/VSC
 continue.png> <./figuren/VSCpasswd.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 158--162
 
@@ -1238,12 +1233,12 @@ File: figuren/VSCiconeExpl.png Graphic file (type png)
 <use figuren/VSCiconeExpl.png>
 Package pdftex.def Info: figuren/VSCiconeExpl.png  used on input line 168.
 (pdftex.def)             Requested size: 14.49995pt x 14.49995pt.
-<figuren/VSCopenFolder.png, id=773, 893.58844pt x 242.40562pt>
+<figuren/VSCopenFolder.png, id=724, 893.58844pt x 242.40562pt>
 File: figuren/VSCopenFolder.png Graphic file (type png)
 <use figuren/VSCopenFolder.png>
 Package pdftex.def Info: figuren/VSCopenFolder.png  used on input line 171.
 (pdftex.def)             Requested size: 350.5393pt x 95.09262pt.
-<figuren/VSCexplorerveld.png, id=775, 807.51688pt x 465.74pt>
+<figuren/VSCexplorerveld.png, id=726, 807.51688pt x 465.74pt>
 File: figuren/VSCexplorerveld.png Graphic file (type png)
 <use figuren/VSCexplorerveld.png>
 Package pdftex.def Info: figuren/VSCexplorerveld.png  used on input line 182.
@@ -1257,9 +1252,9 @@ f Ctrl+Shift+E.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36 <./figuren/VSCfout1.png> <./figuren/VSCnewTerminal.png> <./figuren/VSCopenF
+[32 <./figuren/VSCfout1.png> <./figuren/VSCnewTerminal.png> <./figuren/VSCopenF
 older.png>]
-<figuren/VSCmakeFile.png, id=791, 31.61812pt x 29.35968pt>
+<figuren/VSCmakeFile.png, id=742, 31.61812pt x 29.35968pt>
 File: figuren/VSCmakeFile.png Graphic file (type png)
 <use figuren/VSCmakeFile.png>
 Package pdftex.def Info: figuren/VSCmakeFile.png  used on input line 191.
@@ -1280,22 +1275,22 @@ File: figuren/extensionIcon.png Graphic file (type png)
 <use figuren/extensionIcon.png>
 Package pdftex.def Info: figuren/extensionIcon.png  used on input line 221.
 (pdftex.def)             Requested size: 14.49985pt x 14.07956pt.
-[37 <./figuren/VSCexplorerveld.png (PNG copy)> <./figuren/VSCmakeFile.png>]
+[33 <./figuren/VSCexplorerveld.png (PNG copy)> <./figuren/VSCmakeFile.png>]
 File: figuren/cPlusIcon.png Graphic file (type png)
 <use figuren/cPlusIcon.png>
 Package pdftex.def Info: figuren/cPlusIcon.png  used on input line 222.
 (pdftex.def)             Requested size: 14.4999pt x 12.39305pt.
-<figuren/VSCcompile.png, id=816, 691.08188pt x 398.23781pt>
+<figuren/VSCcompile.png, id=767, 691.08188pt x 398.23781pt>
 File: figuren/VSCcompile.png Graphic file (type png)
 <use figuren/VSCcompile.png>
 Package pdftex.def Info: figuren/VSCcompile.png  used on input line 228.
 (pdftex.def)             Requested size: 262.90614pt x 151.50208pt.
-<figuren/VSCiconeRunDebug.png, id=817, 46.67438pt x 45.16875pt>
+<figuren/VSCiconeRunDebug.png, id=768, 46.67438pt x 45.16875pt>
 File: figuren/VSCiconeRunDebug.png Graphic file (type png)
 <use figuren/VSCiconeRunDebug.png>
 Package pdftex.def Info: figuren/VSCiconeRunDebug.png  used on input line 244.
 (pdftex.def)             Requested size: 14.49951pt x 14.0318pt.
-<figuren/VCRrunDebug.png, id=820, 17.06375pt x 18.0675pt>
+<figuren/VCRrunDebug.png, id=771, 17.06375pt x 18.0675pt>
 File: figuren/VCRrunDebug.png Graphic file (type png)
 <use figuren/VCRrunDebug.png>
 Package pdftex.def Info: figuren/VCRrunDebug.png  used on input line 250.
@@ -1305,39 +1300,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
-[38 <./figuren/VSCcompile.png> <./figuren/VSCiconeRunDebug.png> <./figuren/VCRr
+[34 <./figuren/VSCcompile.png> <./figuren/VSCiconeRunDebug.png> <./figuren/VCRr
 unDebug.png (PNG copy)>]
-<figuren/VSCksGDB.png, id=841, 372.64218pt x 142.28156pt>
+<figuren/VSCksGDB.png, id=792, 372.64218pt x 142.28156pt>
 File: figuren/VSCksGDB.png Graphic file (type png)
 <use figuren/VSCksGDB.png>
 Package pdftex.def Info: figuren/VSCksGDB.png  used on input line 256.
 (pdftex.def)             Requested size: 163.87857pt x 62.5715pt.
-<figuren/VSCKsGcc.png, id=842, 425.33907pt x 271.76532pt>
+<figuren/VSCKsGcc.png, id=793, 425.33907pt x 271.76532pt>
 File: figuren/VSCKsGcc.png Graphic file (type png)
 <use figuren/VSCKsGcc.png>
 Package pdftex.def Info: figuren/VSCKsGcc.png  used on input line 261.
 (pdftex.def)             Requested size: 187.31685pt x 119.68492pt.
-<figuren/VSCdebugVeld.png, id=843, 1640.37843pt x 1023.825pt>
+<figuren/VSCdebugVeld.png, id=794, 1640.37843pt x 1023.825pt>
 File: figuren/VSCdebugVeld.png Graphic file (type png)
 <use figuren/VSCdebugVeld.png>
 Package pdftex.def Info: figuren/VSCdebugVeld.png  used on input line 273.
 (pdftex.def)             Requested size: 350.5393pt x 218.77457pt.
-<figuren/VSCDebugKnoppen.png, id=844, 172.39406pt x 28.60687pt>
+<figuren/VSCDebugKnoppen.png, id=795, 172.39406pt x 28.60687pt>
 File: figuren/VSCDebugKnoppen.png Graphic file (type png)
 <use figuren/VSCDebugKnoppen.png>
 Package pdftex.def Info: figuren/VSCDebugKnoppen.png  used on input line 278.
 (pdftex.def)             Requested size: 122.64058pt x 20.35117pt.
-<figuren/F5-Continue.png, id=845, 28.60687pt x 28.60687pt>
+<figuren/F5-Continue.png, id=796, 28.60687pt x 28.60687pt>
 File: figuren/F5-Continue.png Graphic file (type png)
 <use figuren/F5-Continue.png>
 Package pdftex.def Info: figuren/F5-Continue.png  used on input line 283.
 (pdftex.def)             Requested size: 21.9108pt x 22.76286pt.
-<figuren/F10-StepOver.png, id=846, 28.60687pt x 28.60687pt>
+<figuren/F10-StepOver.png, id=797, 28.60687pt x 28.60687pt>
 File: figuren/F10-StepOver.png Graphic file (type png)
 <use figuren/F10-StepOver.png>
 Package pdftex.def Info: figuren/F10-StepOver.png  used on input line 284.
 (pdftex.def)             Requested size: 21.9108pt x 22.76286pt.
-<figuren/F11-StepInto.png, id=847, 28.60687pt x 28.60687pt>
+<figuren/F11-StepInto.png, id=798, 28.60687pt x 28.60687pt>
 File: figuren/F11-StepInto.png Graphic file (type png)
 <use figuren/F11-StepInto.png>
 Package pdftex.def Info: figuren/F11-StepInto.png  used on input line 285.
@@ -1352,18 +1347,160 @@ Overfull \hbox (38.80997pt too wide) in paragraph at lines 281--287
 [][] 
  []
 
-)) Excluding 'comment' comment. [39 <./figuren/VSCksGDB.png> <./figuren/VSCKsGc
-c.png> <./figuren/VSCdebugVeld.png> <./figuren/VSCDebugKnoppen.png> <./figuren/
-F5-Continue.png> <./figuren/F10-StepOver.png> <./figuren/F11-StepInto.png>]
-(./OOPopdrachten.aux)
+) (./linuxcommandos.tex [35 <./figuren/VSCksGDB.png> <./figuren/VSCKsGcc.png> <
+./figuren/VSCdebugVeld.png> <./figuren/VSCDebugKnoppen.png> <./figuren/F5-Conti
+nue.png> <./figuren/F10-StepOver.png> <./figuren/F11-StepInto.png>]
+B\ij lage B.
+
+Overfull \hbox (31.09871pt too wide) in paragraph at lines 2--2
+|[]\OT1/cmr/bx/n/24.88 Tips&Tricks&Troubleshooting voor
+ []
+
+[36
+
+]
+Overfull \hbox (10.96863pt too wide) in paragraph at lines 43--67
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--67
+
+ []
+
+
+Underfull \vbox (badness 2103) has occurred while \output is active []
+
+ [37]))
+Excluding 'comment' comment. [38] (./OOPopdrachten.aux)
 Package rerunfilecheck Info: File `OOPopdrachten.out' has not changed.
-(rerunfilecheck)             Checksum: D8F57D7193407DF70A7FD4296B7BD1AE;4358.
+(rerunfilecheck)             Checksum: 2C7A53601ACC8984E0725F9F4593D086;4414.
  ) 
 Here is how much of TeX's memory you used:
- 19799 strings out of 476024
- 317676 string characters out of 5794016
- 2056382 words of memory out of 5000000
- 39419 multiletter control sequences out of 15000+600000
+ 19798 strings out of 476024
+ 317664 string characters out of 5794016
+ 2055382 words of memory out of 5000000
+ 39420 multiletter control sequences out of 15000+600000
  528739 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,16n,76p,1202b,2040s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1384,10 +1521,10 @@ e1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
 texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:/texlive/2022/tex
 mf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2022/texmf-dist/fonts/ty
 pe1/urw/courier/ucrro8a.pfb>
-Output written on OOPopdrachten.pdf (39 pages, 27217569 bytes).
+Output written on OOPopdrachten.pdf (38 pages, 27218943 bytes).
 PDF statistics:
- 1030 PDF objects out of 1200 (max. 8388607)
- 856 compressed objects within 9 object streams
- 435 named destinations out of 1000 (max. 500000)
+ 1026 PDF objects out of 1200 (max. 8388607)
+ 853 compressed objects within 9 object streams
+ 433 named destinations out of 1000 (max. 500000)
  450 words of extra memory for PDF output out of 10000 (max. 10000000)
 

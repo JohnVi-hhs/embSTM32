@@ -36,10 +36,10 @@ De instellingen van de DDD debugger staan in de folder .ddd die staat in de home
 	Ik vind \href{https://linuxconfig.org/linux-commands-cheat-sheet}{deze uitleg} wel prettig.
 \end{itemize}
 
-\break
+% \break
 \section{Linux commando's (zie ook tips in \ref{app:tips})}\label{app:commands}
 
-\begin{table}[ht] %[h!]
+%\begin{table}[ht] %[h!]
 	\begin{tabular}{|l|l|}
 		\hline
 		%\multicolumn{2}{|l|}{Linux commando's}    \\ \hline
@@ -54,14 +54,19 @@ De instellingen van de DDD debugger staan in de folder .ddd die staat in de home
 	    \texttt{mkdir} & make directory \\ \hline
 		\texttt{rmdir} & remove (lege) directory \\ \hline
 	    \texttt{history} & Laat lijst zien van laatst uitgevoerde commando's \\ \hline
-	    \texttt{sudo} & Zet dit vóór je commando om het met admin rechten uit te voeren. \\ \hline
-	    \texttt{chmod} & (met sudo) lees/schrijfrechten wijzigen, +x maakt bestand executable. \\ \hline
-	    \texttt{chown} & (met sudo) eigenaar van bestand / map wijzigen \\ \hline
+	    \texttt{sudo} & Zet dit vóór je commando om het met admin rechten uit te voeren.\\
+	    ~ & \emph{Alle onderstaande commando's hebben \textbf{sudo} nodig!} \\ \hline
+	    \texttt{chmod} & (lees/schrijfrechten wijzigen, +x maakt bestand executable. \\ \hline
+	    \texttt{chown} & eigenaar van bestand / map wijzigen \\ \hline
+	    \texttt{journalctl} & journalctl -n 30 laat de laatste 30 regels linux systemlog zien. \\ \hline
+	    \texttt{reboot} & opnieuw opstarten \\ \hline
 	\end{tabular}
-\end{table}
+%\end{table}
+% Lelijke manier om tabel bovenaan de pagina te zetten (Gert). Standaard uitlijning is onderaan pagina.
+~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\
 
 \break
-\section{GPIO poorten in Linux}\label{app:gpiolinux}
+\section{Uitleg GPIO poorten in Linux}\label{app:gpiolinux}
 In Linux wordt alles gerepresenteerd als een bestand. Of het nu een volledige disk of een device is, je kunt het als een bestand openen en lezen en schrijven. Dit geldt ook voor GPIO pinnen (‘General Purpose Input/Output’ pinnen). Deze pinnen gebruik je op dezelfde manier als de pinnen van een microcontroller (denk aan een Arduino Uno, of een Microbit). Je kunt pinnen als uitgang zetten en hoog of laag maken, of als ingang instellen en uitlezen of een pin hoog of laag is (en nog meer, bijvoorbeeld pull-up en pull-down en reageren op events, maar dat gaan we niet behandelen).\newline
 Omdat pinnen gerepresenteerd worden door bestanden, geldt ook dat er rechten op gezet worden in het bestandssysteem. Meestal kan een standaard gebruiker (zoal ‘rock’) er niet bij. Alleen ‘root’ kan er standaard bij. Voor het practicum hebben we de rechten zo ingesteld dat gebruiker ‘rock’ standaard gebruik kan maken van de op de breakout board beschikbare pinnen.\newline
 Voorbeeld van de handelingen om een pin in te stellen en uit te lezen of aan te sturen, het hekje ‘\#’ aan het begin van de regel geeft aan dat het commentaar (uitleg) is:
