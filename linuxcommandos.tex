@@ -34,6 +34,8 @@ De instellingen van de DDD debugger staan in de folder .ddd die staat in de home
 	\item
 	Wil je meer uitleg, \href{https://duckduckgo.com/?q=linux+command+cheatsheet}{zoek dan naar 'Linux Command Cheatsheet'}. \newline
 	Ik vind \href{https://linuxconfig.org/linux-commands-cheat-sheet}{deze uitleg} wel prettig.
+	\item 
+	Om bestanden vanaf je PC naar en van de RockPi te kopiëren kun je \href{https://winscp.net/eng/download.php}{WinSCP} gebruiken. Gebruik als protocol SCP, dit gebruikt SSH. Maak een nieuwe site aan, vul IP adres, username en password in. Kies Opslaan (met wachtwoord) en vul bij 'map' in \texttt{/home/rock}. Het gebruik wijst zichzelf.
 \end{itemize}
 
 % \break
@@ -50,7 +52,7 @@ De instellingen van de DDD debugger staan in de folder .ddd die staat in de home
 	    \texttt{rm} & remove - Verwijderen van bestanden en mappen. \\ \hline
 	    \texttt{mv} & move - Verplaatsen van bestanden en mappen. \\ \hline
 	    \texttt{cat} & bestand bekijken \\ \hline
-	    \texttt{pwd} & In welke directoy sta ik? ('present working directory') \\ \hline
+	    \texttt{pwd} & In welke directory ben ik nu? ('present working directory') \\ \hline
 	    \texttt{mkdir} & make directory \\ \hline
 		\texttt{rmdir} & remove (lege) directory \\ \hline
 	    \texttt{history} & Laat lijst zien van laatst uitgevoerde commando's \\ \hline
@@ -63,9 +65,10 @@ De instellingen van de DDD debugger staan in de folder .ddd die staat in de home
 	\end{tabular}
 %\end{table}
 % Lelijke manier om tabel bovenaan de pagina te zetten (Gert). Standaard uitlijning is onderaan pagina.
-~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\
+% ~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\
 
-\break
+%\break
+\newpage
 \section{Uitleg GPIO poorten in Linux}\label{app:gpiolinux}
 In Linux wordt alles gerepresenteerd als een bestand. Of het nu een volledige disk of een device is, je kunt het als een bestand openen en lezen en schrijven. Dit geldt ook voor GPIO pinnen (‘General Purpose Input/Output’ pinnen). Deze pinnen gebruik je op dezelfde manier als de pinnen van een microcontroller (denk aan een Arduino Uno, of een Microbit). Je kunt pinnen als uitgang zetten en hoog of laag maken, of als ingang instellen en uitlezen of een pin hoog of laag is (en nog meer, bijvoorbeeld pull-up en pull-down en reageren op events, maar dat gaan we niet behandelen).\newline
 Omdat pinnen gerepresenteerd worden door bestanden, geldt ook dat er rechten op gezet worden in het bestandssysteem. Meestal kan een standaard gebruiker (zoal ‘rock’) er niet bij. Alleen ‘root’ kan er standaard bij. Voor het practicum hebben we de rechten zo ingesteld dat gebruiker ‘rock’ standaard gebruik kan maken van de op de breakout board beschikbare pinnen.\newline
