@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.3)  1 APR 2023 14:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.3)  7 APR 2023 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,7 +788,7 @@ Package caption Info: End \AtBeginDocument code.
 
 LaTeX Warning: No \author given.
 
-<figuren/frontRock.png, id=108, 2415.0225pt x 1348.28719pt>
+<figuren/frontRock.png, id=132, 2415.0225pt x 1348.28719pt>
 File: figuren/frontRock.png Graphic file (type png)
 <use figuren/frontRock.png>
 Package pdftex.def Info: figuren/frontRock.png  used on input line 186.
@@ -805,12 +805,12 @@ Hoofdstuk 1.
 [3
 
 ] Excluding 'comment' comment.
-<figuren/laBnetwork.png, id=159, 581.17125pt x 455.7025pt>
+<figuren/laBnetwork.png, id=190, 581.17125pt x 455.7025pt>
 File: figuren/laBnetwork.png Graphic file (type png)
 <use figuren/laBnetwork.png>
 Package pdftex.def Info: figuren/laBnetwork.png  used on input line 43.
 (pdftex.def)             Requested size: 175.26631pt x 137.428pt.
-<figuren/rockIPnr.png, id=161, 2811.75468pt x 1090.82532pt>
+<figuren/rockIPnr.png, id=192, 2811.75468pt x 1090.82532pt>
 File: figuren/rockIPnr.png Graphic file (type png)
 <use figuren/rockIPnr.png>
 Package pdftex.def Info: figuren/rockIPnr.png  used on input line 53.
@@ -821,12 +821,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--65
  []
 
 [4 <./figuren/laBnetwork.png> <./figuren/rockIPnr.png>]
-<figuren/Terminal-icoon.png, id=177, 222.07968pt x 38.39343pt>
+<figuren/Terminal-icoon.png, id=207, 222.07968pt x 38.39343pt>
 File: figuren/Terminal-icoon.png Graphic file (type png)
 <use figuren/Terminal-icoon.png>
 Package pdftex.def Info: figuren/Terminal-icoon.png  used on input line 80.
 (pdftex.def)             Requested size: 175.26631pt x 30.3pt.
-<figuren/terminal-inlogscherm.png, id=178, 412.03937pt x 171.13937pt>
+<figuren/terminal-inlogscherm.png, id=208, 412.03937pt x 171.13937pt>
 File: figuren/terminal-inlogscherm.png Graphic file (type png)
 <use figuren/terminal-inlogscherm.png>
 Package pdftex.def Info: figuren/terminal-inlogscherm.png  used on input line 9
@@ -862,12 +862,12 @@ Package Listings Warning: Text dropped after begin of listing on input line 143
 .
 
 [6]
-<figuren/File-Manager.png, id=212, 222.07968pt x 38.39343pt>
+<figuren/File-Manager.png, id=242, 222.07968pt x 38.39343pt>
 File: figuren/File-Manager.png Graphic file (type png)
 <use figuren/File-Manager.png>
 Package pdftex.def Info: figuren/File-Manager.png  used on input line 167.
 (pdftex.def)             Requested size: 175.26631pt x 30.3pt.
-<figuren/FileManagerUsbStick.png, id=214, 645.16031pt x 298.86656pt>
+<figuren/FileManagerUsbStick.png, id=244, 645.16031pt x 298.86656pt>
 File: figuren/FileManagerUsbStick.png Graphic file (type png)
 <use figuren/FileManagerUsbStick.png>
 Package pdftex.def Info: figuren/FileManagerUsbStick.png  used on input line 17
@@ -887,7 +887,7 @@ File: figuren/rockIPnr.png Graphic file (type png)
 <use figuren/rockIPnr.png>
 Package pdftex.def Info: figuren/rockIPnr.png  used on input line 30.
 (pdftex.def)             Requested size: 438.17247pt x 169.97499pt.
-<figuren/windowsPowerShellSearch.png, id=240, 581.92406pt x 44.41594pt>
+<figuren/windowsPowerShellSearch.png, id=270, 581.92406pt x 44.41594pt>
 File: figuren/windowsPowerShellSearch.png Graphic file (type png)
 <use figuren/windowsPowerShellSearch.png>
 Package pdftex.def Info: figuren/windowsPowerShellSearch.png  used on input lin
@@ -896,7 +896,7 @@ e 43.
  Excluding 'comment' comment. [8
 
  <./figuren/windowsPowerShellSearch.png (PNG copy)>]
-<figuren/ingelogtRockPi.png, id=251, 823.57687pt x 493.845pt>
+<figuren/ingelogtRockPi.png, id=281, 823.57687pt x 493.845pt>
 File: figuren/ingelogtRockPi.png Graphic file (type png)
 <use figuren/ingelogtRockPi.png>
 Package pdftex.def Info: figuren/ingelogtRockPi.png  used on input line 65.
@@ -904,7 +904,7 @@ Package pdftex.def Info: figuren/ingelogtRockPi.png  used on input line 65.
  [9
 
  <./figuren/ingelogtRockPi.png>]
-<figuren/rockpi-connector.png, id=260, 2500.34125pt x 1003.75pt>
+<figuren/rockpi-connector.png, id=290, 2500.34125pt x 1003.75pt>
 File: figuren/rockpi-connector.png Graphic file (type png)
 <use figuren/rockpi-connector.png>
 Package pdftex.def Info: figuren/rockpi-connector.png  used on input line 78.
@@ -917,7 +917,7 @@ Overfull \hbox (43.81992pt too wide) in paragraph at lines 78--79
 [10
 
  <./figuren/rockpi-connector.png>]
-<figuren/gitclone.png, id=274, 691.83469pt x 329.73187pt>
+<figuren/gitclone.png, id=305, 691.83469pt x 329.73187pt>
 File: figuren/gitclone.png Graphic file (type png)
 <use figuren/gitclone.png>
 Package pdftex.def Info: figuren/gitclone.png  used on input line 111.
@@ -925,22 +925,22 @@ Package pdftex.def Info: figuren/gitclone.png  used on input line 111.
  [11
 
  <./figuren/gitclone.png>]
-<figuren/remoteExplorer.png, id=307, 22.28325pt x 22.28325pt>
+<figuren/remoteExplorer.png, id=337, 22.28325pt x 22.28325pt>
 File: figuren/remoteExplorer.png Graphic file (type png)
 <use figuren/remoteExplorer.png>
 Package pdftex.def Info: figuren/remoteExplorer.png  used on input line 162.
 (pdftex.def)             Requested size: 14.50058pt x 14.50058pt.
-<figuren/remoteExplorer2.png, id=309, 392.21532pt x 132.495pt>
+<figuren/remoteExplorer2.png, id=339, 392.21532pt x 132.495pt>
 File: figuren/remoteExplorer2.png Graphic file (type png)
 <use figuren/remoteExplorer2.png>
 Package pdftex.def Info: figuren/remoteExplorer2.png  used on input line 166.
 (pdftex.def)             Requested size: 350.5393pt x 118.42357pt.
-<figuren/VSCiconeExpl.png, id=310, 42.1575pt x 42.1575pt>
+<figuren/VSCiconeExpl.png, id=340, 42.1575pt x 42.1575pt>
 File: figuren/VSCiconeExpl.png Graphic file (type png)
 <use figuren/VSCiconeExpl.png>
 Package pdftex.def Info: figuren/VSCiconeExpl.png  used on input line 177.
 (pdftex.def)             Requested size: 14.49995pt x 14.49995pt.
-<figuren/vncSchermOp1.png, id=312, 1378.14874pt x 884.30376pt>
+<figuren/vncSchermOp1.png, id=342, 1378.14874pt x 884.30376pt>
 File: figuren/vncSchermOp1.png Graphic file (type png)
 <use figuren/vncSchermOp1.png>
 Package pdftex.def Info: figuren/vncSchermOp1.png  used on input line 182.
@@ -951,17 +951,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12 <./figuren/remoteExplorer.png> <./figuren/remoteExplorer2.png> <./figuren/V
 SCiconeExpl.png>]
-<figuren/cPlusIcon.png, id=325, 35.23163pt x 30.1125pt>
+<figuren/cPlusIcon.png, id=355, 35.23163pt x 30.1125pt>
 File: figuren/cPlusIcon.png Graphic file (type png)
 <use figuren/cPlusIcon.png>
 Package pdftex.def Info: figuren/cPlusIcon.png  used on input line 194.
 (pdftex.def)             Requested size: 11.99956pt x 10.25603pt.
-<figuren/debugPijl.png, id=326, 47.17625pt x 39.14626pt>
+<figuren/debugPijl.png, id=356, 47.17625pt x 39.14626pt>
 File: figuren/debugPijl.png Graphic file (type png)
 <use figuren/debugPijl.png>
 Package pdftex.def Info: figuren/debugPijl.png  used on input line 196.
 (pdftex.def)             Requested size: 14.49994pt x 12.03186pt.
-<figuren/debugScherm.png, id=328, 1378.14874pt x 858.20625pt>
+<figuren/debugScherm.png, id=358, 1378.14874pt x 858.20625pt>
 File: figuren/debugScherm.png Graphic file (type png)
 <use figuren/debugScherm.png>
 Package pdftex.def Info: figuren/debugScherm.png  used on input line 200.
@@ -983,7 +983,7 @@ Overfull \hbox (46.53473pt too wide) in paragraph at lines 213--215
 -hhs/oop.git 
  []
 
-<figuren/klasseLedOpg1.png, id=332, 271.0125pt x 279.0425pt>
+<figuren/klasseLedOpg1.png, id=362, 271.0125pt x 279.0425pt>
 File: figuren/klasseLedOpg1.png Graphic file (type png)
 <use figuren/klasseLedOpg1.png>
 Package pdftex.def Info: figuren/klasseLedOpg1.png  used on input line 221.
@@ -998,14 +998,14 @@ Overfull \hbox (33.3144pt too wide) in paragraph at lines 218--253
 Excluding 'comment' comment.
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <12> not available
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 318.
-<figuren/ddd_startup_screen.png, id=384, 992.70876pt x 548.0475pt>
+<figuren/ddd_startup_screen.png, id=414, 992.70876pt x 548.0475pt>
 File: figuren/ddd_startup_screen.png Graphic file (type png)
 <use figuren/ddd_startup_screen.png>
 Package pdftex.def Info: figuren/ddd_startup_screen.png  used on input line 321
 .
 (pdftex.def)             Requested size: 350.5393pt x 193.52545pt.
  [15]
-<figuren/ddd_set_breakpoint.png, id=421, 934.49126pt x 533.995pt>
+<figuren/ddd_set_breakpoint.png, id=451, 934.49126pt x 533.995pt>
 File: figuren/ddd_set_breakpoint.png Graphic file (type png)
 <use figuren/ddd_set_breakpoint.png>
 Package pdftex.def Info: figuren/ddd_set_breakpoint.png  used on input line 340
@@ -1020,7 +1020,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--363
 
  []
 
-<figuren/LedDDD.png, id=438, 1068.99374pt x 932.48375pt>
+<figuren/LedDDD.png, id=468, 1068.99374pt x 932.48375pt>
 File: figuren/LedDDD.png Graphic file (type png)
 <use figuren/LedDDD.png>
 Package pdftex.def Info: figuren/LedDDD.png  used on input line 367.
@@ -1036,22 +1036,22 @@ Overfull \hbox (30.49693pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/24.88 Afgeleide klasse en ob-jec-ten in C++| 
  []
 
-<figuren/singleled.jpg, id=467, 539.01375pt x 1601.985pt>
+<figuren/singleled.jpg, id=497, 539.01375pt x 1601.985pt>
 File: figuren/singleled.jpg Graphic file (type jpg)
 <use figuren/singleled.jpg>
 Package pdftex.def Info: figuren/singleled.jpg  used on input line 18.
 (pdftex.def)             Requested size: 92.00945pt x 99.5616pt.
-<figuren/dualled.jpg, id=468, 775.89874pt x 1632.0975pt>
+<figuren/dualled.jpg, id=498, 775.89874pt x 1632.0975pt>
 File: figuren/dualled.jpg Graphic file (type jpg)
 <use figuren/dualled.jpg>
 Package pdftex.def Info: figuren/dualled.jpg  used on input line 25.
 (pdftex.def)             Requested size: 92.01462pt x 99.56526pt.
-<figuren/rgbled.jpeg, id=469, 225.84375pt x 225.84375pt>
+<figuren/rgbled.jpeg, id=499, 225.84375pt x 225.84375pt>
 File: figuren/rgbled.jpeg Graphic file (type jpg)
 <use figuren/rgbled.jpeg>
 Package pdftex.def Info: figuren/rgbled.jpeg  used on input line 32.
 (pdftex.def)             Requested size: 118.30783pt x 99.5852pt.
-<figuren/rgbKlasse.png, id=471, 387.4475pt x 318.18875pt>
+<figuren/rgbKlasse.png, id=501, 387.4475pt x 318.18875pt>
 File: figuren/rgbKlasse.png Graphic file (type png)
 <use figuren/rgbKlasse.png>
 Package pdftex.def Info: figuren/rgbKlasse.png  used on input line 43.
@@ -1073,7 +1073,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--154
 
  []
 
-<figuren/DDDLed1Led2.png, id=552, 836.12375pt x 118.4425pt>
+<figuren/DDDLed1Led2.png, id=582, 836.12375pt x 118.4425pt>
 File: figuren/DDDLed1Led2.png Graphic file (type png)
 <use figuren/DDDLed1Led2.png>
 Package pdftex.def Info: figuren/DDDLed1Led2.png  used on input line 162.
@@ -1100,14 +1100,14 @@ Overfull \hbox (35.07664pt too wide) in paragraph at lines 295--296
 \OT1/pcr/m/n/12 LedInfo(kleuren); 
  []
 
-<figuren/DDDRGB.png, id=648, 781.92125pt x 164.615pt>
+<figuren/DDDRGB.png, id=678, 781.92125pt x 164.615pt>
 File: figuren/DDDRGB.png Graphic file (type png)
 <use figuren/DDDRGB.png>
 Package pdftex.def Info: figuren/DDDRGB.png  used on input line 300.
 (pdftex.def)             Requested size: 416.2625pt x 87.63486pt.
 ) (./opdracht3.tex [26 <./figuren/dddRGB.png>]
 Hoofdstuk 4.
-<figuren/logled.png, id=661, 665.48625pt x 547.04375pt>
+<figuren/logled.png, id=691, 665.48625pt x 547.04375pt>
 File: figuren/logled.png Graphic file (type png)
 <use figuren/logled.png>
 Package pdftex.def Info: figuren/logled.png  used on input line 9.
@@ -1115,7 +1115,7 @@ Package pdftex.def Info: figuren/logled.png  used on input line 9.
 [27
 
  <./figuren/logled.png>] (./tijdsduur.tex
-<figuren/tijdsduur.png, id=668, 201.75375pt x 182.6825pt>
+<figuren/tijdsduur.png, id=698, 201.75375pt x 182.6825pt>
 File: figuren/tijdsduur.png Graphic file (type png)
 <use figuren/tijdsduur.png>
 Package pdftex.def Info: figuren/tijdsduur.png  used on input line 6.
@@ -1134,7 +1134,7 @@ File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 96.
  [29])
-<figuren/seqZetAan.png, id=737, 688.5725pt x 302.12875pt>
+<figuren/seqZetAan.png, id=768, 688.5725pt x 302.12875pt>
 File: figuren/seqZetAan.png Graphic file (type png)
 <use figuren/seqZetAan.png>
 Package pdftex.def Info: figuren/seqZetAan.png  used on input line 52.
@@ -1144,56 +1144,97 @@ Package pdftex.def Info: figuren/seqZetAan.png  used on input line 52.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [30]
-<figuren/seqZetUit.png, id=756, 626.34pt x 308.15125pt>
+<figuren/seqZetUit.png, id=786, 626.34pt x 308.15125pt>
 File: figuren/seqZetUit.png Graphic file (type png)
 <use figuren/seqZetUit.png>
 Package pdftex.def Info: figuren/seqZetUit.png  used on input line 69.
 (pdftex.def)             Requested size: 350.5393pt x 172.46477pt.
+ [31 <./figuren/seqZetAan.png> <./figuren/seqZetUit.png>]
 
+LaTeX Warning: Reference `lst:loglImpl' on page 32 undefined on input line 80.
 
-LaTeX Warning: Reference `lst:loglImpl' on page 31 undefined on input line 79.
-
-[31 <./figuren/seqZetAan.png> <./figuren/seqZetUit.png>] [32]
-<figuren/dddTweeLogleds.png, id=815, 879.285pt x 233.87375pt>
+[32]
+<figuren/dddTweeLogleds.png, id=845, 879.285pt x 233.87375pt>
 File: figuren/dddTweeLogleds.png Graphic file (type png)
 <use figuren/dddTweeLogleds.png>
-Package pdftex.def Info: figuren/dddTweeLogleds.png  used on input line 130.
+Package pdftex.def Info: figuren/dddTweeLogleds.png  used on input line 131.
 (pdftex.def)             Requested size: 372.44926pt x 99.06134pt.
-<figuren/ddd_logled_p2a.png, id=820, 688.5725pt x 233.87375pt>
+<figuren/ddd_logled_p2a.png, id=850, 688.5725pt x 233.87375pt>
 File: figuren/ddd_logled_p2a.png Graphic file (type png)
 <use figuren/ddd_logled_p2a.png>
-Package pdftex.def Info: figuren/ddd_logled_p2a.png  used on input line 143.
+Package pdftex.def Info: figuren/ddd_logled_p2a.png  used on input line 144.
 (pdftex.def)             Requested size: 203.9709pt x 69.27763pt.
-<figuren/ddd_logled_p2b.png, id=821, 524.96124pt x 182.6825pt>
+<figuren/ddd_logled_p2b.png, id=851, 524.96124pt x 182.6825pt>
 File: figuren/ddd_logled_p2b.png Graphic file (type png)
 <use figuren/ddd_logled_p2b.png>
-Package pdftex.def Info: figuren/ddd_logled_p2b.png  used on input line 148.
+Package pdftex.def Info: figuren/ddd_logled_p2b.png  used on input line 149.
 (pdftex.def)             Requested size: 203.9709pt x 70.98106pt.
 
-Overfull \hbox (23.88457pt too wide) in paragraph at lines 137--157
+Overfull \hbox (23.88457pt too wide) in paragraph at lines 138--158
 []\OT1/cmr/m/n/12 Voer het pro-gramma nog een keer uit en maak ge-du-rende de u
 it-voer twee []\OT1/cmr/bx/n/12 screenshots[]
  []
 
-[33 <./figuren/dddTweeLogleds.png> <./figuren/ddd_logled_p2a.png> <./figuren/dd
-d_logled_p2b.png>] Excluding 'comment' comment.) (./appendix.tex [34
+) (./opdracht4.tex [33 <./figuren/dddTweeLogleds.png> <./figuren/ddd_logled_p2a
+.png> <./figuren/ddd_logled_p2b.png>]
+Hoofdstuk 5.
+<figuren/llExcept.png, id=865, 666.49pt x 612.2875pt>
+File: figuren/llExcept.png Graphic file (type png)
+<use figuren/llExcept.png>
+Package pdftex.def Info: figuren/llExcept.png  used on input line 9.
+(pdftex.def)             Requested size: 394.35254pt x 362.28354pt.
+[34
+
+ <./figuren/llExcept.png>]
+Overfull \hbox (30.40204pt too wide) in paragraph at lines 21--24
+\OT1/pcr/m/n/12 Verkeerde kleur. De ledkleur is:groen Aangesloten op pin:132 
+ []
+
+<figuren/deviceled.png, id=875, 1073.00874pt x 702.625pt>
+File: figuren/deviceled.png Graphic file (type png)
+<use figuren/deviceled.png>
+Package pdftex.def Info: figuren/deviceled.png  used on input line 55.
+(pdftex.def)             Requested size: 438.17247pt x 286.92023pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35]
+<figuren/dddmeerdreld.png, id=912, 1209.51875pt x 386.44376pt>
+File: figuren/dddmeerdreld.png Graphic file (type png)
+<use figuren/dddmeerdreld.png>
+Package pdftex.def Info: figuren/dddmeerdreld.png  used on input line 100.
+(pdftex.def)             Requested size: 416.2625pt x 132.99303pt.
+ [36 <./figuren/deviceled.png>]) (./unitTest.tex [37 <./figuren/dddmeerdreld.pn
+g>]
+Hoofdstuk 6.
+[38
+
+]
+Overfull \hbox (6.38298pt too wide) in paragraph at lines 88--123
+ $[]$  $[]$
+ []
 
 
-] [35]
-(./deOmgeving.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+[40]) (./appendix.tex [41] [42
+
+
+] [43] (./deOmgeving.tex
 B\ij lage A.
 Excluding 'comment' comment.
-<figuren/vncopstart.png, id=844, 664.58287pt x 79.79813pt>
+<figuren/vncopstart.png, id=1093, 664.58287pt x 79.79813pt>
 File: figuren/vncopstart.png Graphic file (type png)
 <use figuren/vncopstart.png>
 Package pdftex.def Info: figuren/vncopstart.png  used on input line 37.
 (pdftex.def)             Requested size: 438.17247pt x 52.61333pt.
-<figuren/laptopVCS.png, id=847, 530.58224pt x 243.00787pt>
+<figuren/laptopVCS.png, id=1096, 530.58224pt x 243.00787pt>
 File: figuren/laptopVCS.png Graphic file (type png)
 <use figuren/laptopVCS.png>
 Package pdftex.def Info: figuren/laptopVCS.png  used on input line 52.
 (pdftex.def)             Requested size: 284.80942pt x 130.44733pt.
-<figuren/vcsExtSSH.png, id=849, 930.47626pt x 520.94624pt>
+<figuren/vcsExtSSH.png, id=1098, 930.47626pt x 520.94624pt>
 File: figuren/vcsExtSSH.png Graphic file (type png)
 <use figuren/vcsExtSSH.png>
 Package pdftex.def Info: figuren/vcsExtSSH.png  used on input line 65.
@@ -1202,47 +1243,47 @@ Package pdftex.def Info: figuren/vcsExtSSH.png  used on input line 65.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuren/extensionIcon.png, id=850, 51.94406pt x 50.43843pt>
+<figuren/extensionIcon.png, id=1099, 51.94406pt x 50.43843pt>
 File: figuren/extensionIcon.png Graphic file (type png)
 <use figuren/extensionIcon.png>
 Package pdftex.def Info: figuren/extensionIcon.png  used on input line 73.
 (pdftex.def)             Requested size: 14.49985pt x 14.07956pt.
-[36
+[44
 
  <./figuren/vncopstart.png> <./figuren/laptopVCS.png>]
-<figuren/VNCremoteSSH.png, id=860, 1442.38875pt x 936.49875pt>
+<figuren/VNCremoteSSH.png, id=1109, 1442.38875pt x 936.49875pt>
 File: figuren/VNCremoteSSH.png Graphic file (type png)
 <use figuren/VNCremoteSSH.png>
 Package pdftex.def Info: figuren/VNCremoteSSH.png  used on input line 82.
 (pdftex.def)             Requested size: 262.90614pt x 170.69168pt.
-<figuren/VNCInvoerHost.png, id=863, 828.84656pt x 144.54pt>
+<figuren/VNCInvoerHost.png, id=1112, 828.84656pt x 144.54pt>
 File: figuren/VNCInvoerHost.png Graphic file (type png)
 <use figuren/VNCInvoerHost.png>
 Package pdftex.def Info: figuren/VNCInvoerHost.png  used on input line 91.
 (pdftex.def)             Requested size: 262.90614pt x 45.84572pt.
-<figuren/VSCsshCommand.png, id=865, 682.04813pt x 100.12407pt>
+<figuren/VSCsshCommand.png, id=1114, 682.04813pt x 100.12407pt>
 File: figuren/VSCsshCommand.png Graphic file (type png)
 <use figuren/VSCsshCommand.png>
 Package pdftex.def Info: figuren/VSCsshCommand.png  used on input line 100.
 (pdftex.def)             Requested size: 306.71939pt x 45.02637pt.
-<figuren/VSCconfigFile.png, id=867, 834.86906pt x 207.77625pt>
+<figuren/VSCconfigFile.png, id=1116, 834.86906pt x 207.77625pt>
 File: figuren/VSCconfigFile.png Graphic file (type png)
 <use figuren/VSCconfigFile.png>
 Package pdftex.def Info: figuren/VSCconfigFile.png  used on input line 108.
 (pdftex.def)             Requested size: 306.71939pt x 76.33386pt.
- [37 <./figuren/vcsExtSSH.png> <./figuren/extensionIcon.png> <./figuren/VNCremo
+ [45 <./figuren/vcsExtSSH.png> <./figuren/extensionIcon.png> <./figuren/VNCremo
 teSSH.png> <./figuren/VNCInvoerHost.png>]
-<figuren/VSCcontinue.png, id=888, 832.61063pt x 152.82094pt>
+<figuren/VSCcontinue.png, id=1135, 832.61063pt x 152.82094pt>
 File: figuren/VSCcontinue.png Graphic file (type png)
 <use figuren/VSCcontinue.png>
 Package pdftex.def Info: figuren/VSCcontinue.png  used on input line 117.
 (pdftex.def)             Requested size: 306.71939pt x 56.29567pt.
-<figuren/VSCpasswd.png, id=890, 831.85782pt x 115.93312pt>
+<figuren/VSCpasswd.png, id=1137, 831.85782pt x 115.93312pt>
 File: figuren/VSCpasswd.png Graphic file (type png)
 <use figuren/VSCpasswd.png>
 Package pdftex.def Info: figuren/VSCpasswd.png  used on input line 126.
 (pdftex.def)             Requested size: 306.71939pt x 42.74597pt.
-<figuren/VSCfout1.png, id=892, 772.38562pt x 171.64125pt>
+<figuren/VSCfout1.png, id=1139, 772.38562pt x 171.64125pt>
 File: figuren/VSCfout1.png Graphic file (type png)
 <use figuren/VSCfout1.png>
 Package pdftex.def Info: figuren/VSCfout1.png  used on input line 135.
@@ -1251,7 +1292,7 @@ Package pdftex.def Info: figuren/VSCfout1.png  used on input line 135.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuren/VSCnewTerminal.png, id=893, 1425.07407pt x 368.87813pt>
+<figuren/VSCnewTerminal.png, id=1140, 1425.07407pt x 368.87813pt>
 File: figuren/VSCnewTerminal.png Graphic file (type png)
 <use figuren/VSCnewTerminal.png>
 Package pdftex.def Info: figuren/VSCnewTerminal.png  used on input line 144.
@@ -1259,7 +1300,7 @@ Package pdftex.def Info: figuren/VSCnewTerminal.png  used on input line 144.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[38 <./figuren/VSCsshCommand.png> <./figuren/VSCconfigFile.png> <./figuren/VSCc
+[46 <./figuren/VSCsshCommand.png> <./figuren/VSCconfigFile.png> <./figuren/VSCc
 ontinue.png> <./figuren/VSCpasswd.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 158--162
 
@@ -1269,12 +1310,12 @@ File: figuren/VSCiconeExpl.png Graphic file (type png)
 <use figuren/VSCiconeExpl.png>
 Package pdftex.def Info: figuren/VSCiconeExpl.png  used on input line 168.
 (pdftex.def)             Requested size: 14.49995pt x 14.49995pt.
-<figuren/VSCopenFolder.png, id=913, 893.58844pt x 242.40562pt>
+<figuren/VSCopenFolder.png, id=1160, 893.58844pt x 242.40562pt>
 File: figuren/VSCopenFolder.png Graphic file (type png)
 <use figuren/VSCopenFolder.png>
 Package pdftex.def Info: figuren/VSCopenFolder.png  used on input line 171.
 (pdftex.def)             Requested size: 350.5393pt x 95.09262pt.
-<figuren/VSCexplorerveld.png, id=915, 807.51688pt x 465.74pt>
+<figuren/VSCexplorerveld.png, id=1162, 807.51688pt x 465.74pt>
 File: figuren/VSCexplorerveld.png Graphic file (type png)
 <use figuren/VSCexplorerveld.png>
 Package pdftex.def Info: figuren/VSCexplorerveld.png  used on input line 182.
@@ -1288,9 +1329,9 @@ f Ctrl+Shift+E.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39 <./figuren/VSCfout1.png> <./figuren/VSCnewTerminal.png> <./figuren/VSCopenF
+[47 <./figuren/VSCfout1.png> <./figuren/VSCnewTerminal.png> <./figuren/VSCopenF
 older.png>]
-<figuren/VSCmakeFile.png, id=930, 31.61812pt x 29.35968pt>
+<figuren/VSCmakeFile.png, id=1177, 31.61812pt x 29.35968pt>
 File: figuren/VSCmakeFile.png Graphic file (type png)
 <use figuren/VSCmakeFile.png>
 Package pdftex.def Info: figuren/VSCmakeFile.png  used on input line 191.
@@ -1311,22 +1352,22 @@ File: figuren/extensionIcon.png Graphic file (type png)
 <use figuren/extensionIcon.png>
 Package pdftex.def Info: figuren/extensionIcon.png  used on input line 221.
 (pdftex.def)             Requested size: 14.49985pt x 14.07956pt.
-[40 <./figuren/VSCexplorerveld.png (PNG copy)> <./figuren/VSCmakeFile.png>]
+[48 <./figuren/VSCexplorerveld.png (PNG copy)> <./figuren/VSCmakeFile.png>]
 File: figuren/cPlusIcon.png Graphic file (type png)
 <use figuren/cPlusIcon.png>
 Package pdftex.def Info: figuren/cPlusIcon.png  used on input line 222.
 (pdftex.def)             Requested size: 14.4999pt x 12.39305pt.
-<figuren/VSCcompile.png, id=954, 691.08188pt x 398.23781pt>
+<figuren/VSCcompile.png, id=1201, 691.08188pt x 398.23781pt>
 File: figuren/VSCcompile.png Graphic file (type png)
 <use figuren/VSCcompile.png>
 Package pdftex.def Info: figuren/VSCcompile.png  used on input line 228.
 (pdftex.def)             Requested size: 262.90614pt x 151.50208pt.
-<figuren/VSCiconeRunDebug.png, id=955, 46.67438pt x 45.16875pt>
+<figuren/VSCiconeRunDebug.png, id=1202, 46.67438pt x 45.16875pt>
 File: figuren/VSCiconeRunDebug.png Graphic file (type png)
 <use figuren/VSCiconeRunDebug.png>
 Package pdftex.def Info: figuren/VSCiconeRunDebug.png  used on input line 244.
 (pdftex.def)             Requested size: 14.49951pt x 14.0318pt.
-<figuren/VCRrunDebug.png, id=958, 17.06375pt x 18.0675pt>
+<figuren/VCRrunDebug.png, id=1205, 17.06375pt x 18.0675pt>
 File: figuren/VCRrunDebug.png Graphic file (type png)
 <use figuren/VCRrunDebug.png>
 Package pdftex.def Info: figuren/VCRrunDebug.png  used on input line 250.
@@ -1336,39 +1377,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
-[41 <./figuren/VSCcompile.png> <./figuren/VSCiconeRunDebug.png> <./figuren/VCRr
+[49 <./figuren/VSCcompile.png> <./figuren/VSCiconeRunDebug.png> <./figuren/VCRr
 unDebug.png (PNG copy)>]
-<figuren/VSCksGDB.png, id=979, 372.64218pt x 142.28156pt>
+<figuren/VSCksGDB.png, id=1228, 372.64218pt x 142.28156pt>
 File: figuren/VSCksGDB.png Graphic file (type png)
 <use figuren/VSCksGDB.png>
 Package pdftex.def Info: figuren/VSCksGDB.png  used on input line 256.
 (pdftex.def)             Requested size: 163.87857pt x 62.5715pt.
-<figuren/VSCKsGcc.png, id=980, 425.33907pt x 271.76532pt>
+<figuren/VSCKsGcc.png, id=1229, 425.33907pt x 271.76532pt>
 File: figuren/VSCKsGcc.png Graphic file (type png)
 <use figuren/VSCKsGcc.png>
 Package pdftex.def Info: figuren/VSCKsGcc.png  used on input line 261.
 (pdftex.def)             Requested size: 187.31685pt x 119.68492pt.
-<figuren/VSCdebugVeld.png, id=981, 1640.37843pt x 1023.825pt>
+<figuren/VSCdebugVeld.png, id=1230, 1640.37843pt x 1023.825pt>
 File: figuren/VSCdebugVeld.png Graphic file (type png)
 <use figuren/VSCdebugVeld.png>
 Package pdftex.def Info: figuren/VSCdebugVeld.png  used on input line 273.
 (pdftex.def)             Requested size: 350.5393pt x 218.77457pt.
-<figuren/VSCDebugKnoppen.png, id=982, 172.39406pt x 28.60687pt>
+<figuren/VSCDebugKnoppen.png, id=1231, 172.39406pt x 28.60687pt>
 File: figuren/VSCDebugKnoppen.png Graphic file (type png)
 <use figuren/VSCDebugKnoppen.png>
 Package pdftex.def Info: figuren/VSCDebugKnoppen.png  used on input line 278.
 (pdftex.def)             Requested size: 122.64058pt x 20.35117pt.
-<figuren/F5-Continue.png, id=983, 28.60687pt x 28.60687pt>
+<figuren/F5-Continue.png, id=1232, 28.60687pt x 28.60687pt>
 File: figuren/F5-Continue.png Graphic file (type png)
 <use figuren/F5-Continue.png>
 Package pdftex.def Info: figuren/F5-Continue.png  used on input line 283.
 (pdftex.def)             Requested size: 21.9108pt x 22.76286pt.
-<figuren/F10-StepOver.png, id=984, 28.60687pt x 28.60687pt>
+<figuren/F10-StepOver.png, id=1233, 28.60687pt x 28.60687pt>
 File: figuren/F10-StepOver.png Graphic file (type png)
 <use figuren/F10-StepOver.png>
 Package pdftex.def Info: figuren/F10-StepOver.png  used on input line 284.
 (pdftex.def)             Requested size: 21.9108pt x 22.76286pt.
-<figuren/F11-StepInto.png, id=985, 28.60687pt x 28.60687pt>
+<figuren/F11-StepInto.png, id=1234, 28.60687pt x 28.60687pt>
 File: figuren/F11-StepInto.png Graphic file (type png)
 <use figuren/F11-StepInto.png>
 Package pdftex.def Info: figuren/F11-StepInto.png  used on input line 285.
@@ -1383,7 +1424,7 @@ Overfull \hbox (38.80997pt too wide) in paragraph at lines 281--287
 [][] 
  []
 
-) (./linuxcommandos.tex [42 <./figuren/VSCksGDB.png> <./figuren/VSCKsGcc.png> <
+) (./linuxcommandos.tex [50 <./figuren/VSCksGDB.png> <./figuren/VSCKsGcc.png> <
 ./figuren/VSCdebugVeld.png> <./figuren/VSCDebugKnoppen.png> <./figuren/F5-Conti
 nue.png> <./figuren/F10-StepOver.png> <./figuren/F11-StepInto.png>]
 B\ij lage B.
@@ -1392,28 +1433,28 @@ Overfull \hbox (31.09871pt too wide) in paragraph at lines 2--2
 |[]\OT1/cmr/bx/n/24.88 Tips&Tricks&Troubleshooting voor
  []
 
-[43
+[51
 
 ]
 Overfull \hbox (10.96863pt too wide) in paragraph at lines 45--69
 [] 
  []
 
-[44])) Excluding 'comment' comment. [45] (./OOPopdrachten.aux)
+[52])) Excluding 'comment' comment. [53] (./OOPopdrachten.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `OOPopdrachten.out' has not changed.
-(rerunfilecheck)             Checksum: 1510CA185B3A355002A125947C757953;4914.
+(rerunfilecheck)             Checksum: 4D69CE01BC5DAB8DCF37725279594783;6104.
  ) 
 Here is how much of TeX's memory you used:
- 19820 strings out of 479647
- 317551 string characters out of 5878803
- 997190 words of memory out of 5000000
- 36843 multiletter control sequences out of 15000+600000
+ 20136 strings out of 479647
+ 322285 string characters out of 5878803
+ 1009867 words of memory out of 5000000
+ 36977 multiletter control sequences out of 15000+600000
  486328 words of font info for 88 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 60i,16n,63p,1202b,2058s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,16n,63p,1202b,1927s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/john/.texl
 ive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
@@ -1431,10 +1472,10 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/c
 ourier/ucrro8a.pfb>
-Output written on OOPopdrachten.pdf (45 pages, 27376159 bytes).
+Output written on OOPopdrachten.pdf (53 pages, 27560508 bytes).
 PDF statistics:
- 1239 PDF objects out of 1440 (max. 8388607)
- 1044 compressed objects within 11 object streams
- 560 named destinations out of 1000 (max. 500000)
- 509 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1522 PDF objects out of 1728 (max. 8388607)
+ 1310 compressed objects within 14 object streams
+ 733 named destinations out of 1000 (max. 500000)
+ 572 words of extra memory for PDF output out of 10000 (max. 10000000)
 
