@@ -13,14 +13,14 @@
 \contentsline {paragraph}{Opdracht:}{15}{lstnumber.2.2.43}%
 \contentsline {section}{\numberline {2.3}Het werken met de DDD visuele debugger.}{15}{section.2.3}%
 \contentsline {paragraph}{Opdracht}{16}{figure.caption.16}%
-\contentsline {chapter}{\numberline {3}Afgeleide klasse en objecten in C++}{19}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Afgeleide klassen en objecten in C++}{19}{chapter.3}%
 \contentsline {section}{\numberline {3.1}De Klasse SingleLed}{21}{section.3.1}%
 \contentsline {paragraph}{Opdracht}{21}{lstnumber.3.2.100}%
 \contentsline {section}{\numberline {3.2}De Klasse RGBLed}{23}{section.3.2}%
 \contentsline {paragraph}{Opdracht}{24}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Een compositie en aggregatie.}{27}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Compositie en aggregatie.}{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}De klasse Tijdsduur.}{28}{section.4.1}%
-\contentsline {paragraph}{Opdracht}{29}{lstnumber.4.3.26}%
+\contentsline {paragraph}{Opdracht}{30}{lstnumber.4.3.26}%
 \contentsline {section}{\numberline {4.2}De klasse Logled}{30}{section.4.2}%
 \contentsline {paragraph}{Opdracht}{32}{figure.caption.26}%
 \contentsline {chapter}{\numberline {5}Het gebruik van Exceptions bij meerdere objecten.}{34}{chapter.5}%

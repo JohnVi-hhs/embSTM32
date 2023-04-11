@@ -1,9 +1,8 @@
-\chapter{Een compositie en aggregatie.}
+\chapter{Compositie en aggregatie.}
 \label{ch:hfstCompAgg}
-Bij deze opdracht zal een aggregatie en compositie in C++ geïmplementeerd worden. Met behulp van de DDD debugger worden objecten en hun onderlinge verbindingen zichtbaar gemaakt. Hiervan zullen verschillende screenshots gemaakt moeten worden die opgenomen  moeten worden in je portfolio. De portfolio moet aan het einde van de week geüpload worden op Brightspace. Tijdens het aftekenen moeten de screenshots zichtbaar zijn.
-Op de screenshots zal je \textbf{eigen} \textcolor{BrickRed}{\textbf{naam}} en \textcolor{BrickRed}{\textbf{studienummer}} moeten staan.
+Bij deze opdracht worden aggregatie en compositie in C++ geïmplementeerd. Met behulp van de DDD debugger worden objecten en hun onderlinge verbindingen zichtbaar gemaakt. Hiervan zullen verschillende screenshots gemaakt moeten worden die opgenomen  moeten worden in je portfolio. De portfolio moet aan het einde van de week geüpload worden op Brightspace. Tijdens het aftekenen moeten de screenshots zichtbaar zijn. Op de screenshots zal je \textbf{eigen} \textcolor{BrickRed}{\textbf{naam}} en \textcolor{BrickRed}{\textbf{studienummer}} moeten staan.
 
-De opdracht bestaat uit een speciaal type LED, de LogLed. De LogLed heeft als extra een stopwatch,en een Tijdsduur. De klasse wordt weergegeven in figuur \ref{fig:logled}.
+De opdracht bestaat uit een speciaal type LED, de Logled. De Logled heeft als extra een Stopwatch en een Tijdsduur. De klasse wordt weergegeven in Figuur \ref{fig:logled}.
     \begin{figure}[h!]
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.9 \linewidth]{figuren/logled}      %ledPlatform}
@@ -11,24 +10,24 @@ De opdracht bestaat uit een speciaal type LED, de LogLed. De LogLed heeft als ex
 \caption{De logled met timer en stopwatch.}
 \label{fig:logled}
 \end{figure} 
-De logled is speciaal ontwikkelt om ervoor te zorgen dat een LED maar een maximum aan uren aan kan. daarna moet een nieuwe logled gekocht worden. 
+De Logled is speciaal ontwikkeld om ervoor te zorgen dat een maximale levensduur voor de LED kan worden ingesteld. Daarna moet een nieuwe Logled gekocht worden. 
 \begin{itemize}
-	\item Met het tijdsduur wordt bijgehouden hoeveel minuten de logled nog aan mag. 
-	\item Met de stopwatch wordt elke keer gecheckt hoelang de logled voor dat moment aan is.
-	\item De Led kan hergebruikt worden uit de vorige opgave, De stopwatch krijg je cadeau en is te downloaden van github. \\De klasse Logled en Tijdsduur moet je zelf maken.
+	\item Met de tijdsduur wordt bijgehouden hoeveel minuten de Logled nog aan mag. 
+	\item Met de stopwatch wordt elke keer gecheckt hoe lang de Logled voor dat moment aan is.
+	\item De Led uit de vorige opgave kan hergebruikt worden. De stopwatch krijg je cadeau en is te downloaden van Github. \\De klasse Logled en Tijdsduur moet je zelf maken.
 \end{itemize}
 
 \input{tijdsduur}
 
 \section{De klasse Logled}
 
-Zoals uit figuur \ref{fig:logled} blijkt heeft de klasse \textbf{Logled} twee compositie klassen namelijk de Klasse \textbf{Tijdsduur} en \textbf{Stopwatch}.
-Hierdoor kan het maximum aan minuten en seconden dat een logled in totaal aan kan gaan, worden opgegeven. Stel een logled wordt gecreëerd met de volgende regel.
+Zoals uit Figuur \ref{fig:logled} blijkt heeft de klasse \textbf{Logled} twee compositie klassen, namelijk de klassen \textbf{Tijdsduur} en \textbf{Stopwatch}.
+Hierdoor kan het maximum aan minuten en seconden dat een Logled in totaal aan kan gaan, worden opgegeven. Stel een Logled wordt gecreëerd met de volgende regel:
 \begin{lstlisting}
 	Logled logger(135,"rood","Pietje Puk",0,4);
 \end{lstlisting}
-Dit houd in dat een logled aangemaakt wordt met als naam \texttt{logger}. De led wordt aangesloten op pin 135 en heeft de kleur rood. De eigenaar is "Pietje Puk". De maximale tijd dat een led in totaal aan kan gaan is 0 minuten en 4 seconden.
-De werking van de methoden \texttt{zetAan} en \texttt{zetUit} van logled is als volgt:
+Dit houdt in dat een Logled wordt aangemaakt met als naam \texttt{logger}. De led wordt aangesloten op pin 135 en heeft de kleur rood. De eigenaar is "Pietje Puk". De maximale tijd dat een led in totaal aan kan gaan is 0 minuten en 4 seconden.
+De werking van de methoden \texttt{zetAan} en \texttt{zetUit} van Logled zijn als volgt:
 
 \begin{itemize}
 	\item De methode \texttt{void zetAan("groen");}  
@@ -39,14 +38,14 @@ De werking van de methoden \texttt{zetAan} en \texttt{zetUit} van logled is als 
 	  		
 	  	\end{itemize}
 	  	\item De tijd dat de led nog aan mag, wordt opgehaald.
-	  	\item Opgehaalde tijd\textgreater  0 ?
+	  	\item Opgehaalde tijd \textgreater  0 ?
 	  		  	\begin{enumerate}
 	  		\item Reset de stopwatch.
 	  		\item Begin met tijdmeting.
 	  		\item Zet de led aan.	  		
 	  	\end{enumerate}
 	  \end{enumerate}
-  In het sequentiediagram van figuur \ref{fig:ll_zetAan} wordt een scenario weergegeven wanneer de logled aangezet wordt en 
+  In het sequentiediagram van Figuur \ref{fig:ll_zetAan} wordt een scenario weergegeven wanneer de Logled aangezet wordt en 
       \begin{figure}[h!]
   	\captionsetup{justification=centering}
   	\includegraphics[width=0.8 \linewidth]{figuren/seqZetAan}      %ledPlatform}
@@ -54,16 +53,16 @@ De werking van de methoden \texttt{zetAan} en \texttt{zetUit} van logled is als 
   \caption{De werking van de methode zetAan.}
   \label{fig:ll_zetAan}
 \end{figure} 
- deze nog 4 seconde te gaan heeft. 
- \newpage
- \item De methode \textit{ void zetUit()}. 
+ deze nog 4 seconden te gaan heeft. 
+
+ \item De methode \textit{void zetUit()} doet het volgende: 
  \begin{itemize}
  	\item Stop de stopwatch.
  	\item Haal de stopwachttijd op.
  	\item Breng deze tijd in mindering bij tijdTeGaan.
  	\item Zet de led uit.
  \end{itemize} 
- In het sequentiediagram van figuur \ref{fig:ll_zetUit} wordt een scenario weergegeven wanneer de logled wordt uitgezet
+ In het sequentiediagram van Figuur \ref{fig:ll_zetUit} wordt een scenario weergegeven wanneer de Logled wordt uitgezet
   \begin{figure}[h!]
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.8 \linewidth]{figuren/seqZetUit}      %ledPlatform}
@@ -71,14 +70,14 @@ De werking van de methoden \texttt{zetAan} en \texttt{zetUit} van logled is als 
 \caption{De werking van de methode zetUit.}
 \label{fig:ll_zetUit}
 \end{figure} 
-nadat deze 2 seconde heeft aangestaan.
+nadat deze 2 seconden heeft aangestaan.
 \end{itemize}
 \newpage
 \paragraph{Opdracht}
 
 \begin{enumerate}[label=\alph*]
 	\item Implementeer de klasse Logled, zodat de code van listing \ref{lst:loglImpl} zonder compiler errors en warnings werkt.
-	\begin{lstlisting}[caption=Een test van de klasse \texttt{LogLed}. ,frame=trbl,firstnumber=1,numbers=left,label={lst:lst:loglImpl}]{Name}
+	\begin{lstlisting}[caption=Een test van de klasse \texttt{LogLed}. ,frame=trbl,firstnumber=1,numbers=left,label={lst:loglImpl}]{Name}
 #include <iostream> // nodig voor cout (schrijven naar scherm)
 #include <unistd.h>
 #include "Logled.h"
@@ -101,7 +100,7 @@ int main() {
 	return 0;
 }	
 \end{lstlisting}
-\item  Pas de main() aan zodat deze eruit ziet als listing \ref{lst:logled2}
+\item  Pas de \texttt{main()} aan zodat deze eruit ziet als listing \ref{lst:logled2}
 \begin{lstlisting}[caption=Twee objecten van de klasse \texttt{LogLed}. ,frame=trbl,firstnumber=1,numbers=left,label={lst:logled2}]{Name}
 int main() {
 	
@@ -125,7 +124,7 @@ int main() {
 \end{lstlisting}
 Compileer het programma en laat het runnen. Plaats de code (\texttt{.h} en \texttt{.cpp}) file van de klasse \textbf{Logled} in je portfolio.
 \newpage
-\item Open de vnc viewer, run de DDD debugger (\texttt{ddd ./testlogled}), zet een breakpoint bij het statement  \texttt{usleep(TWEE\_SEC);} (regel 11 van listing \ref{lst:logled2})
+\item Open de VNC viewer, run de DDD debugger (\texttt{ddd ./testlogled}), zet een breakpoint bij het statement  \texttt{usleep(TWEE\_SEC);} (regel 11 van listing \ref{lst:logled2})
 \begin{figure}[h!]
 \captionsetup{justification=centering}
 	\includegraphics[width=0.85 \linewidth]{figuren/dddTweeLogleds}      
@@ -133,10 +132,10 @@ Compileer het programma en laat het runnen. Plaats de code (\texttt{.h} en \text
 \caption{Twee objecten van de klasse Logled}
 \label{fig:dddTweeLogl}
 \end{figure}
-en display beide objecten (\texttt{logger} en \texttt{sportled}) van de klasse \textbf{Logled}. Als het goed is krijg je iets te zien zoals figuur \ref{fig:dddTweeLogl}, uiteraard met je \textcolor{red}{eigen} naam.\\
+en display beide objecten (\texttt{logger} en \texttt{sportled}) van de klasse \textbf{Logled}. Als het goed is krijg je iets te zien zoals Figuur \ref{fig:dddTweeLogl}, uiteraard met je \textcolor{red}{eigen} naam.\\
 Maak van de afbeelding een screenshot en plaats deze in je portfolio.
-\item Voer het programma nog een keer uit en maak gedurende de uitvoer twee \textcolor{BlueViolet}{\textbf{screenshots}} die lijken op figuur \ref{fig:logledOjecten}. Indien Args niet zichtbaar is, kan deze zichtbaar gemaakt worden via Data $\rightarrow$	 Display Arguments (ALT + U).
-Led op: De begintijd van \ref{fig:logObjectA} en \ref{fig:logObjectB} zijn hetzelfde, de stopwatch is immers een compositie van logled.
+\item Voer het programma nog een keer uit en maak gedurende de uitvoer twee \textcolor{BlueViolet}{\textbf{screenshots}} die lijken op Figuur \ref{fig:logledOjecten}. Indien Args niet zichtbaar is, kan deze zichtbaar gemaakt worden via Data $\rightarrow$	 Display Arguments (ALT + U).
+Led op: De begintijd van \ref{fig:logObjectA} en \ref{fig:logObjectB} zijn hetzelfde, de stopwatch is immers een compositie van Logled.
 \begin{figure}[h!]
 	\centering
 	\begin{center} 	
@@ -150,11 +149,11 @@ Led op: De begintijd van \ref{fig:logObjectA} en \ref{fig:logObjectB} zijn hetze
 			\caption{Van het object stopwatch, de attributen en lokale variabele tijd.}
 			\label{fig:logObjectB}
 		\end{subfigure}
-		\caption{Inhoud van het object logled bij het aanroepen van de  zetUit() en vervolgens stap voor stap naar methode stop() van stopwatch.}
+		\caption{Inhoud van het object Logled bij het aanroepen van de zetUit() en vervolgens stap voor stap naar methode stop() van stopwatch.}
 		\label{fig:logledOjecten}   
 	\end{center}
 \end{figure}
-Bij figuur \ref{fig:logObjectB} zie je de waarde van de attributen van het object van de klasse \textit{Stopwatch} waarbij \textit{\textbf{tijd}} een lokale variabele is binnen de methoden \textit{void begin()} en \textit{void stop()} van de klasse Stopwatch.
+Bij Figuur \ref{fig:logObjectB} zie je de waarde van de attributen van het object van de klasse \textit{Stopwatch} waarbij \textit{\textbf{tijd}} een lokale variabele is binnen de methoden \textit{void begin()} en \textit{void stop()} van de klasse Stopwatch.
 \end{enumerate}
 
 

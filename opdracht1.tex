@@ -55,10 +55,10 @@ Open in Windows een terminal (b.v. een PowerShell, cmd prompt of een extern prog
 	\end{comment}
 	\end{center}
 \end{figure}
-tik vervolgens in: \textit{powershell}. In de PowerShell kan het \textit{ssh} commando met de username en het IP adres gegeven worden, zoals in figuur \ref{fig:rockpiLogIn} wordt weergegeven. Bij de eerste keer zal de melding komen of de host key moet worden opgeslagen, kies \textit{yes}. Vervolgens zal om om het password gevraagd worden. Dit is \textit{rock}. 
+tik vervolgens in: \textit{powershell}. In de PowerShell kan het \textit{ssh} commando met de username en het IP adres gegeven worden, zoals in Figuur \ref{fig:rockpiLogIn} wordt weergegeven. Bij de eerste keer zal de melding komen of de host key moet worden opgeslagen, kies \textit{yes}. Vervolgens zal om om het password gevraagd worden. Dit is \textit{rock}. 
 
 \clearpage
-Wanneer het inloggen gelukt is, verschijnt een verhaaltje dat eindigt met de prompt van de RockPi, zoals in figuur \ref{fig:rockpiLogIn} te zien is.
+Wanneer het inloggen gelukt is, verschijnt een verhaaltje dat eindigt met de prompt van de RockPi, zoals in Figuur \ref{fig:rockpiLogIn} te zien is.
 \begin{figure}[h!]
 	\centering
 	\begin{center} 	
@@ -67,7 +67,7 @@ Wanneer het inloggen gelukt is, verschijnt een verhaaltje dat eindigt met de pro
 		\label{fig:rockpiLogIn}   
 	\end{center}
 \end{figure}
-Vanaf nu werk je in een Linux terminal omgeving. Een listing van een directory kan opgevraagd worden met het \textit{ls} commando, het veranderen van een directory kan gedaan worden het \textit{cd} commando (change directory) en het maken van een directory met het \textit{mkdir}  commando (make directory). Verdere Linux commando's en tips zijn te vinden in  \hyperlink{LinuxTipsTrics}{de Bijlage}.
+Vanaf nu werk je in een Linux terminal omgeving. Een listing van een directory kan opgevraagd worden met het \textit{ls} commando (list files and directories), het veranderen van een directory kan gedaan worden het \textit{cd} commando (change directory) en het maken van een directory met het \textit{mkdir}  commando (make directory). Verdere Linux commando's en tips zijn te vinden in  \hyperlink{LinuxTipsTrics}{de Bijlage}.
 
 \clearpage
 \subsection{Het aansturen van een LED.}
@@ -82,7 +82,7 @@ Wanneer contact is gemaakt met de RockPi, zoals beschreven in hoofdstuk \ref{chp
 \end{figure}
 De buitenste kolom geeft het GPIO nummer aan waarop deze geprogrammeerd kan worden. Zo zit de rode LED aangesloten op GPIO nummer 135. De \textbf{dikgedrukte} pinnen worden gebruikt met de printplaat. In de kolom \textbf{breakout} zie je wat op die pinnen zit.
 
-\paragraph[Opdracht 1a]{Opdracht 1a, het eerste programmaatje op de RockPI}	
+\paragraph[Opdracht 1a]{Opdracht 1a, het eerste programmaatje op de RockPi}	
 
 \begin{enumerate}
 	\item Plaats de \hyperlink{chp:USBstick}{USB stick} in de RockPi.
@@ -175,7 +175,7 @@ Hierbij wordt vanuit 'Visual Studio Code' (VSC) gewerkt, en wordt de klasse Led 
       \end{itemize}
       
       \item Nadat een verbinding gemaakt is met de RockPi, open een remote folder door op \img{figuren/VSCiconeExpl} te klikken (of druk Ctrl+K Ctrl+O) en ga naar de directory van de vorige opdracht: \texttt{/home/rock/Documents/ledje/oop/} \newline
-      Aan de linkerkant worden de files zichtbaar en onderaan een statusbalk met informatie. Dit is te zien in figuur \ref{fig:vncOp}
+      Aan de linkerkant worden de files zichtbaar en onderaan een statusbalk met informatie. Dit is te zien in Figuur \ref{fig:vncOp}
   		\begin{figure}[h!]
   	\centering
   	\begin{center} 	
@@ -193,7 +193,7 @@ en selecteer de folder waarin de files staan.
 \begin{itemize}
 	\item Selecteer de file \textit{test.cpp} en compileer de files\footnote{compileren lukt niet, controleer of C++ extension (\img{figuren/cPlusIcon} ) is geïnstalleerd} (Terminal $\rightarrow$ Run Build Task... of Ctrl+Shift+B). \textit{(Als je rechtsonder in het venster een melding krijgt over CMake, klik deze dan weg, we gebruiken geen CMake.)}
 	\item Klik links van regelnummer 10, er verschijnt een rode stip, dit is een breakpoint.
-	\item Selecteer bij het pijltje rechtsboven \img{figuren/debugPijl} de Debug optie en klik op de pijl (of Run $\rightarrow$ Start Debugging), de debugger wordt gestart en het  beeldscherm zoals in figuur \ref{fig:debugScherm} verschijnt.
+	\item Selecteer bij het pijltje rechtsboven \img{figuren/debugPijl} de Debug optie en klik op de pijl (of Run $\rightarrow$ Start Debugging), de debugger wordt gestart en het  beeldscherm zoals in Figuur \ref{fig:debugScherm} verschijnt.
 	\begin{figure}[h!]
 		\centering
 		\begin{center} 	
@@ -209,11 +209,11 @@ en selecteer de folder waarin de files staan.
 
 \item Bij deze opdracht wordt de eerste klasse gemaakt.
 \begin{itemize}
-	\item Maak een nieuwe terminal aan (Terminal $\rightarrow$ New Terminal) of Ctrl+Shift+` en maak een nieuwe directory aan:\\ \texttt{mkdir $\sim$/Documents/opdrLedH} gevolgd door \texttt{cd $\sim$/Documents/opdrLedH}
+	\item Maak een nieuwe terminal aan (Terminal $\rightarrow$ New Terminal of \textbf{Ctrl+Shift+`}) en maak een nieuwe directory aan:\\ \texttt{mkdir $\sim$/Documents/opdrLedH} gevolgd door \texttt{cd $\sim$/Documents/opdrLedH}
 	\item clone de volgende code:\\
 	 {\small \texttt{git clone } \verb|--|\texttt{branch opdrLedH https://github.com/JohnVi-hhs/oop.git}}
-	 \item Sluit in VSC de huidige folder (Ctrl+K F) en open de folder\\ /home/rock/Documents/opdrLedH/oop/ 
-	\item De UML notatie van de klasse \textbf{Led} wordt weergegeven in figuur \ref{fig:klassLed} en de headerfile in listing \ref{lst:ledH}
+	 \item Sluit in VSC de huidige folder (\textbf{Ctrl+K F}) en open de folder\\ /home/rock/Documents/opdrLedH/oop/ 
+	\item De UML notatie van de klasse \textbf{Led} wordt weergegeven in Figuur \ref{fig:klassLed} en de headerfile in listing \ref{lst:ledH}
 
 	\begin{minipage}{0.5\textwidth} 
 	\begin{figure}[H]
@@ -310,7 +310,7 @@ Een paar handige links hierbij zijn:
 \end{itemize}
 
 \begin{comment}
-De instellingen van de DDD debugger staan in de folder .ddd die staat in de home directory (\textit{/home/rock}). Soms is het eenvoudiger om deze directory te deleten dan de instellingen aan te passen (tips: \texttt{ls -al $\sim$} en \texttt{rm -rf $\sim$/.ddd}).
+De instellingen van de DDD debugger staan in de folder \texttt{.ddd} die staat in de home directory (\textit{/home/rock}). Soms is het eenvoudiger om deze directory te deleten dan de instellingen aan te passen (tips: \texttt{ls -al $\sim$} en \texttt{rm -rf $\sim$/.ddd}).
 \end{comment}
 
 We gaan nu met de DDD debugger werken.
@@ -331,7 +331,7 @@ We gaan hierbij stap voor stap het programma doorlopen, waarbij de inhoud van de
 	\item Als eerste een korte kennismaking met de DDD debugger.
 \begin{enumerate} [label=\roman*]
 
-	\item Ga met de cursor op de regel \texttt{\textit{ Led rood(RODELED,"Rood", "Pietje Puk");}}
+	\item Zet de cursor op de regel \texttt{\textit{Led rood(RODELED,"Rood", "Pietje Puk");}}
 	(regelnummer 14)
 	\item Klik op \textit{Break} (bij `algemene commando's`, zie Figuur \ref{fig:dddscherm1}). Voor het begin van de regel verschijnt nu een breakpoint (een rood STOP-bordje).
 
