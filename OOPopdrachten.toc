@@ -11,33 +11,34 @@
 \contentsline {paragraph}{Opdracht 1a}{10}{figure.caption.10}%
 \contentsline {section}{\numberline {2.2}Het werken vanuit Visual Studio Code}{12}{section.2.2}%
 \contentsline {paragraph}{Opdracht:}{15}{lstnumber.2.2.43}%
-\contentsline {section}{\numberline {2.3}Het werken met de DDD visuele debugger.}{15}{section.2.3}%
-\contentsline {paragraph}{Opdracht}{16}{figure.caption.16}%
-\contentsline {chapter}{\numberline {3}Afgeleide klassen en objecten in C++}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}De Klasse SingleLed}{21}{section.3.1}%
-\contentsline {paragraph}{Opdracht}{21}{lstnumber.3.2.100}%
-\contentsline {section}{\numberline {3.2}De Klasse RGBLed}{23}{section.3.2}%
-\contentsline {paragraph}{Opdracht}{24}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Compositie en aggregatie.}{27}{chapter.4}%
-\contentsline {section}{\numberline {4.1}De klasse Tijdsduur.}{28}{section.4.1}%
-\contentsline {paragraph}{Opdracht}{30}{lstnumber.4.3.26}%
-\contentsline {section}{\numberline {4.2}De klasse Logled}{30}{section.4.2}%
-\contentsline {paragraph}{Opdracht}{32}{figure.caption.26}%
-\contentsline {chapter}{\numberline {5}Het gebruik van Exceptions bij meerdere objecten.}{34}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Exceptions}{34}{section.5.1}%
-\contentsline {paragraph}{Opdracht}{35}{figure.caption.29}%
-\contentsline {section}{\numberline {5.2}Toepassen van 1 op 0..5 multipliciteit.}{35}{section.5.2}%
-\contentsline {paragraph}{Opdracht}{35}{figure.caption.30}%
-\contentsline {chapter}{\numberline {6}Introductie in unit testing}{38}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Deel 1, introductie}{38}{section.6.1}%
-\contentsline {paragraph}{Opdracht}{39}{lstnumber.6.1.25}%
-\contentsline {section}{\numberline {6.2}Deel2, een eigen test}{41}{section.6.2}%
-\contentsline {chapter}{Appendices}{42}{section*.32}%
-\contentsline {chapter}{\numberline {A}Installeren van de practicum omgeving}{44}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}De VNC viewer}{44}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Het gebruik van 'Visual Studio Code'}{44}{section.1.A.2}%
-\contentsline {chapter}{\numberline {B}Tips\&Tricks\&Troubleshooting voor Linux omgeving}{51}{appendix.1.B}%
-\contentsline {section}{\numberline {B.1}Troubleshooting}{51}{section.1.B.1}%
-\contentsline {section}{\numberline {B.2}Tips}{51}{section.1.B.2}%
-\contentsline {section}{\numberline {B.3}Linux commando's (zie ook tips in \ref {app:tips})}{52}{section.1.B.3}%
-\contentsline {section}{\numberline {B.4}Uitleg GPIO poorten in Linux}{53}{section.1.B.4}%
+\contentsline {paragraph}{Opdracht:}{15}{lstnumber.2.3.73}%
+\contentsline {section}{\numberline {2.3}Het werken met de DDD visuele debugger.}{16}{section.2.3}%
+\contentsline {paragraph}{Opdracht:}{16}{figure.caption.16}%
+\contentsline {chapter}{\numberline {3}Afgeleide klassen en objecten in C++}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}De Klasse SingleLed}{22}{section.3.1}%
+\contentsline {paragraph}{Opdracht}{22}{lstnumber.3.2.99}%
+\contentsline {section}{\numberline {3.2}De Klasse RGBLed}{24}{section.3.2}%
+\contentsline {paragraph}{Opdracht}{25}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Compositie en aggregatie.}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}De klasse Tijdsduur.}{29}{section.4.1}%
+\contentsline {paragraph}{Opdracht}{31}{lstnumber.4.3.26}%
+\contentsline {section}{\numberline {4.2}De klasse Logled}{31}{section.4.2}%
+\contentsline {paragraph}{Opdracht}{33}{figure.caption.26}%
+\contentsline {chapter}{\numberline {5}Het gebruik van Exceptions bij meerdere objecten.}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Exceptions}{35}{section.5.1}%
+\contentsline {paragraph}{Opdracht}{36}{figure.caption.29}%
+\contentsline {section}{\numberline {5.2}Toepassen van 1 op 0..5 multipliciteit.}{36}{section.5.2}%
+\contentsline {paragraph}{Opdracht}{36}{figure.caption.30}%
+\contentsline {chapter}{\numberline {6}Introductie in unit testing}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Deel 1, introductie}{39}{section.6.1}%
+\contentsline {paragraph}{Opdracht}{40}{lstnumber.6.1.25}%
+\contentsline {section}{\numberline {6.2}Deel2, een eigen test}{42}{section.6.2}%
+\contentsline {chapter}{Appendices}{43}{section*.32}%
+\contentsline {chapter}{\numberline {A}Installeren van de practicum omgeving}{45}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}De VNC viewer}{45}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Het gebruik van 'Visual Studio Code'}{45}{section.1.A.2}%
+\contentsline {chapter}{\numberline {B}Tips\&Tricks\&Troubleshooting voor Linux omgeving}{52}{appendix.1.B}%
+\contentsline {section}{\numberline {B.1}Troubleshooting}{52}{section.1.B.1}%
+\contentsline {section}{\numberline {B.2}Tips}{52}{section.1.B.2}%
+\contentsline {section}{\numberline {B.3}Linux commando's (zie ook tips in \ref {app:tips})}{53}{section.1.B.3}%
+\contentsline {section}{\numberline {B.4}Uitleg GPIO poorten in Linux}{54}{section.1.B.4}%
