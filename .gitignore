@@ -4,3 +4,7 @@ OOPopdrachten.out
 opdracht2.log
 *.gz
 OOPopdrachten.out
+*.aux
+*.aux
+*.log
+*.out
