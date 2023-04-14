@@ -8,3 +8,10 @@ OOPopdrachten.out
 *.aux
 *.log
 *.out
+*.aux
+*.aux
+*.log
+*.out
+*.pdf
+*.gz
+*.toc
