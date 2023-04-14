@@ -15,3 +15,8 @@ OOPopdrachten.out
 *.pdf
 *.gz
 *.toc
+*.aux
+*.aux
+*.log
+*.pdf
+*.gz
