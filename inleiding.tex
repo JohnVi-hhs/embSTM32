@@ -60,10 +60,17 @@ Sluit de USB-C voedingskabel aan zodat de RockPi gaat opstarten (op de RockPi ga
 \end{figure}
 
 \textbf{\textit{Controleer de zelftest:}} Om zeker te weten dat het bovenstaande bordje OK is gaat de RockPi alle leds even aan en uitzetten. \newline
-Als je de RockPi in het lab (D2.001) aanzet, verschijnt op het oled display bij “IP address for wlan0:” een IP adres van het Lab001 Wi-Fi netwerk (zie Figuur \ref{fig:rockIPnr}). \newline
+Als je de RockPi in het lab (D2.001) aanzet, verschijnt op het oled display 
+% bij “IP address for wlan0:”
+een IP adres van het Lab001 Wi-Fi netwerk (zie Figuur \ref{fig:rockIPnr}). %\newline
 Nu kun je via SSH en/of VNC een verbinding maken met dit IP adres en inloggen op de RockPi.
-De username is \textbf{rock}, het password is ook \textbf{rock}. Mocht er een sudo password gevraagd worden, dan is dit ook \textbf{rock}.
-Overigens kun je ook een ethernet kabel aansluiten zoals in Figuur \ref{fig:rockIPnr} te zien is bij “IP address for eth0:”.\break\newline
+% wijziging 15-4-2023
+%De username is \textbf{rock}, het password is ook \textbf{rock}. Mocht er een sudo password gevraagd worden, dan is dit ook \textbf{rock}.
+
+De username is \textbf{rock}, het password voor deze sessie wordt weergegeven op het display, zie Figuur \ref{fig:rockIPnr} (elke keer als de RockPi opnieuw opstart krijg je een nieuw password). Mocht er een sudo password gevraagd worden, dan is dit hetzelfde password.
+
+Overigens kun je ook een ethernet kabel aansluiten.
+% zoals in Figuur \ref{fig:rockIPnr} te zien is bij “IP address for eth0:”.\break\newline
 Zorg wel dat je PC op hetzelfde netwerk is aangesloten. Als VNC het niet wil doen, maar ssh wel, dan zitten je PC en de RockPi mogelijk op verschillende Wi-Fi access-points. Als VNC niet werkt, maar je RockPi en laptop zitten wel op hetzelfde netwerk, dan kun je het knopje '\textbf{Restart\_X}' indrukken, dit herstart de grafische schil op de RockPi.
 
 Zodra je bent ingelogd met VNC, kun je je USB stick aansluiten en configureren. Het maakt niet uit welke USB poort je gebruikt. 
@@ -185,5 +192,5 @@ Als dit werkt, dan zie je onderin de statusbalk van de ‘File Manager’ hoevee
 \end{figure}
 
 Met de 'File Manager' kun je in het bestandssysteem van Linux kijken.\newline
-Bij het practicum begin je altijd in de home directory van gebruiker \textbf{rock} (\texttt{/home/rock}). Je werkt \textit{uitsluitend} in de map Documents (\texttt{/home/rock}).\newline
+Bij het practicum begin je altijd in de home directory van gebruiker \textbf{rock} (\texttt{/home/rock}). Je werkt \textit{uitsluitend} in de map Documents (\texttt{/home/rock/Documents}).\newline
 Als je meer wilt weten over het Linux bestandssysteem, \href{https://www.techrepublic.com/article/linux-101-demystifying-the-linux-directory-structure/}{klik dan hier}.
