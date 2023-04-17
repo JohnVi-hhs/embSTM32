@@ -20,3 +20,6 @@ OOPopdrachten.out
 *.log
 *.pdf
 *.gz
+*.gz
+*.log
+*.aux
