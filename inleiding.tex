@@ -63,7 +63,7 @@ Sluit de USB-C voedingskabel aan zodat de RockPi gaat opstarten (op de RockPi ga
 Als je de RockPi in het lab (D2.001) aanzet, verschijnt op het oled display 
 % bij “IP address for wlan0:”
 een IP adres van het Lab001 Wi-Fi netwerk (zie Figuur \ref{fig:rockIPnr}). %\newline
-Nu kun je via SSH en/of VNC een verbinding maken met dit IP adres en inloggen op de RockPi.
+Nu kun je via \hyperlink{chp:ssh}{SSH} en/of \hyperlink{chp:vnc}{VNC} een verbinding maken met dit IP adres en inloggen op de RockPi.
 % wijziging 15-4-2023
 %De username is \textbf{rock}, het password is ook \textbf{rock}. Mocht er een sudo password gevraagd worden, dan is dit ook \textbf{rock}.
 
@@ -71,7 +71,7 @@ De username is \textbf{rock}, het password voor deze sessie wordt weergegeven op
 
 Overigens kun je ook een ethernet kabel aansluiten.
 % zoals in Figuur \ref{fig:rockIPnr} te zien is bij “IP address for eth0:”.\break\newline
-Zorg wel dat je PC op hetzelfde netwerk is aangesloten. Als VNC het niet wil doen, maar ssh wel, dan zitten je PC en de RockPi mogelijk op verschillende Wi-Fi access-points. Als VNC niet werkt, maar je RockPi en laptop zitten wel op hetzelfde netwerk, dan kun je het knopje '\textbf{Restart\_X}' indrukken, dit herstart de grafische schil op de RockPi.
+Zorg wel dat je PC op hetzelfde netwerk is aangesloten. Als VNC het niet wil doen, maar SSH wel, dan zitten je PC en de RockPi mogelijk op verschillende Wi-Fi access-points. Als VNC niet werkt, maar je RockPi en laptop zitten wel op hetzelfde netwerk, dan kun je het knopje '\textbf{Restart\_X}' indrukken, dit herstart de grafische schil op de RockPi.
 
 Zodra je bent ingelogd met VNC, kun je je USB stick aansluiten en configureren. Het maakt niet uit welke USB poort je gebruikt. 
 
@@ -82,7 +82,7 @@ Als je klaar bent met je practicum, moet je de RockPi netjes afsluiten. Door op 
 Aan 'Knop\_A', 'Knop\_B' en de DIP switches (blauwe blokje) zijn verder geen functies toegewezen. Daar kun je zelf code voor schrijven.
 
 \section{Inloggen met VNC}
-Controleer even of het werkt. Je gaat dit later pas gebruiken. \\Voer het IP adres zoals getoond op het oled display in op VNC (Figuur \ref{fig:rockIPnr}).\newline
+Controleer even of het werkt. Je gaat dit later pas gebruiken. \\Voer het IP adres zoals getoond op het oled display in op \hyperlink{chp:vnc}{VNC}  (Figuur \ref{fig:rockIPnr}).\newline
 Log in op de RockPi en klik op het ‘Terminal’ icoon (rood omcirkeld in Figuur \ref{fig:termico}):
 \begin{figure}[h!]
 	\centering
@@ -140,10 +140,11 @@ Als je het commando \href{https://www.techrepublic.com/article/linux-101-what-is
 
 Hierboven zie je dat disk ge-'mount' is. Om te formatteren moet je eerst 'umount' doen:\newline
 \textbf{\texttt{umount /dev/sda1 }}\newline
-Nu USB disk formatteren met ext4 filesystem (sudo password is \textit{rock}):\newline
+Nu USB disk formatteren met ext4 filesystem (het \textit{sudo} password is hetzelfde als het password van user \textit{rock}; het password van het display):\newline
 \textbf{\texttt{sudo mkfs -t ext4 /dev/sda}}\newline
 Vervolgens disklabel 'Documents' instellen:\newline
 \textbf{\texttt{sudo e2label /dev/sda Documents}}\newline
+Trek nu de USB stick uit de RockPi en steek hem terug zodat deze ge-'mount' wordt onder de naam 'Documents'.\\
 Als laatste gebruiker \textit{rock} eigenaar maken van de USB stick:\newline
 \textbf{\texttt{sudo chown rock /home/rock/Documents}}\newline
 

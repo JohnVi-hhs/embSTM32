@@ -1,6 +1,7 @@
 \chapter{Installeren van de practicum omgeving} \label{app:instal}
 
 
+\hypertarget{chp:vnc}{}
 \section{De VNC viewer}
 \label{sec:vnc}
 Installeer \href{https://www.realvnc.com/en/connect/download/viewer/}{VNC Viewer} op je laptop. Op de RockPi is VNC Server al geïnstalleerd.
@@ -71,7 +72,7 @@ Op de laptop draait 'Visual Studio Code' (VSC) en de source file is de file \tex
 
 	\begin{enumerate}
 		\item Klik op Extension \img{figuren/extensionIcon} of CTRL + Shift + X
-		\item Zoek naar ssh
+		\item Zoek naar SSH
 		\item klik op install
 	\end{enumerate}
     \item Verbinding maken met de RockPi.
@@ -94,7 +95,7 @@ Op de laptop draait 'Visual Studio Code' (VSC) en de source file is de file \tex
 		\label{fig:vscAddcon}
 	\end{figure}
 
-\item klik op \textit{+ Add New SSH Host}. VSC vraag vervolgens om een ssh command: type in: ssh rock@\textit{\small{ip.nr. van de host}} zoals te zien is in Figuur \ref{fig:vscConIP}. Uiteraard wel met je eigen IP nummer.
+\item klik op \textit{+ Add New SSH Host}. VSC vraagt vervolgens om een SSH command: type in: ssh rock@\textit{\small{ip.nr. van de host}} zoals te zien is in Figuur \ref{fig:vscConIP}. Uiteraard wel met je eigen IP nummer.
 		    \begin{figure}[h!]
 	\captionsetup{justification=centering}
 	\includegraphics[width=0.7 \linewidth]{figuren/VSCsshCommand}
@@ -146,7 +147,7 @@ Raak niet in paniek en probeer desgewenst weer opnieuw.
 	\caption{Een geopende terminal in VSC.}
 	\label{fig:vscnewTerm}
 \end{figure}	
-Als het goed is verschijnt de terminal in het onderste deel van VSC met een ssh verbinding naar de RockPi, zoals Figuur \ref{fig:vscnewTerm} laat zien. 
+Als het goed is verschijnt de terminal in het onderste deel van VSC met een SSH verbinding naar de RockPi, zoals Figuur \ref{fig:vscnewTerm} laat zien. 
 \begin{enumerate}
 	\item Met het \textit{ls} commando vraag je de listing op van de huidige directory.
 	\item Met het \textit{pwd} commando wordt het pad van de huidige directory zichtbaar.\\
