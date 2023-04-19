@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.18)  18 APR 2023 20:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.18)  19 APR 2023 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1508,8 +1508,14 @@ Overfull \hbox (10.96863pt too wide) in paragraph at lines 45--69
  []
 
 [55])) Excluding 'comment' comment. [56] (./OOPopdrachten.aux)
-Package rerunfilecheck Info: File `OOPopdrachten.out' has not changed.
-(rerunfilecheck)             Checksum: F22E51812E2D47BF9069E71D07947BB7;6175.
+
+Package rerunfilecheck Warning: File `OOPopdrachten.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `OOPopdrachten.out':
+(rerunfilecheck)             Before: B99466D4C6EADF9786BFB6B219382B5C;6170
+(rerunfilecheck)             After:  F22E51812E2D47BF9069E71D07947BB7;6175.
  ) 
 Here is how much of TeX's memory you used:
  20481 strings out of 476024
@@ -1536,7 +1542,7 @@ e1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
 texlive/2022/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:/texlive/2022/tex
 mf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2022/texmf-dist/fonts/ty
 pe1/urw/courier/ucrro8a.pfb>
-Output written on OOPopdrachten.pdf (56 pages, 24174669 bytes).
+Output written on OOPopdrachten.pdf (56 pages, 24174688 bytes).
 PDF statistics:
  1568 PDF objects out of 1728 (max. 8388607)
  1353 compressed objects within 14 object streams
