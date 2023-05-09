@@ -89,7 +89,7 @@ class SingleLed : public Led
 	public:
 	/*
 	Implementeer hier 
-	de construcor(s) 
+	de constructor(s) 
 	en de methoden
 	*/
 
@@ -106,7 +106,9 @@ class SingleLed : public Led
 {\small \texttt{git clone } \verb|--|\texttt{branch opdracht31 https://github.com/JohnVi-hhs/oop.git}}
 \item
 Implementeer de klasse Led en SingleLed (zowel de .h als de .cpp file ).
-Hierbij kan inspiratie opgedaan worden bij de klassen Hond, Tekel en SintBernard uit het college en de bijbehorende code uit bijlage \ref{cpt:klHonden}. Run vervolgens de main code van Listing \ref{lst:mainSled}.
+Hierbij kan inspiratie opgedaan worden bij de klassen Hond, Tekkel en SintBernard uit het college en de bijbehorende code uit bijlage \ref{cpt:klHonden}. Run vervolgens de main code van Listing \ref{lst:mainSled}.\\~\\
+TIP: in de code wordt gevraagd om de \texttt{int pinNr} als \texttt{string} af te drukken. Deze omzetting heet een cast, dit doe je met het commando \texttt{to\_string(pinNr)}
+\newpage
 
 \begin{lstlisting}[caption=main functie om de klasse SingleLed te testen. ,frame=trbl,firstnumber=1,numbers=left,label={lst:mainSled}]{Name}
 #define GROENELED 132
@@ -151,6 +153,8 @@ De status van de Led is:1\\
 De eigenaar is:Pietje Puk\\
 De Led is aangesloten op pinnen135\\
 De status van de Led is:0\\}
+
+\newpage
 \item 
 \begin{itemize}
 	\item Start de VNC viewer op met hierin de DDD debugger.
