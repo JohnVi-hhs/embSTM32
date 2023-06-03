@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.31)  25 MAY 2023 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.31)  3 JUN 2023 22:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1405,11 +1405,11 @@ Overfull \hbox (30.40204pt too wide) in paragraph at lines 21--24
 \OT1/pcr/m/n/12 Verkeerde kleur. De ledkleur is:groen Aangesloten op pin:132 
  []
 
-<figuren/deviceled.png, id=969, 1073.00874pt x 702.625pt>
+<figuren/deviceled.png, id=969, 770.12718pt x 523.9575pt>
 File: figuren/deviceled.png Graphic file (type png)
 <use figuren/deviceled.png>
 Package pdftex.def Info: figuren/deviceled.png  used on input line 55.
-(pdftex.def)             Requested size: 438.17247pt x 286.92023pt.
+(pdftex.def)             Requested size: 438.17247pt x 298.10722pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1750,7 +1750,7 @@ live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019
 t/fonts/type1/urw/courier/ucrb8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/ur
 w/courier/ucrr8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrro8
 a.pfb>
-Output written on OOPopdrachten.pdf (62 pages, 24204961 bytes).
+Output written on OOPopdrachten.pdf (62 pages, 24204473 bytes).
 PDF statistics:
  1954 PDF objects out of 2073 (max. 8388607)
  1742 compressed objects within 18 object streams
