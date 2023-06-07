@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.31)  7 JUN 2023 09:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.31)  7 JUN 2023 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1409,11 +1409,11 @@ Overfull \hbox (30.40204pt too wide) in paragraph at lines 21--24
  []
 
 [39 <./figuren/llExcept.png>]
-<figuren/deviceled.png, id=986, 770.12718pt x 523.9575pt>
+<figuren/deviceled.png, id=986, 593.8185pt x 403.5075pt>
 File: figuren/deviceled.png Graphic file (type png)
 <use figuren/deviceled.png>
 Package pdftex.def Info: figuren/deviceled.png  used on input line 57.
-(pdftex.def)             Requested size: 438.17247pt x 298.10722pt.
+(pdftex.def)             Requested size: 438.17247pt x 297.74121pt.
  [40 <./figuren/deviceled.png>] [41]
 <figuren/dddmeerdreld.png, id=1017, 1209.51875pt x 386.44376pt>
 File: figuren/dddmeerdreld.png Graphic file (type png)
@@ -1750,7 +1750,7 @@ live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019
 t/fonts/type1/urw/courier/ucrb8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/ur
 w/courier/ucrr8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrro8
 a.pfb>
-Output written on OOPopdrachten.pdf (64 pages, 24183693 bytes).
+Output written on OOPopdrachten.pdf (64 pages, 24288062 bytes).
 PDF statistics:
  1965 PDF objects out of 2073 (max. 8388607)
  1751 compressed objects within 18 object streams
