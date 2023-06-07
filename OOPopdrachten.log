@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.31)  3 JUN 2023 22:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.31)  7 JUN 2023 09:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1393,36 +1393,36 @@ it-voer twee []\OT1/cmr/bx/n/12 screenshots[]
 ) (./opdracht4.tex [37 <./figuren/dddTweeLogleds.png> <./figuren/ddd_logled_p2a
 .png> <./figuren/ddd_logled_p2b.png>]
 Hoofdstuk 6.
-<figuren/llExcept.png, id=959, 666.49pt x 612.2875pt>
+<figuren/llExcept.png, id=959, 362.85562pt x 403.5075pt>
 File: figuren/llExcept.png Graphic file (type png)
 <use figuren/llExcept.png>
 Package pdftex.def Info: figuren/llExcept.png  used on input line 9.
-(pdftex.def)             Requested size: 394.35254pt x 362.28354pt.
+(pdftex.def)             Requested size: 394.35254pt x 438.54611pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [38
 
- <./figuren/llExcept.png>]
+]
 Overfull \hbox (30.40204pt too wide) in paragraph at lines 21--24
 \OT1/pcr/m/n/12 Verkeerde kleur. De ledkleur is:groen Aangesloten op pin:132 
  []
 
-<figuren/deviceled.png, id=969, 770.12718pt x 523.9575pt>
+[39 <./figuren/llExcept.png>]
+<figuren/deviceled.png, id=986, 770.12718pt x 523.9575pt>
 File: figuren/deviceled.png Graphic file (type png)
 <use figuren/deviceled.png>
-Package pdftex.def Info: figuren/deviceled.png  used on input line 55.
+Package pdftex.def Info: figuren/deviceled.png  used on input line 57.
 (pdftex.def)             Requested size: 438.17247pt x 298.10722pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[39]
-<figuren/dddmeerdreld.png, id=1006, 1209.51875pt x 386.44376pt>
+ [40 <./figuren/deviceled.png>] [41]
+<figuren/dddmeerdreld.png, id=1017, 1209.51875pt x 386.44376pt>
 File: figuren/dddmeerdreld.png Graphic file (type png)
 <use figuren/dddmeerdreld.png>
-Package pdftex.def Info: figuren/dddmeerdreld.png  used on input line 100.
+Package pdftex.def Info: figuren/dddmeerdreld.png  used on input line 102.
 (pdftex.def)             Requested size: 416.2625pt x 132.99303pt.
- [40 <./figuren/deviceled.png>]) (./unitTest.tex [41 <./figuren/dddmeerdreld.pn
-g>]
+ [42 <./figuren/dddmeerdreld.png>]) (./unitTest.tex [43]
 Hoofdstuk 7.
-[42
+[44
 
 ]
 Overfull \hbox (6.38298pt too wide) in paragraph at lines 88--123
@@ -1432,24 +1432,24 @@ Overfull \hbox (6.38298pt too wide) in paragraph at lines 88--123
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
-[44]) (./appendix.tex [45] [46
+ [45]
+[46]) (./appendix.tex [47] [48
 
 
-] [47] (./deOmgeving.tex
+] [49] (./deOmgeving.tex
 B"ylage A.
 Excluding 'comment' comment.
-<figuren/vncopstart.png, id=1185, 664.58287pt x 79.79813pt>
+<figuren/vncopstart.png, id=1196, 664.58287pt x 79.79813pt>
 File: figuren/vncopstart.png Graphic file (type png)
 <use figuren/vncopstart.png>
 Package pdftex.def Info: figuren/vncopstart.png  used on input line 38.
 (pdftex.def)             Requested size: 438.17247pt x 52.61333pt.
-<figuren/laptopVCS.png, id=1188, 530.58224pt x 243.00787pt>
+<figuren/laptopVCS.png, id=1199, 530.58224pt x 243.00787pt>
 File: figuren/laptopVCS.png Graphic file (type png)
 <use figuren/laptopVCS.png>
 Package pdftex.def Info: figuren/laptopVCS.png  used on input line 53.
 (pdftex.def)             Requested size: 284.80942pt x 130.44733pt.
-<figuren/vcsExtSSH.png, id=1190, 930.47626pt x 520.94624pt>
+<figuren/vcsExtSSH.png, id=1201, 930.47626pt x 520.94624pt>
 File: figuren/vcsExtSSH.png Graphic file (type png)
 <use figuren/vcsExtSSH.png>
 Package pdftex.def Info: figuren/vcsExtSSH.png  used on input line 66.
@@ -1458,47 +1458,47 @@ Package pdftex.def Info: figuren/vcsExtSSH.png  used on input line 66.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuren/extensionIcon.png, id=1191, 51.94406pt x 50.43843pt>
+<figuren/extensionIcon.png, id=1202, 51.94406pt x 50.43843pt>
 File: figuren/extensionIcon.png Graphic file (type png)
 <use figuren/extensionIcon.png>
 Package pdftex.def Info: figuren/extensionIcon.png  used on input line 74.
 (pdftex.def)             Requested size: 14.49985pt x 14.07956pt.
-[48
+[50
 
  <./figuren/vncopstart.png> <./figuren/laptopVCS.png>]
-<figuren/VNCremoteSSH.png, id=1201, 1442.38875pt x 936.49875pt>
+<figuren/VNCremoteSSH.png, id=1212, 1442.38875pt x 936.49875pt>
 File: figuren/VNCremoteSSH.png Graphic file (type png)
 <use figuren/VNCremoteSSH.png>
 Package pdftex.def Info: figuren/VNCremoteSSH.png  used on input line 83.
 (pdftex.def)             Requested size: 262.90614pt x 170.69168pt.
-<figuren/VNCInvoerHost.png, id=1204, 828.84656pt x 144.54pt>
+<figuren/VNCInvoerHost.png, id=1215, 828.84656pt x 144.54pt>
 File: figuren/VNCInvoerHost.png Graphic file (type png)
 <use figuren/VNCInvoerHost.png>
 Package pdftex.def Info: figuren/VNCInvoerHost.png  used on input line 92.
 (pdftex.def)             Requested size: 262.90614pt x 45.84572pt.
-<figuren/VSCsshCommand.png, id=1206, 682.04813pt x 100.12407pt>
+<figuren/VSCsshCommand.png, id=1217, 682.04813pt x 100.12407pt>
 File: figuren/VSCsshCommand.png Graphic file (type png)
 <use figuren/VSCsshCommand.png>
 Package pdftex.def Info: figuren/VSCsshCommand.png  used on input line 101.
 (pdftex.def)             Requested size: 306.71939pt x 45.02637pt.
-<figuren/VSCconfigFile.png, id=1208, 834.86906pt x 207.77625pt>
+<figuren/VSCconfigFile.png, id=1219, 834.86906pt x 207.77625pt>
 File: figuren/VSCconfigFile.png Graphic file (type png)
 <use figuren/VSCconfigFile.png>
 Package pdftex.def Info: figuren/VSCconfigFile.png  used on input line 109.
 (pdftex.def)             Requested size: 306.71939pt x 76.33386pt.
- [49 <./figuren/vcsExtSSH.png> <./figuren/extensionIcon.png> <./figuren/VNCremo
+ [51 <./figuren/vcsExtSSH.png> <./figuren/extensionIcon.png> <./figuren/VNCremo
 teSSH.png> <./figuren/VNCInvoerHost.png>]
-<figuren/VSCcontinue.png, id=1230, 832.61063pt x 152.82094pt>
+<figuren/VSCcontinue.png, id=1240, 832.61063pt x 152.82094pt>
 File: figuren/VSCcontinue.png Graphic file (type png)
 <use figuren/VSCcontinue.png>
 Package pdftex.def Info: figuren/VSCcontinue.png  used on input line 118.
 (pdftex.def)             Requested size: 306.71939pt x 56.29567pt.
-<figuren/VSCpasswd.png, id=1232, 831.85782pt x 115.93312pt>
+<figuren/VSCpasswd.png, id=1242, 831.85782pt x 115.93312pt>
 File: figuren/VSCpasswd.png Graphic file (type png)
 <use figuren/VSCpasswd.png>
 Package pdftex.def Info: figuren/VSCpasswd.png  used on input line 127.
 (pdftex.def)             Requested size: 306.71939pt x 42.74597pt.
-<figuren/VSCfout1.png, id=1234, 772.38562pt x 171.64125pt>
+<figuren/VSCfout1.png, id=1244, 772.38562pt x 171.64125pt>
 File: figuren/VSCfout1.png Graphic file (type png)
 <use figuren/VSCfout1.png>
 Package pdftex.def Info: figuren/VSCfout1.png  used on input line 136.
@@ -1507,7 +1507,7 @@ Package pdftex.def Info: figuren/VSCfout1.png  used on input line 136.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuren/VSCnewTerminal.png, id=1235, 1425.07407pt x 368.87813pt>
+<figuren/VSCnewTerminal.png, id=1245, 1425.07407pt x 368.87813pt>
 File: figuren/VSCnewTerminal.png Graphic file (type png)
 <use figuren/VSCnewTerminal.png>
 Package pdftex.def Info: figuren/VSCnewTerminal.png  used on input line 145.
@@ -1515,7 +1515,7 @@ Package pdftex.def Info: figuren/VSCnewTerminal.png  used on input line 145.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[50 <./figuren/VSCsshCommand.png> <./figuren/VSCconfigFile.png> <./figuren/VSCc
+[52 <./figuren/VSCsshCommand.png> <./figuren/VSCconfigFile.png> <./figuren/VSCc
 ontinue.png> <./figuren/VSCpasswd.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 159--163
 
@@ -1525,12 +1525,12 @@ File: figuren/VSCiconeExpl.png Graphic file (type png)
 <use figuren/VSCiconeExpl.png>
 Package pdftex.def Info: figuren/VSCiconeExpl.png  used on input line 169.
 (pdftex.def)             Requested size: 14.49995pt x 14.49995pt.
-<figuren/VSCopenFolder.png, id=1254, 893.58844pt x 242.40562pt>
+<figuren/VSCopenFolder.png, id=1264, 893.58844pt x 242.40562pt>
 File: figuren/VSCopenFolder.png Graphic file (type png)
 <use figuren/VSCopenFolder.png>
 Package pdftex.def Info: figuren/VSCopenFolder.png  used on input line 172.
 (pdftex.def)             Requested size: 350.5393pt x 95.09262pt.
-<figuren/VSCexplorerveld.png, id=1256, 807.51688pt x 465.74pt>
+<figuren/VSCexplorerveld.png, id=1266, 807.51688pt x 465.74pt>
 File: figuren/VSCexplorerveld.png Graphic file (type png)
 <use figuren/VSCexplorerveld.png>
 Package pdftex.def Info: figuren/VSCexplorerveld.png  used on input line 183.
@@ -1544,9 +1544,9 @@ f Ctrl+Shift+E.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[51 <./figuren/VSCfout1.png> <./figuren/VSCnewTerminal.png> <./figuren/VSCopenF
+[53 <./figuren/VSCfout1.png> <./figuren/VSCnewTerminal.png> <./figuren/VSCopenF
 older.png>]
-<figuren/VSCmakeFile.png, id=1271, 31.61812pt x 29.35968pt>
+<figuren/VSCmakeFile.png, id=1281, 31.61812pt x 29.35968pt>
 File: figuren/VSCmakeFile.png Graphic file (type png)
 <use figuren/VSCmakeFile.png>
 Package pdftex.def Info: figuren/VSCmakeFile.png  used on input line 192.
@@ -1567,22 +1567,22 @@ File: figuren/extensionIcon.png Graphic file (type png)
 <use figuren/extensionIcon.png>
 Package pdftex.def Info: figuren/extensionIcon.png  used on input line 222.
 (pdftex.def)             Requested size: 14.49985pt x 14.07956pt.
-[52 <./figuren/VSCexplorerveld.png (PNG copy)> <./figuren/VSCmakeFile.png>]
+[54 <./figuren/VSCexplorerveld.png (PNG copy)> <./figuren/VSCmakeFile.png>]
 File: figuren/cPlusIcon.png Graphic file (type png)
 <use figuren/cPlusIcon.png>
 Package pdftex.def Info: figuren/cPlusIcon.png  used on input line 223.
 (pdftex.def)             Requested size: 14.4999pt x 12.39305pt.
-<figuren/VSCcompile.png, id=1295, 691.08188pt x 398.23781pt>
+<figuren/VSCcompile.png, id=1305, 691.08188pt x 398.23781pt>
 File: figuren/VSCcompile.png Graphic file (type png)
 <use figuren/VSCcompile.png>
 Package pdftex.def Info: figuren/VSCcompile.png  used on input line 229.
 (pdftex.def)             Requested size: 262.90614pt x 151.50208pt.
-<figuren/VSCiconeRunDebug.png, id=1296, 46.67438pt x 45.16875pt>
+<figuren/VSCiconeRunDebug.png, id=1306, 46.67438pt x 45.16875pt>
 File: figuren/VSCiconeRunDebug.png Graphic file (type png)
 <use figuren/VSCiconeRunDebug.png>
 Package pdftex.def Info: figuren/VSCiconeRunDebug.png  used on input line 245.
 (pdftex.def)             Requested size: 14.49951pt x 14.0318pt.
-<figuren/VCRrunDebug.png, id=1299, 17.06375pt x 18.0675pt>
+<figuren/VCRrunDebug.png, id=1309, 17.06375pt x 18.0675pt>
 File: figuren/VCRrunDebug.png Graphic file (type png)
 <use figuren/VCRrunDebug.png>
 Package pdftex.def Info: figuren/VCRrunDebug.png  used on input line 251.
@@ -1592,39 +1592,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
-[53 <./figuren/VSCcompile.png> <./figuren/VSCiconeRunDebug.png> <./figuren/VCRr
+[55 <./figuren/VSCcompile.png> <./figuren/VSCiconeRunDebug.png> <./figuren/VCRr
 unDebug.png (PNG copy)>]
-<figuren/VSCksGDB.png, id=1320, 372.64218pt x 142.28156pt>
+<figuren/VSCksGDB.png, id=1331, 372.64218pt x 142.28156pt>
 File: figuren/VSCksGDB.png Graphic file (type png)
 <use figuren/VSCksGDB.png>
 Package pdftex.def Info: figuren/VSCksGDB.png  used on input line 257.
 (pdftex.def)             Requested size: 163.87857pt x 62.5715pt.
-<figuren/VSCKsGcc.png, id=1321, 425.33907pt x 271.76532pt>
+<figuren/VSCKsGcc.png, id=1332, 425.33907pt x 271.76532pt>
 File: figuren/VSCKsGcc.png Graphic file (type png)
 <use figuren/VSCKsGcc.png>
 Package pdftex.def Info: figuren/VSCKsGcc.png  used on input line 262.
 (pdftex.def)             Requested size: 187.31685pt x 119.68492pt.
-<figuren/VSCdebugVeld.png, id=1322, 1640.37843pt x 1023.825pt>
+<figuren/VSCdebugVeld.png, id=1333, 1640.37843pt x 1023.825pt>
 File: figuren/VSCdebugVeld.png Graphic file (type png)
 <use figuren/VSCdebugVeld.png>
 Package pdftex.def Info: figuren/VSCdebugVeld.png  used on input line 274.
 (pdftex.def)             Requested size: 350.5393pt x 218.77457pt.
-<figuren/VSCDebugKnoppen.png, id=1323, 172.39406pt x 28.60687pt>
+<figuren/VSCDebugKnoppen.png, id=1334, 172.39406pt x 28.60687pt>
 File: figuren/VSCDebugKnoppen.png Graphic file (type png)
 <use figuren/VSCDebugKnoppen.png>
 Package pdftex.def Info: figuren/VSCDebugKnoppen.png  used on input line 279.
 (pdftex.def)             Requested size: 122.64058pt x 20.35117pt.
-<figuren/F5-Continue.png, id=1324, 28.60687pt x 28.60687pt>
+<figuren/F5-Continue.png, id=1335, 28.60687pt x 28.60687pt>
 File: figuren/F5-Continue.png Graphic file (type png)
 <use figuren/F5-Continue.png>
 Package pdftex.def Info: figuren/F5-Continue.png  used on input line 284.
 (pdftex.def)             Requested size: 21.9108pt x 22.76286pt.
-<figuren/F10-StepOver.png, id=1325, 28.60687pt x 28.60687pt>
+<figuren/F10-StepOver.png, id=1336, 28.60687pt x 28.60687pt>
 File: figuren/F10-StepOver.png Graphic file (type png)
 <use figuren/F10-StepOver.png>
 Package pdftex.def Info: figuren/F10-StepOver.png  used on input line 285.
 (pdftex.def)             Requested size: 21.9108pt x 22.76286pt.
-<figuren/F11-StepInto.png, id=1326, 28.60687pt x 28.60687pt>
+<figuren/F11-StepInto.png, id=1337, 28.60687pt x 28.60687pt>
 File: figuren/F11-StepInto.png Graphic file (type png)
 <use figuren/F11-StepInto.png>
 Package pdftex.def Info: figuren/F11-StepInto.png  used on input line 286.
@@ -1639,7 +1639,7 @@ Overfull \hbox (38.80997pt too wide) in paragraph at lines 282--288
 [][] 
  []
 
-) (./linuxcommandos.tex [54 <./figuren/VSCksGDB.png> <./figuren/VSCKsGcc.png> <
+) (./linuxcommandos.tex [56 <./figuren/VSCksGDB.png> <./figuren/VSCKsGcc.png> <
 ./figuren/VSCdebugVeld.png> <./figuren/VSCDebugKnoppen.png> <./figuren/F5-Conti
 nue.png> <./figuren/F10-StepOver.png> <./figuren/F11-StepInto.png>]
 B"ylage B.
@@ -1648,28 +1648,28 @@ Overfull \hbox (31.09871pt too wide) in paragraph at lines 2--2
 |[]\OT1/cmr/bx/n/24.88 Tips&Tricks&Troubleshooting voor
  []
 
-[55
+[57
 
 ]
 Overfull \hbox (10.96863pt too wide) in paragraph at lines 45--69
 [] 
  []
 
-[56]) (./voorbeeldcode.tex [57]
+[58]) (./voorbeeldcode.tex [59]
 B"ylage C.
 
 Overfull \hbox (48.42197pt too wide) in paragraph at lines 19--54
  $[]$  $[]$ 
  []
 
-[58
+[60
 
 ]
 Overfull \hbox (48.42197pt too wide) in paragraph at lines 69--131
  $[]$  $[]$ 
  []
 
-[59] [60]
+[61] [62]
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
@@ -1679,7 +1679,7 @@ Overfull \hbox (64.41827pt too wide) in paragraph at lines 157--233
  $[]$  $[]$ 
  []
 
-[61]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
@@ -1706,7 +1706,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--32
 
 ) Excluding 'comment' comment.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 227.
- [62]
+ [64]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 227.
  (./OOPopdrachten.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 227.
@@ -1720,13 +1720,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
  ) 
 Here is how much of TeX's memory you used:
- 16655 strings out of 492162
- 244364 string characters out of 6129062
+ 16661 strings out of 492162
+ 244428 string characters out of 6129062
  703549 words of memory out of 5000000
- 19579 multiletter control sequences out of 15000+600000
+ 19581 multiletter control sequences out of 15000+600000
  21370 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,60p,1202b,1567s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,16n,60p,1202b,2018s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Bi\\kern\040-0.02em\\protect\040\\penalty\040\\@M
 \040\\hskip\040\\z@skip\040j{}lage.1.A} has been referenced but does not exist,
  replaced by a fixed one
@@ -1750,10 +1750,10 @@ live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019
 t/fonts/type1/urw/courier/ucrb8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/ur
 w/courier/ucrr8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrro8
 a.pfb>
-Output written on OOPopdrachten.pdf (62 pages, 24204473 bytes).
+Output written on OOPopdrachten.pdf (64 pages, 24183693 bytes).
 PDF statistics:
- 1954 PDF objects out of 2073 (max. 8388607)
- 1742 compressed objects within 18 object streams
- 1031 named destinations out of 1200 (max. 500000)
+ 1965 PDF objects out of 2073 (max. 8388607)
+ 1751 compressed objects within 18 object streams
+ 1035 named destinations out of 1200 (max. 500000)
  641 words of extra memory for PDF output out of 10000 (max. 10000000)
 

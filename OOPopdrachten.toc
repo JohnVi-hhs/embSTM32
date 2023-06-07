@@ -28,25 +28,25 @@
 \contentsline {chapter}{\numberline {6}Het gebruik van Exceptions bij meerdere objecten.}{38}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Exceptions}{38}{section.6.1}%
 \contentsline {paragraph}{Opdracht}{39}{figure.caption.30}%
-\contentsline {section}{\numberline {6.2}Toepassen van 1 op 0..5 multipliciteit.}{39}{section.6.2}%
-\contentsline {paragraph}{Opdracht}{39}{figure.caption.31}%
-\contentsline {chapter}{\numberline {7}Introductie in unit testing}{42}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Deel 1, introductie}{42}{section.7.1}%
-\contentsline {paragraph}{Opdracht}{43}{lstnumber.7.1.25}%
-\contentsline {section}{\numberline {7.2}Deel2, een eigen test}{45}{section.7.2}%
-\contentsline {chapter}{Appendices}{46}{section*.33}%
-\contentsline {chapter}{\numberline {A}Installeren van de practicum omgeving}{48}{B"ylage.1.A}%
-\contentsline {section}{\numberline {A.1}De VNC viewer}{48}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Het gebruik van 'Visual Studio Code'}{48}{section.1.A.2}%
-\contentsline {chapter}{\numberline {B}Tips\&Tricks\&Troubleshooting voor Linux omgeving}{55}{B"ylage.1.B}%
-\contentsline {section}{\numberline {B.1}Troubleshooting}{55}{section.1.B.1}%
-\contentsline {section}{\numberline {B.2}Tips}{55}{section.1.B.2}%
-\contentsline {section}{\numberline {B.3}Linux commando's (zie ook tips in \ref {app:tips})}{56}{section.1.B.3}%
-\contentsline {section}{\numberline {B.4}Uitleg GPIO poorten in Linux}{57}{section.1.B.4}%
-\contentsline {chapter}{\numberline {C}Voorbeeld code}{58}{B"ylage.1.C}%
-\contentsline {section}{\numberline {C.1}De klasse Aanwezigheid}{58}{section.1.C.1}%
-\contentsline {section}{\numberline {C.2}De klasse Breuk}{59}{section.1.C.2}%
-\contentsline {section}{\numberline {C.3}De verschillende honden klassen}{60}{section.1.C.3}%
-\contentsline {subsection}{\numberline {C.3.1}De klasse Hond}{61}{subsection.1.C.3.1}%
-\contentsline {subsection}{\numberline {C.3.2}De klasse Tekkel}{62}{subsection.1.C.3.2}%
-\contentsline {subsection}{\numberline {C.3.3}De klasse SintBernard}{62}{subsection.1.C.3.3}%
+\contentsline {section}{\numberline {6.2}Toepassen van 1 op 0..5 multipliciteit.}{40}{section.6.2}%
+\contentsline {paragraph}{Opdracht}{41}{figure.caption.31}%
+\contentsline {chapter}{\numberline {7}Introductie in unit testing}{44}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Deel 1, introductie}{44}{section.7.1}%
+\contentsline {paragraph}{Opdracht}{45}{lstnumber.7.1.25}%
+\contentsline {section}{\numberline {7.2}Deel2, een eigen test}{47}{section.7.2}%
+\contentsline {chapter}{Appendices}{48}{section*.33}%
+\contentsline {chapter}{\numberline {A}Installeren van de practicum omgeving}{50}{B"ylage.1.A}%
+\contentsline {section}{\numberline {A.1}De VNC viewer}{50}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Het gebruik van 'Visual Studio Code'}{50}{section.1.A.2}%
+\contentsline {chapter}{\numberline {B}Tips\&Tricks\&Troubleshooting voor Linux omgeving}{57}{B"ylage.1.B}%
+\contentsline {section}{\numberline {B.1}Troubleshooting}{57}{section.1.B.1}%
+\contentsline {section}{\numberline {B.2}Tips}{57}{section.1.B.2}%
+\contentsline {section}{\numberline {B.3}Linux commando's (zie ook tips in \ref {app:tips})}{58}{section.1.B.3}%
+\contentsline {section}{\numberline {B.4}Uitleg GPIO poorten in Linux}{59}{section.1.B.4}%
+\contentsline {chapter}{\numberline {C}Voorbeeld code}{60}{B"ylage.1.C}%
+\contentsline {section}{\numberline {C.1}De klasse Aanwezigheid}{60}{section.1.C.1}%
+\contentsline {section}{\numberline {C.2}De klasse Breuk}{61}{section.1.C.2}%
+\contentsline {section}{\numberline {C.3}De verschillende honden klassen}{62}{section.1.C.3}%
+\contentsline {subsection}{\numberline {C.3.1}De klasse Hond}{63}{subsection.1.C.3.1}%
+\contentsline {subsection}{\numberline {C.3.2}De klasse Tekkel}{64}{subsection.1.C.3.2}%
+\contentsline {subsection}{\numberline {C.3.3}De klasse SintBernard}{64}{subsection.1.C.3.3}%

@@ -36,7 +36,9 @@ int main()
 	}
 	catch (LedException &le)
 	{
-		cout << le.deFoutmelding() << " Aangesloten op pin:" << le.welkeLed()->connectie() << endl;
+		Led* lamp=le.welkeLed();
+		
+		cout << le.deFoutmelding() << " Aangesloten op pin:" << lamp->connectie() << endl;
 	}
 	usleep(DRIE_SEC);
 	logger.zetUit();
